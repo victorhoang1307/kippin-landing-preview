@@ -1,0 +1,909 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kippin — Không gian xem an toàn cho bé do ba mẹ chọn lọc</title>
+  <meta
+    name="description"
+    content="Nền tảng video an toàn cho trẻ em theo cơ chế 100% Whitelist do ba mẹ chọn lọc. Không thuật toán dẫn dắt, không quảng cáo, không YouTube Shorts."
+  />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:SOFT,WONK,opsz,wght@0..100,0..1,9..144,400..600&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ─── 1. Sticky Editorial Header (Single Kinetic Wordmark) ─── -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a
+        href="#top"
+        class="brand-link"
+        data-i18n-aria="header.homeAria"
+        aria-label="Trang chủ Kippin"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="-30 -26 584 302"
+          role="img"
+          aria-label="Kippin"
+          width="104"
+          height="54"
+        >
+          <g transform="translate(0,0) rotate(0 34 125)">
+            <g class="kippin-hop" style="animation-delay: 0.00s">
+              <line x1="12" y1="30" x2="12" y2="170" stroke="#52758E" stroke-width="24" stroke-linecap="round" />
+              <line x1="12" y1="118" x2="54" y2="82" stroke="#52758E" stroke-width="24" stroke-linecap="round" />
+              <line x1="24" y1="106" x2="56" y2="170" stroke="#52758E" stroke-width="24" stroke-linecap="round" />
+            </g>
+          </g>
+          <g transform="translate(0,-10) rotate(5 96 125)">
+            <g transform="translate(84,0)">
+              <g class="kippin-hop" style="animation-delay: 0.09s">
+                <line x1="12" y1="80" x2="12" y2="170" stroke="#E9A844" stroke-width="24" stroke-linecap="round" />
+                <circle cx="12" cy="45" r="13.92" fill="#D86A50" />
+              </g>
+            </g>
+          </g>
+          <g transform="translate(0,6) rotate(-4 184 125)">
+            <g transform="translate(134,0)">
+              <g class="kippin-hop" style="animation-delay: 0.18s">
+                <path d="M12,220L12,125A38,38 0 0 1 88,125A38,38 0 0 1 12,125" fill="none" stroke="#D86A50" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+                <circle class="kippin-blink" cx="54" cy="125" r="8.84" fill="#232228" />
+              </g>
+            </g>
+          </g>
+          <g transform="translate(0,-8) rotate(5 302 125)">
+            <g transform="translate(252,0)">
+              <g class="kippin-hop" style="animation-delay: 0.27s">
+                <path d="M12,220L12,125A38,38 0 0 1 88,125A38,38 0 0 1 12,125" fill="none" stroke="#D98293" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+                <circle class="kippin-blink" cx="46" cy="125" r="8.84" fill="#232228" />
+              </g>
+            </g>
+          </g>
+          <g class="kippin-hop" style="animation-delay: 0.225s">
+            <path d="M184.96,202.11C207.5,211.79 235.67,192.9 235.27,168.38" fill="none" stroke="#232228" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+          </g>
+          <g transform="translate(0,-12) rotate(-5 382 125)">
+            <g transform="translate(370,0)">
+              <g class="kippin-hop" style="animation-delay: 0.36s">
+                <line x1="12" y1="80" x2="12" y2="170" stroke="#6FA090" stroke-width="24" stroke-linecap="round" />
+                <circle cx="12" cy="45" r="13.92" fill="#52758E" />
+              </g>
+            </g>
+          </g>
+          <g transform="translate(0,2) rotate(2 472 125)">
+            <g transform="translate(420,0)">
+              <g class="kippin-hop" style="animation-delay: 0.45s">
+                <path d="M12,170L12,125A40,33 0 0 1 92,125L92,170" fill="none" stroke="#232228" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+                <line x1="12" y1="80" x2="12" y2="170" stroke="#232228" stroke-width="24" stroke-linecap="round" />
+              </g>
+            </g>
+          </g>
+        </svg>
+      </a>
+
+      <nav class="desktop-nav" data-i18n-aria="header.navAria" aria-label="Điều hướng chính">
+        <a href="#manifesto" data-i18n="nav.manifesto">Triết lý</a>
+        <a href="#features" data-i18n="nav.features">Cơ chế bảo vệ</a>
+        <a href="#comparison" data-i18n="nav.comparison">Đối chiếu</a>
+        <a href="/tv-guide" data-route-preview="/tv-guide" data-i18n="nav.tvSetup">Cài đặt TV</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-pill" role="group" aria-label="Language switcher">
+          <button type="button" class="lang-btn" data-lang-btn="vi" aria-pressed="true">VI</button>
+          <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">EN</button>
+        </div>
+
+        <a
+          href="/login"
+          data-route-preview="/login"
+          class="btn-primary btn-primary--sm"
+          data-i18n="header.signInCta"
+        >Đăng nhập</a>
+
+        <button
+          type="button"
+          class="mobile-menu-btn"
+          id="mobile-menu-btn"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          data-i18n-aria="header.openMenuAria"
+          aria-label="Mở menu điều hướng"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <line x1="4" y1="7" x2="20" y2="7" />
+            <line x1="4" y1="12" x2="20" y2="12" />
+            <line x1="4" y1="17" x2="20" y2="17" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <nav class="mobile-drawer-links" data-i18n-aria="header.mobileMenuAria" aria-label="Menu thu gọn">
+        <a href="#manifesto" data-i18n="nav.manifesto">Triết lý</a>
+        <a href="#features" data-i18n="nav.features">Cơ chế bảo vệ</a>
+        <a href="#comparison" data-i18n="nav.comparison">Đối chiếu</a>
+        <a href="/tv-guide" data-route-preview="/tv-guide" data-i18n="nav.tvSetup">Cài đặt TV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ─── 2. Beat 1: Asymmetric Split Hero + 1:1 Android TV Stage ─── -->
+    <section id="top" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="editorial-overline" data-i18n="hero.overline">100% Whitelist · Không thuật toán</span>
+          <h1 class="display-h1" data-i18n="hero.heading">
+            Không gian xem tĩnh lặng, nơi ba mẹ chọn từng khung hình cho con.
+          </h1>
+          <p class="hero-lead" data-i18n="hero.lead">
+            Thêm kênh và danh sách phát tin cậy từ YouTube hoặc tải lên video gia đình tự quay. Không thuật toán dẫn dắt sang nội dung rác, không quảng cáo xen ngang, không vòng xoáy YouTube Shorts.
+          </p>
+
+          <div class="hero-cta-group">
+            <a
+              href="/login"
+              data-route-preview="/login"
+              class="btn-primary"
+              data-i18n="hero.primaryCta"
+            >Vào bảng điều khiển</a>
+            <a
+              href="/tv-guide"
+              data-route-preview="/tv-guide"
+              class="btn-secondary"
+              data-i18n="hero.secondaryCta"
+            >Hướng dẫn cài Smart TV</a>
+          </div>
+
+          <ul class="hero-meta-list">
+            <li>
+              <span class="meta-check" aria-hidden="true">✓</span>
+              <span data-i18n="hero.meta1">100% kênh do ba mẹ duyệt</span>
+            </li>
+            <li>
+              <span class="meta-check" aria-hidden="true">✓</span>
+              <span data-i18n="hero.meta2">Chặn cứng video ngắn ≤ 60 giây</span>
+            </li>
+            <li>
+              <span class="meta-check" aria-hidden="true">✓</span>
+              <span data-i18n="hero.meta3">Ghép nối Android TV bằng mã 6 số</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right 7fr: Interactive 1:1 Android TV Product Stage -->
+        <div class="tv-stage-wrapper">
+          <div class="stage-toolbar">
+            <div class="stage-tabs" role="tablist" aria-label="Chế độ màn hình Smart TV">
+              <button
+                type="button"
+                role="tab"
+                class="stage-tab"
+                id="tab-tv-home"
+                data-tv-tab="home"
+                aria-selected="true"
+                aria-controls="panel-tv-home"
+                data-i18n="stage.tabHome"
+              >Màn hình của bé</button>
+              <button
+                type="button"
+                role="tab"
+                class="stage-tab"
+                id="tab-tv-pair"
+                data-tv-tab="pair"
+                aria-selected="false"
+                aria-controls="panel-tv-pair"
+                data-i18n="stage.tabPair"
+              >Ghép nối TV 6 số</button>
+            </div>
+
+            <div class="profile-pills" id="profile-pills-group" role="group" aria-label="Hồ sơ bé">
+              <button type="button" class="profile-pill" data-profile-btn="minh" aria-pressed="true">
+                <img src="assets/avatar-kip.webp" alt="Kip" width="256" height="256" />
+                <span data-i18n="stage.profileMinh">Bé Minh · 5 tuổi</span>
+              </button>
+              <button type="button" class="profile-pill" data-profile-btn="an" aria-pressed="false">
+                <img src="assets/avatar-lumi.webp" alt="Lumi" width="256" height="256" />
+                <span data-i18n="stage.profileAn">Bé An · 8 tuổi</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="tv-hardware-frame">
+            <div class="tv-viewport">
+              <!-- TV View 1: 1:1 KidHomeScreen.kt -->
+              <div
+                id="panel-tv-home"
+                class="tv-screen-view"
+                role="tabpanel"
+                aria-labelledby="tab-tv-home"
+              >
+                <div class="tv-home-layout">
+                  <aside class="tv-sidebar" aria-hidden="true">
+                    <div class="tv-nav-item is-active" title="Home">
+                      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3.2 3 10.5V21h6v-6h6v6h6V10.5L12 3.2z" /></svg>
+                    </div>
+                    <div class="tv-nav-item" title="Search">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7" /><line x1="16.5" y1="16.5" x2="21" y2="21" /></svg>
+                    </div>
+                    <div class="tv-nav-item" title="History">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8.5" /><polyline points="12 7.5 12 12 15.5 14" /></svg>
+                    </div>
+                    <div class="tv-nav-item" title="Channels">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3.5" y="5" width="17" height="14" rx="2" /><line x1="9" y1="5" x2="9" y2="19" /></svg>
+                    </div>
+                    <div class="tv-nav-item" title="Favorites">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20.5s-7-4.4-7-10.1A4.4 4.4 0 0 1 12 7a4.4 4.4 0 0 1 7 3.4c0 5.7-7 10.1-7 10.1z" /></svg>
+                    </div>
+                  </aside>
+
+                  <div class="tv-main">
+                    <div class="tv-topbar">
+                      <div class="tv-brand-mini" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 -26 584 302" width="70" height="36">
+                          <g transform="translate(0,0)"><line x1="12" y1="30" x2="12" y2="170" stroke="#F4EFEA" stroke-width="24" stroke-linecap="round" /><line x1="12" y1="118" x2="54" y2="82" stroke="#F4EFEA" stroke-width="24" stroke-linecap="round" /><line x1="24" y1="106" x2="56" y2="170" stroke="#F4EFEA" stroke-width="24" stroke-linecap="round" /></g>
+                          <g transform="translate(0,-10) rotate(5 96 125)"><g transform="translate(84,0)"><line x1="12" y1="80" x2="12" y2="170" stroke="#E9A844" stroke-width="24" stroke-linecap="round" /><circle cx="12" cy="45" r="13.92" fill="#D86A50" /></g></g>
+                          <g transform="translate(0,6) rotate(-4 184 125)"><g transform="translate(134,0)"><path d="M12,220L12,125A38,38 0 0 1 88,125A38,38 0 0 1 12,125" fill="none" stroke="#D86A50" stroke-width="24" stroke-linecap="round" /><circle cx="54" cy="125" r="8.84" fill="#F4EFEA" /></g></g>
+                          <g transform="translate(0,-8) rotate(5 302 125)"><g transform="translate(252,0)"><path d="M12,220L12,125A38,38 0 0 1 88,125A38,38 0 0 1 12,125" fill="none" stroke="#D98293" stroke-width="24" stroke-linecap="round" /><circle cx="46" cy="125" r="8.84" fill="#F4EFEA" /></g></g>
+                          <path d="M184.96,202.11C207.5,211.79 235.67,192.9 235.27,168.38" fill="none" stroke="#E9A844" stroke-width="10" stroke-linecap="round" />
+                          <g transform="translate(0,-12) rotate(-5 382 125)"><g transform="translate(370,0)"><line x1="12" y1="80" x2="12" y2="170" stroke="#6FA090" stroke-width="24" stroke-linecap="round" /><circle cx="12" cy="45" r="13.92" fill="#E9A844" /></g></g>
+                          <g transform="translate(0,2) rotate(2 472 125)"><g transform="translate(420,0)"><path d="M12,170L12,125A40,33 0 0 1 92,125L92,170" fill="none" stroke="#F4EFEA" stroke-width="24" stroke-linecap="round" /><line x1="12" y1="80" x2="12" y2="170" stroke="#F4EFEA" stroke-width="24" stroke-linecap="round" /></g></g>
+                        </svg>
+                      </div>
+
+                      <div class="tv-active-profile-badge">
+                        <img id="tv-badge-avatar" src="assets/avatar-kip.webp" alt="" width="256" height="256" />
+                        <span id="tv-badge-name" data-i18n="stage.badgeMinh">Bé Minh · Đã khóa Whitelist</span>
+                      </div>
+                    </div>
+
+                    <div class="tv-chips-row" role="group" aria-label="Bộ lọc danh mục TV">
+                      <button type="button" class="tv-chip" data-tv-chip="all" aria-pressed="true" data-i18n="stage.chipAll">Tất cả</button>
+                      <button type="button" class="tv-chip" data-tv-chip="films" aria-pressed="false" data-i18n="stage.chipFilms">Phim hoạt hình mở</button>
+                      <button type="button" class="tv-chip" data-tv-chip="nature" aria-pressed="false" data-i18n="stage.chipNature">Khám phá &amp; Mỹ thuật</button>
+                    </div>
+
+                    <div class="tv-shelf-header">
+                      <span id="tv-shelf-label" data-i18n="stage.shelfTitle">Đang xem dở &amp; Tập tiếp theo</span>
+                      <span class="tv-safe-pill" data-i18n="stage.safePill">Chỉ kênh ba mẹ duyệt</span>
+                    </div>
+
+                    <div class="tv-cards-grid" id="tv-cards-grid">
+                      <!-- Card 1 (LCP Candidate: fetchpriority="high", NO loading="lazy") -->
+                      <button
+                        type="button"
+                        class="tv-video-card is-focused"
+                        data-card-id="wing-it"
+                        data-profile="minh"
+                        data-cat="films"
+                      >
+                        <div class="tv-thumb-box">
+                          <img
+                            src="assets/poster-wing-it.jpg"
+                            alt="Wing It! — Blender Studio Open Movie"
+                            fetchpriority="high"
+                            width="1280"
+                            height="720"
+                          />
+                          <span class="tv-ep-badge" data-i18n="stage.badgeWatching68">▶ ĐANG XEM • 68%</span>
+                          <span class="tv-duration">03:35</span>
+                          <div class="tv-progress-track"><div class="tv-progress-fill" style="width: 68%"></div></div>
+                        </div>
+                        <div class="tv-card-meta">
+                          <span class="tv-card-title" data-i18n="stage.c1Title">Wing It! — S01E02: Cất cánh</span>
+                          <span class="tv-card-sub" data-i18n="stage.c1Sub">Blender Studio · Hoạt hình không lời</span>
+                        </div>
+                      </button>
+
+                      <!-- Card 2 (Visible above fold: standard priority, NO loading="lazy") -->
+                      <button
+                        type="button"
+                        class="tv-video-card"
+                        data-card-id="spring"
+                        data-profile="minh"
+                        data-cat="nature"
+                      >
+                        <div class="tv-thumb-box">
+                          <img
+                            src="assets/poster-spring.jpg"
+                            alt="Spring — Blender Studio Open Movie"
+                            width="1280"
+                            height="720"
+                          />
+                          <span class="tv-ep-badge is-next" data-i18n="stage.badgeNextEp">⏭ TẬP TIẾP THEO</span>
+                          <span class="tv-duration">07:44</span>
+                        </div>
+                        <div class="tv-card-meta">
+                          <span class="tv-card-title" data-i18n="stage.c2Title">Spring — Mùa xuân trên thảo nguyên</span>
+                          <span class="tv-card-sub" data-i18n="stage.c2Sub">Blender Studio · Kể chuyện thiên nhiên</span>
+                        </div>
+                      </button>
+
+                      <!-- Card 3 (Visible above fold: standard priority, NO loading="lazy") -->
+                      <button
+                        type="button"
+                        class="tv-video-card is-third-visible"
+                        data-card-id="llamigos"
+                        data-profile="minh"
+                        data-cat="films"
+                      >
+                        <div class="tv-thumb-box">
+                          <img
+                            src="assets/poster-llamigos.jpg"
+                            alt="Caminandes 3: Llamigos — Blender Studio"
+                            width="1280"
+                            height="720"
+                          />
+                          <span class="tv-ep-badge">S01E03</span>
+                          <span class="tv-duration">02:30</span>
+                        </div>
+                        <div class="tv-card-meta">
+                          <span class="tv-card-title" data-i18n="stage.c3Title">Caminandes 3: Llamigos</span>
+                          <span class="tv-card-sub" data-i18n="stage.c3Sub">Blender Studio · Vui nhộn vùng Andes</span>
+                        </div>
+                      </button>
+
+                      <!-- Card 4 (Initially hidden above fold: fetchpriority="low" + loading="lazy") -->
+                      <button
+                        type="button"
+                        class="tv-video-card"
+                        data-card-id="cosmos"
+                        data-profile="an"
+                        data-cat="nature"
+                        hidden
+                      >
+                        <div class="tv-thumb-box">
+                          <img
+                            src="assets/poster-cosmos.jpg"
+                            alt="Cosmos Laundromat — Blender Studio"
+                            fetchpriority="low"
+                            loading="lazy"
+                            width="1280"
+                            height="720"
+                          />
+                          <span class="tv-ep-badge" data-i18n="stage.badgeWatching42">▶ ĐANG XEM • 42%</span>
+                          <span class="tv-duration">12:10</span>
+                          <div class="tv-progress-track"><div class="tv-progress-fill" style="width: 42%"></div></div>
+                        </div>
+                        <div class="tv-card-meta">
+                          <span class="tv-card-title" data-i18n="stage.c4Title">Cosmos Laundromat — Du hành</span>
+                          <span class="tv-card-sub" data-i18n="stage.c4Sub">Blender Studio · Khoa học viễn tưởng</span>
+                        </div>
+                      </button>
+
+                      <!-- Card 5 (Initially hidden above fold: fetchpriority="low" + loading="lazy") -->
+                      <button
+                        type="button"
+                        class="tv-video-card"
+                        data-card-id="hero-draw"
+                        data-profile="an"
+                        data-cat="nature"
+                        hidden
+                      >
+                        <div class="tv-thumb-box">
+                          <img
+                            src="assets/poster-hero-draw.jpg"
+                            alt="HERO — Blender Grease Pencil"
+                            fetchpriority="low"
+                            loading="lazy"
+                            width="1280"
+                            height="720"
+                          />
+                          <span class="tv-ep-badge is-next" data-i18n="stage.badgeNextEp">⏭ TẬP TIẾP THEO</span>
+                          <span class="tv-duration">04:08</span>
+                        </div>
+                        <div class="tv-card-meta">
+                          <span class="tv-card-title" data-i18n="stage.c5Title">HERO — Phác thảo hoạt họa 2D</span>
+                          <span class="tv-card-sub" data-i18n="stage.c5Sub">Blender Studio · Mỹ thuật &amp; Sáng tạo</span>
+                        </div>
+                      </button>
+
+                      <!-- Card 6 (Initially hidden above fold: fetchpriority="low" + loading="lazy") -->
+                      <button
+                        type="button"
+                        class="tv-video-card"
+                        data-card-id="sprite"
+                        data-profile="an"
+                        data-cat="films"
+                        hidden
+                      >
+                        <div class="tv-thumb-box">
+                          <img
+                            src="assets/poster-sprite-fright.jpg"
+                            alt="Sprite Fright — Blender Studio"
+                            fetchpriority="low"
+                            loading="lazy"
+                            width="1280"
+                            height="720"
+                          />
+                          <span class="tv-ep-badge">8+</span>
+                          <span class="tv-duration">10:29</span>
+                        </div>
+                        <div class="tv-card-meta">
+                          <span class="tv-card-title" data-i18n="stage.c6Title">Sprite Fright — Khu rừng nấm</span>
+                          <span class="tv-card-sub" data-i18n="stage.c6Sub">Blender Studio · Phiêu lưu đồng đội</span>
+                        </div>
+                      </button>
+                    </div>
+
+                    <div class="tv-now-playing-strip">
+                      <span id="tv-strip-left">
+                        <strong data-i18n="stage.stripFocusPrefix">Đang chọn:</strong>
+                        <span id="tv-strip-title">Wing It! — S01E02: Cất cánh</span>
+                      </span>
+                      <span id="tv-strip-right" data-i18n="stage.stripAutoNext">Tự chuyển tập cùng kênh</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- TV View 2: 1:1 TVLoginScreen.kt (Initially hidden via content-visibility: hidden fallback) -->
+              <div
+                id="panel-tv-pair"
+                class="tv-screen-view is-inactive"
+                role="tabpanel"
+                aria-labelledby="tab-tv-pair"
+                aria-hidden="true"
+                inert
+              >
+                <div class="tv-pairing-layout">
+                  <div class="tv-pairing-logo" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 -26 584 302" width="108" height="56">
+                      <g transform="translate(0,0)"><g class="kippin-hop" style="animation-delay: 0.00s"><line x1="12" y1="30" x2="12" y2="170" stroke="#F4EFEA" stroke-width="24" stroke-linecap="round" /><line x1="12" y1="118" x2="54" y2="82" stroke="#F4EFEA" stroke-width="24" stroke-linecap="round" /><line x1="24" y1="106" x2="56" y2="170" stroke="#F4EFEA" stroke-width="24" stroke-linecap="round" /></g></g>
+                      <g transform="translate(0,-10) rotate(5 96 125)"><g transform="translate(84,0)"><g class="kippin-hop" style="animation-delay: 0.09s"><line x1="12" y1="80" x2="12" y2="170" stroke="#E9A844" stroke-width="24" stroke-linecap="round" /><circle cx="12" cy="45" r="13.92" fill="#D86A50" /></g></g></g>
+                      <g transform="translate(0,6) rotate(-4 184 125)"><g transform="translate(134,0)"><g class="kippin-hop" style="animation-delay: 0.18s"><path d="M12,220L12,125A38,38 0 0 1 88,125A38,38 0 0 1 12,125" fill="none" stroke="#D86A50" stroke-width="24" stroke-linecap="round" /><circle class="kippin-blink" cx="54" cy="125" r="8.84" fill="#F4EFEA" /></g></g></g>
+                      <g transform="translate(0,-8) rotate(5 302 125)"><g transform="translate(252,0)"><g class="kippin-hop" style="animation-delay: 0.27s"><path d="M12,220L12,125A38,38 0 0 1 88,125A38,38 0 0 1 12,125" fill="none" stroke="#D98293" stroke-width="24" stroke-linecap="round" /><circle class="kippin-blink" cx="46" cy="125" r="8.84" fill="#F4EFEA" /></g></g></g>
+                      <g class="kippin-hop" style="animation-delay: 0.225s"><path d="M184.96,202.11C207.5,211.79 235.67,192.9 235.27,168.38" fill="none" stroke="#E9A844" stroke-width="10" stroke-linecap="round" /></g>
+                      <g transform="translate(0,-12) rotate(-5 382 125)"><g transform="translate(370,0)"><g class="kippin-hop" style="animation-delay: 0.36s"><line x1="12" y1="80" x2="12" y2="170" stroke="#6FA090" stroke-width="24" stroke-linecap="round" /><circle cx="12" cy="45" r="13.92" fill="#E9A844" /></g></g></g>
+                      <g transform="translate(0,2) rotate(2 472 125)"><g transform="translate(420,0)"><g class="kippin-hop" style="animation-delay: 0.45s"><path d="M12,170L12,125A40,33 0 0 1 92,125L92,170" fill="none" stroke="#F4EFEA" stroke-width="24" stroke-linecap="round" /><line x1="12" y1="80" x2="12" y2="170" stroke="#F4EFEA" stroke-width="24" stroke-linecap="round" /></g></g></g>
+                    </svg>
+                  </div>
+
+                  <p class="tv-pairing-inst" data-i18n="stage.pairInst">
+                    Mở kippin.app trên điện thoại của ba mẹ → mục Ghép nối TV và nhập mã 6 ký tự dưới đây:
+                  </p>
+
+                  <div class="tv-code-boxes" aria-label="Mã ghép nối TV 6 ký tự">
+                    <span class="tv-code-slot" data-code-slot="0">K</span>
+                    <span class="tv-code-slot" data-code-slot="1">7</span>
+                    <span class="tv-code-slot" data-code-slot="2">P</span>
+                    <span class="tv-code-dash" aria-hidden="true">–</span>
+                    <span class="tv-code-slot" data-code-slot="3">9</span>
+                    <span class="tv-code-slot" data-code-slot="4">2</span>
+                    <span class="tv-code-slot" data-code-slot="5">M</span>
+                  </div>
+
+                  <div class="tv-pairing-meta">
+                    <span>
+                      <span data-i18n="stage.pairExpires">Mã hết hạn sau</span>
+                      <strong id="tv-countdown">14:58</strong>
+                    </span>
+                    <span class="tv-wait-status">
+                      <span class="tv-wait-dot" aria-hidden="true"></span>
+                      <span class="tv-wait-dot" aria-hidden="true"></span>
+                      <span class="tv-wait-dot" aria-hidden="true"></span>
+                      <span data-i18n="stage.pairWaiting">Đang chờ kết nối...</span>
+                    </span>
+                  </div>
+
+                  <button type="button" class="tv-refresh-btn" id="tv-refresh-code-btn" data-i18n="stage.pairNewCode">
+                    ↻ Tạo mã 6 số mới
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tv-stand-neck" aria-hidden="true"></div>
+          <div class="tv-stand-base" aria-hidden="true"></div>
+
+          <div class="tv-caption-bar">
+            <span data-i18n="stage.captionLeft">Giao diện Android TV thực tế · Bấm thẻ hoặc đổi hồ sơ để thử</span>
+            <span data-i18n="stage.captionRight">© Blender Foundation (CC-BY 4.0)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 3. Beat 2: Editorial Manifesto (Blacklist vs. 100% Whitelist) ─── -->
+    <section id="manifesto" class="manifesto-section">
+      <div class="container manifesto-grid">
+        <div>
+          <span class="section-index" data-i18n="manifesto.index">01 / Triết lý an toàn</span>
+          <h2 class="display-h2" data-i18n="manifesto.heading">
+            An tâm trao điều khiển TV cho con mỗi ngày.
+          </h2>
+        </div>
+
+        <div class="manifesto-columns">
+          <article class="manifesto-col">
+            <span class="manifesto-tag manifesto-tag--muted" data-i18n="manifesto.col1Tag">Cơ chế Blacklist phổ biến</span>
+            <h3 data-i18n="manifesto.col1Title">Chặn đuổi theo thuật toán</h3>
+            <p data-i18n="manifesto.col1Body">
+              Phần lớn ứng dụng video trẻ em hiện nay vận hành bằng thuật toán tự động — thả trẻ vào biển hàng triệu video tự do rồi mới cố gắng lọc bỏ nội dung xấu. Chỉ một cú bấm nhầm trên điều khiển cũng đủ kéo con vào vòng xoáy Shorts vô tận.
+            </p>
+          </article>
+
+          <article class="manifesto-col">
+            <span class="manifesto-tag manifesto-tag--safe" data-i18n="manifesto.col2Tag">Cơ chế 100% Whitelist của Kippin</span>
+            <h3 data-i18n="manifesto.col2Title">Đóng cổng trước, mở từng kênh</h3>
+            <p data-i18n="manifesto.col2Body">
+              Kippin đảo ngược hoàn toàn cách tiếp cận đó: màn hình của con mặc định tĩnh lặng. Chỉ những kênh giáo dục, phim hoạt hình và câu chuyện chính thống mà ba mẹ tận tay duyệt mới được phép xuất hiện — dù trên Web, Tablet hay Smart TV phòng khách.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 4. Beat 3: Asymmetric Bento Showcase (Deferred Below Fold) ─── -->
+    <section id="features" class="showcase-section deferred-section">
+      <div class="container">
+        <div class="section-head-split">
+          <div>
+            <span class="section-index" data-i18n="bento.index">02 / Cơ chế bảo vệ cốt lõi</span>
+            <h2 class="display-h2" data-i18n="bento.heading">
+              Ba mẹ chọn một lần, con xem lành mạnh mỗi ngày.
+            </h2>
+          </div>
+          <p class="section-head-desc" data-i18n="bento.lead">
+            Mỗi tính năng được thiết kế như một chốt chặn vật lý rõ ràng — thay thế hoàn toàn luồng đề xuất tự động bằng quyền quyết định trực tiếp của phụ huynh.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Card 01: Interactive Parent Whitelist Switchboard (7 cols) -->
+          <article class="bento-card bento-span-7">
+            <div>
+              <div class="bento-meta">
+                <span class="bento-num" data-i18n="bento.c1Num">01 · BẢNG DUYỆT WHITELIST</span>
+              </div>
+              <h3 class="bento-title" data-i18n="bento.c1Title">Thêm kênh YouTube tin cậy &amp; video gia đình tự quay</h3>
+              <p class="bento-desc" data-i18n="bento.c1Desc">
+                Dán liên kết kênh hoặc playlist giáo dục từ YouTube, hoặc tải trực tiếp tệp video kỷ niệm gia đình lên không gian riêng của từng bé.
+              </p>
+            </div>
+
+            <div class="ui-artifact">
+              <div class="curation-header">
+                <span data-i18n="bento.c1ArtifactLabel">Nguồn phát đang mở cho Bé Minh (bấm gạt thử)</span>
+                <span class="curation-count" id="curation-count">3 nguồn · 46 tập đã duyệt</span>
+              </div>
+
+              <div class="source-list">
+                <div class="source-row" data-source-row data-ep-count="18">
+                  <div class="source-info">
+                    <img
+                      class="source-thumb"
+                      src="assets/poster-wing-it.jpg"
+                      alt="Blender Studio Open Films"
+                      loading="lazy"
+                      width="1280"
+                      height="720"
+                    />
+                    <div>
+                      <div class="source-name">Blender Studio Open Films</div>
+                      <div class="source-type" data-i18n="bento.s1Meta">Playlist YouTube · 18 tập hoạt hình mở</div>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="toggle-switch"
+                    role="switch"
+                    aria-checked="true"
+                    aria-label="Bật hoặc tắt Blender Studio Open Films"
+                  ><span class="toggle-knob"></span></button>
+                </div>
+
+                <div class="source-row" data-source-row data-ep-count="24">
+                  <div class="source-info">
+                    <img
+                      class="source-thumb"
+                      src="assets/poster-spring.jpg"
+                      alt="Super Simple Phonics"
+                      loading="lazy"
+                      width="1280"
+                      height="720"
+                    />
+                    <div>
+                      <div class="source-name">Super Simple Phonics &amp; Songs</div>
+                      <div class="source-type" data-i18n="bento.s2Meta">Kênh YouTube giáo dục · 24 bài hát</div>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="toggle-switch"
+                    role="switch"
+                    aria-checked="true"
+                    aria-label="Bật hoặc tắt Super Simple Phonics"
+                  ><span class="toggle-knob"></span></button>
+                </div>
+
+                <div class="source-row" data-source-row data-ep-count="4">
+                  <div class="source-info">
+                    <img
+                      class="source-thumb"
+                      src="assets/poster-llamigos.jpg"
+                      alt="Video gia đình"
+                      loading="lazy"
+                      width="1280"
+                      height="720"
+                    />
+                    <div>
+                      <div class="source-name" data-i18n="bento.s3Name">Kỷ niệm bé tập xe cuối tuần.mp4</div>
+                      <div class="source-type" data-i18n="bento.s3Meta">Video gia đình tự tải lên · 4 tệp riêng</div>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="toggle-switch"
+                    role="switch"
+                    aria-checked="true"
+                    aria-label="Bật hoặc tắt video gia đình"
+                  ><span class="toggle-knob"></span></button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 02: Hard Ingestion Filter Log (5 cols) -->
+          <article class="bento-card bento-card--paper bento-span-5">
+            <div>
+              <div class="bento-meta">
+                <span class="bento-num" data-i18n="bento.c2Num">02 · BỘ LỌC ĐẦU VÀO</span>
+              </div>
+              <h3 class="bento-title" data-i18n="bento.c2Title">Chặn sạch YouTube Shorts &amp; quảng cáo</h3>
+              <p class="bento-desc" data-i18n="bento.c2Desc">
+                Tự động loại bỏ mọi video ngắn ≤ 60 giây ngay khi đồng bộ, tắt sạch quảng cáo và khóa toàn bộ liên kết dẫn ra ngoài ứng dụng.
+              </p>
+            </div>
+
+            <div class="ui-artifact">
+              <div class="filter-log">
+                <div class="filter-item">
+                  <span class="filter-item-title" data-i18n="bento.f1Title">Wing It! — S01E02: Cất cánh (03:35)</span>
+                  <span class="status-pill status-pill--ok" data-i18n="bento.f1Status">Đã duyệt</span>
+                </div>
+                <div class="filter-item filter-item--blocked">
+                  <span class="filter-item-title" data-i18n="bento.f2Title">#shorts Thử thách kẹo nổ 15 giây (00:15)</span>
+                  <span class="status-pill status-pill--block" data-i18n="bento.f2Status">Chặn ≤ 60s</span>
+                </div>
+                <div class="filter-item filter-item--blocked">
+                  <span class="filter-item-title" data-i18n="bento.f3Title">Quảng cáo xen ngang &amp; Bình luận tự do</span>
+                  <span class="status-pill status-pill--block" data-i18n="bento.f3Status">Đã khóa</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 03: Seamless Series Auto-Next (5 cols) -->
+          <article class="bento-card bento-card--paper bento-span-5">
+            <div>
+              <div class="bento-meta">
+                <span class="bento-num" data-i18n="bento.c3Num">03 · MẠCH PHIM LIỀN MẠCH</span>
+              </div>
+              <h3 class="bento-title" data-i18n="bento.c3Title">Tự chuyển tập kế tiếp trong cùng Series</h3>
+              <p class="bento-desc" data-i18n="bento.c3Desc">
+                Phát trọn vẹn từng mùa và tập phim theo đúng thứ tự của kênh đã duyệt — không bao giờ nhảy ngẫu nhiên sang kênh lạ.
+              </p>
+            </div>
+
+            <div class="ui-artifact">
+              <div class="series-queue">
+                <div class="series-ep">
+                  <span><span class="ep-code">S01E01</span> · Llama Drama</span>
+                  <span class="status-pill status-pill--ok" data-i18n="bento.epDone">Đã xem</span>
+                </div>
+                <div class="series-ep series-ep--playing">
+                  <span><span class="ep-code">S01E02</span> · Gran Dillama</span>
+                  <strong data-i18n="bento.epNow">▶ Đang phát</strong>
+                </div>
+                <div class="series-ep">
+                  <span><span class="ep-code">S01E03</span> · Llamigos</span>
+                  <span class="ep-code" data-i18n="bento.epNext">Tự phát kế tiếp</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 04: Phone -> Smart TV 6-Code Handshake (7 cols) -->
+          <article class="bento-card bento-span-7">
+            <div>
+              <div class="bento-meta">
+                <span class="bento-num" data-i18n="bento.c4Num">04 · KẾT NỐI PHÒNG KHÁCH</span>
+              </div>
+              <h3 class="bento-title" data-i18n="bento.c4Title">Ghép nối Android TV bằng mã 6 ký tự</h3>
+              <p class="bento-desc" data-i18n="bento.c4Desc">
+                Không cần đăng nhập tài khoản Google của người lớn lên TV. Nhập 6 ký tự hiển thị trên màn hình TV vào điện thoại ba mẹ là xem ngay.
+              </p>
+              <a
+                href="/tv-guide"
+                data-route-preview="/tv-guide"
+                class="inline-text-link"
+                data-i18n="bento.c4Link"
+              >Xem hướng dẫn cài đặt cho Sony, TCL, Xiaomi &amp; Google TV →</a>
+            </div>
+
+            <div class="ui-artifact">
+              <div class="handshake-grid">
+                <div class="handshake-box">
+                  <div class="handshake-label" data-i18n="bento.hPhoneLabel">1. Điện thoại ba mẹ</div>
+                  <div class="handshake-code" data-i18n="bento.hPhoneValue">kippin.app → Ghép nối</div>
+                </div>
+                <div class="handshake-arrow" aria-hidden="true">→</div>
+                <div class="handshake-box handshake-box--tv">
+                  <div class="handshake-label" data-i18n="bento.hTvLabel">2. Smart TV phòng khách</div>
+                  <div class="handshake-code" id="bento-sync-code">K7P – 92M</div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 5. Beat 4: Clean Editorial Comparison Ledger (Deferred Below Fold) ─── -->
+    <section id="comparison" class="compare-section deferred-section">
+      <div class="container">
+        <span class="section-index" data-i18n="compare.index">03 / Đối chiếu minh bạch</span>
+        <h2 class="display-h2" data-i18n="compare.heading">
+          Kippin khác gì YouTube Kids và YouTube thường?
+        </h2>
+
+        <div class="ledger-wrap">
+          <table class="ledger-table" data-i18n-aria="compare.tableAria" aria-label="Bảng so sánh Kippin, YouTube Kids và YouTube">
+            <thead>
+              <tr>
+                <th scope="col" data-i18n="compare.colCriterion">Tiêu chí</th>
+                <th scope="col" class="col-kippin">Kippin</th>
+                <th scope="col" data-i18n="compare.colYtKids">YouTube Kids</th>
+                <th scope="col" data-i18n="compare.colYt">YouTube thường</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="ledger-criterion" data-i18n="compare.r1Criterion">Nguồn video cho bé</td>
+                <td class="col-kippin">
+                  <span class="ledger-kippin-cell">
+                    <span class="ledger-check" aria-hidden="true">✓</span>
+                    <span data-i18n="compare.r1Kippin">Ba mẹ thêm kênh/playlist YouTube hoặc tự tải lên</span>
+                  </span>
+                </td>
+                <td class="ledger-muted" data-i18n="compare.r1YtKids">Thuật toán tự lọc (Blacklist)</td>
+                <td class="ledger-muted" data-i18n="compare.r1Yt">Thuật toán tự do đẩy xu hướng</td>
+              </tr>
+              <tr>
+                <td class="ledger-criterion" data-i18n="compare.r2Criterion">Video ngắn (Shorts ≤ 60s)</td>
+                <td class="col-kippin">
+                  <span class="ledger-kippin-cell">
+                    <span class="ledger-check" aria-hidden="true">✓</span>
+                    <span data-i18n="compare.r2Kippin">Chặn cứng 100%</span>
+                  </span>
+                </td>
+                <td class="ledger-muted" data-i18n="compare.r2YtKids">Vẫn xuất hiện Shorts</td>
+                <td class="ledger-muted" data-i18n="compare.r2Yt">Đẩy liên tục gây nghiện</td>
+              </tr>
+              <tr>
+                <td class="ledger-criterion" data-i18n="compare.r3Criterion">Quảng cáo &amp; Link ngoài</td>
+                <td class="col-kippin">
+                  <span class="ledger-kippin-cell">
+                    <span class="ledger-check" aria-hidden="true">✓</span>
+                    <span data-i18n="compare.r3Kippin">Không quảng cáo, khóa link ngoài</span>
+                  </span>
+                </td>
+                <td class="ledger-muted" data-i18n="compare.r3YtKids">Có quảng cáo xen kẽ</td>
+                <td class="ledger-muted" data-i18n="compare.r3Yt">Nhiều quảng cáo &amp; bình luận</td>
+              </tr>
+              <tr>
+                <td class="ledger-criterion" data-i18n="compare.r4Criterion">Xem theo Series của kênh</td>
+                <td class="col-kippin">
+                  <span class="ledger-kippin-cell">
+                    <span class="ledger-check" aria-hidden="true">✓</span>
+                    <span data-i18n="compare.r4Kippin">Tự chuyển tập tiếp theo cùng kênh</span>
+                  </span>
+                </td>
+                <td class="ledger-muted" data-i18n="compare.r4YtKids">Gợi ý trộn lẫn sang kênh khác</td>
+                <td class="ledger-muted" data-i18n="compare.r4Yt">Tự nhảy sang video ngẫu nhiên</td>
+              </tr>
+              <tr>
+                <td class="ledger-criterion" data-i18n="compare.r5Criterion">Kết nối Android TV</td>
+                <td class="col-kippin">
+                  <span class="ledger-kippin-cell">
+                    <span class="ledger-check" aria-hidden="true">✓</span>
+                    <span data-i18n="compare.r5Kippin">Nhập mã 6 số, không cần login Google</span>
+                  </span>
+                </td>
+                <td class="ledger-muted" data-i18n="compare.r5YtKids">Phải đăng nhập tài khoản Google</td>
+                <td class="ledger-muted" data-i18n="compare.r5Yt">Dùng chung tài khoản người lớn</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 6. Beat 5: Closing Dark Plum Banner (Deferred Below Fold) ─── -->
+    <section class="closing-section deferred-section">
+      <div class="container">
+        <div class="closing-card">
+          <div class="closing-copy">
+            <h2 class="closing-title" data-i18n="closing.heading">
+              Thiết lập không gian xem an toàn cho con chỉ trong 2 phút.
+            </h2>
+            <p class="closing-sub" data-i18n="closing.sub">
+              Tạo hồ sơ riêng cho từng bé, chọn lọc những kênh giáo dục đầu tiên và ghép nối thẳng lên Smart TV phòng khách.
+            </p>
+          </div>
+
+          <div class="closing-actions">
+            <a
+              href="/login"
+              data-route-preview="/login"
+              class="btn-primary"
+              data-i18n="closing.primaryCta"
+            >Đăng nhập / Bắt đầu</a>
+            <a
+              href="/tv-guide"
+              data-route-preview="/tv-guide"
+              class="btn-outline-light"
+              data-i18n="closing.secondaryCta"
+            >Hướng dẫn cài Android TV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ─── Single-Tier Editorial Footer ─── -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#top" class="brand-link" aria-label="Kippin">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 -26 584 302" role="img" aria-label="Kippin" width="92" height="48">
+            <g transform="translate(0,0)"><line x1="12" y1="30" x2="12" y2="170" stroke="#52758E" stroke-width="24" stroke-linecap="round" /><line x1="12" y1="118" x2="54" y2="82" stroke="#52758E" stroke-width="24" stroke-linecap="round" /><line x1="24" y1="106" x2="56" y2="170" stroke="#52758E" stroke-width="24" stroke-linecap="round" /></g>
+            <g transform="translate(0,-10) rotate(5 96 125)"><g transform="translate(84,0)"><line x1="12" y1="80" x2="12" y2="170" stroke="#E9A844" stroke-width="24" stroke-linecap="round" /><circle cx="12" cy="45" r="13.92" fill="#D86A50" /></g></g>
+            <g transform="translate(0,6) rotate(-4 184 125)"><g transform="translate(134,0)"><path d="M12,220L12,125A38,38 0 0 1 88,125A38,38 0 0 1 12,125" fill="none" stroke="#D86A50" stroke-width="24" stroke-linecap="round" /><circle cx="54" cy="125" r="8.84" fill="#232228" /></g></g>
+            <g transform="translate(0,-8) rotate(5 302 125)"><g transform="translate(252,0)"><path d="M12,220L12,125A38,38 0 0 1 88,125A38,38 0 0 1 12,125" fill="none" stroke="#D98293" stroke-width="24" stroke-linecap="round" /><circle cx="46" cy="125" r="8.84" fill="#232228" /></g></g>
+            <path d="M184.96,202.11C207.5,211.79 235.67,192.9 235.27,168.38" fill="none" stroke="#232228" stroke-width="10" stroke-linecap="round" />
+            <g transform="translate(0,-12) rotate(-5 382 125)"><g transform="translate(370,0)"><line x1="12" y1="80" x2="12" y2="170" stroke="#6FA090" stroke-width="24" stroke-linecap="round" /><circle cx="12" cy="45" r="13.92" fill="#52758E" /></g></g>
+            <g transform="translate(0,2) rotate(2 472 125)"><g transform="translate(420,0)"><path d="M12,170L12,125A40,33 0 0 1 92,125L92,170" fill="none" stroke="#232228" stroke-width="24" stroke-linecap="round" /><line x1="12" y1="80" x2="12" y2="170" stroke="#232228" stroke-width="24" stroke-linecap="round" /></g></g>
+          </svg>
+        </a>
+        <div class="footer-meta">
+          <p>
+            <span>© <span id="footer-year">2026</span> Kippin · </span>
+            <span data-i18n="footer.tagline">Không gian xem an toàn cho bé do ba mẹ chọn lọc.</span>
+          </p>
+          <p class="footer-cc" data-i18n="footer.ccNotice">
+            Poster minh họa trên TV trích từ phim hoạt hình mở của Blender Foundation (CC-BY 4.0): Wing It!, Spring, Sprite Fright, Caminandes, Cosmos Laundromat, HERO.
+          </p>
+        </div>
+      </div>
+
+      <nav class="footer-links" aria-label="Liên kết chân trang">
+        <a href="/login" data-route-preview="/login" data-i18n="footer.signIn">Đăng nhập</a>
+        <a href="/tv-guide" data-route-preview="/tv-guide" data-i18n="footer.tvSetup">Cài đặt Android TV</a>
+        <a href="/standby" data-route-preview="/standby" data-i18n="footer.tvStandby">Màn hình chờ TV</a>
+        <a href="/legal" data-route-preview="/legal" data-i18n="footer.legal">Điều khoản &amp; Bản quyền</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Local Prototype Route Toast (Prevents 404 on static preview server) -->
+  <div class="preview-route-toast" id="preview-route-toast" role="status" aria-live="polite" hidden>
+    <span id="preview-route-text">Bản xem trước Local · Nút này trỏ tới <code id="preview-route-code">/login</code></span>
+    <button type="button" class="preview-route-close" id="preview-route-close" data-i18n="toast.close">Đóng</button>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
