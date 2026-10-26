@@ -1,9 +1,9 @@
-/* ─── Kippin Landing V15 — Client Interactivity, Hero Option Switcher & Bilingual Dictionary (VI / EN) ─── */
+/* ─── Kippin Landing V16 — Bilingual Dictionary (VI / EN), Locale UI Screens & Popup Lightbox Gallery ─── */
 
 (() => {
   const I18N = {
     vi: {
-      pageTitle: 'Kippin — Không gian xem an toàn cho con, do chính ba mẹ chọn lọc',
+      pageTitle: 'Kippin — Không gian xem an toàn cho con, do ba mẹ chọn lọc',
       header: {
         homeAria: 'Trang chủ Kippin',
         navAria: 'Điều hướng chính',
@@ -20,136 +20,108 @@
         faq: 'Hỏi đáp',
       },
       hero: {
-        switcherAria: 'Chọn thử bố cục Hero Banner',
-        switcherLabel: 'Xem thử bố cục Hero:',
-        opt1: 'Option 1: Khung Container gọn gàng',
-        opt2: 'Option 2: Toàn màn hình cân xứng 2 bên',
-        title: 'Không gian xem an toàn cho con, do chính ba mẹ chọn lọc',
+        title: 'Không gian xem an toàn cho\u00A0con, do ba\u00A0mẹ chọn\u00A0lọc',
         subtitle:
-          'Tải các bộ video bản quyền đã mua lên kệ phim có ảnh bìa, gom cùng những kênh YouTube chất lượng ba mẹ duyệt riêng cho từng độ tuổi. Không thuật toán tự trôi, không quảng cáo xen ngang, không YouTube Shorts.',
+          'Gom các bộ video bản quyền đã mua và kênh YouTube ba mẹ duyệt cho từng độ tuổi 2–12+ vào một nơi. Không thuật toán tự trôi, không Shorts, không quảng cáo.',
         primaryCta: 'Bắt đầu miễn phí',
-        imgAlt:
-          'Nhóm bạn nhỏ Boro, Lumi, Kip, Pip và Mori vui chơi trên đồi cỏ xanh dưới bầu trời trong trẻo',
+        imgAlt: 'Nhóm nhân vật Boro, Lumi, Kip, Pip và Mori vui chơi trên đồi cỏ xanh',
       },
       video: {
-        title: 'An tâm trao điều khiển cho con mỗi ngày',
+        title: 'Trao điều khiển cho con mà không phải canh chừng',
         body:
-          'Thay vì lo thuật toán tự động chuyển sang các nội dung chưa phù hợp hay quảng cáo cắt ngang mạch xem, ba mẹ chỉ cần chọn sẵn một lần những bộ video bản quyền của gia đình cùng các kênh ngoại ngữ, khoa học, lịch sử và sáng tạo đúng lứa tuổi của con.',
-        linkLabel: 'Xem cách Kippin hoạt động trong 1 phút',
-        playAria: 'Mở trình xem nhanh cách Kippin hoạt động',
-        imgAlt:
-          'Em bé ngồi trên thảm phòng khách nắng ấm xem chương trình yêu thích trên Smart TV',
+          'Ba mẹ chỉ cần chọn sẵn một lần những bộ video của gia đình và các kênh ngoại ngữ, khoa học, sáng tạo hợp tuổi — con tự mở xem mỗi ngày trên Smart TV hoặc iPad.',
+        linkLabel: 'Xem trước 6 màn hình thực tế',
+        playAria: 'Mở thư viện 6 màn hình giao diện thực tế Kippin',
+        imgAlt: 'Em bé ngồi trên thảm phòng khách xem chương trình yêu thích trên Smart TV',
       },
       features: {
-        heading: 'Giải quyết trọn vẹn những trăn trở thực tế nhất của ba mẹ',
+        heading: 'Giải quyết những bất tiện thực tế khi cho con xem video',
         subheading:
-          'Kết hợp tủ lưu trữ các bộ video bản quyền gia đình đã mua với kho kênh YouTube chọn lọc từ mầm non đến tuổi teen — trong một không gian trong trẻo dành riêng cho con.',
-        r1Tag: 'Tủ Đám Mây Gia Đình',
-        r1Title: 'Biến kho video bản quyền trên Google Drive thành rạp phim riêng của con',
+          'Từ các bộ video bản quyền cất trên Google Drive đến danh sách kênh YouTube cho trẻ từ mầm non tới 12+ tuổi.',
+        r1Title: 'Mở bộ video bản quyền đã mua mượt như xem phim dài tập',
         r1Body:
-          'Nhiều ba mẹ mua sẵn các bộ video ngoại ngữ, truyện kể hay khóa học bản quyền cất trên Google Drive nhưng mở cho con xem rất vất vả vì toàn tên file khô khan, hết 1 bài là dừng và hay bị khóa lượt tải. Với Tủ Đám Mây Gia Đình trên Kippin, ba mẹ tải các bộ video bản quyền đã mua hoặc video kỷ niệm lên thành kệ phim chia theo từng Mùa/Tập có ảnh bìa trực quan — con tự chọn dễ dàng trên cả Smart TV lẫn iPad, và ba mẹ có thể gửi mã PIN 4 số để chia sẻ riêng tư thư mục video gia đình với ông bà.',
-        r1Alt:
-          'Giao diện thực tế Tủ Đám Mây Gia Đình chia bộ video bản quyền Oxford Read & Discover theo Mùa 1, Mùa 2 và thanh Xem tiếp',
-        r1Badge: 'Chia theo Mùa/Tập • Chia sẻ video gia đình qua PIN 4 số',
-        r2Tag: '100% Whitelist • 100+ Kênh 2–12+ tuổi',
-        r2Title:
-          'Xem kênh YouTube hay không thuật toán — kèm thư viện 100+ kênh gợi ý từ mầm non đến tuổi teen',
+          'Lưu trên Google Drive toàn tên file rời rạc, hết một bài là dừng và hay kẹt giới hạn lượt xem. Tải lên Kippin, bộ video ngoại ngữ hay truyện kể đã mua hiện thành kệ phim có ảnh bìa chia theo Mùa/Tập — kèm mã PIN 4 số nếu muốn gửi thư mục video kỷ niệm cho ông bà.',
+        r1Alt: 'Mẹ và bé trai ngồi trên ghế sofa chọn tập học tiếng Anh trên máy tính bảng',
+        r2Title: 'Chỉ xem đúng kênh YouTube ba mẹ duyệt — lọc sạch Shorts và quảng cáo',
         r2Body:
-          'Dán link kênh hoặc playlist YouTube bất kỳ, hoặc thêm 1 chạm từ thư viện hơn 100 kênh chọn lọc trải rộng cho cả trẻ nhỏ lẫn anh chị lớn 6–12+ tuổi: từ Numberblocks, Bluey, Super Simple Songs đến TED-Ed, Kurzgesagt, Mark Rober, Nat Geo Kids, SciShow Kids, Art for Kids Hub, VTV7. Kippin chỉ hiển thị đúng những gì ba mẹ đã duyệt và tự động lọc sạch 100% video ngắn Shorts, Livestream cùng quảng cáo.',
-        r2Alt:
-          'Giao diện thực tế Thư viện 100+ kênh YouTube chọn lọc phân theo độ tuổi 2–4, 5–7, 8–10 và 11+ tuổi với TED-Ed, Kurzgesagt, Mark Rober, Nat Geo Kids',
-        r2SubAlt:
-          'Hai anh chị em cùng xem chương trình khoa học và hoạt hình trên máy tính bảng',
-        r3Tag: 'Giới hạn giờ xem & Giữ mạch tập',
-        r3Title:
-          'Hết giờ tự chuyển sang màn hình nghỉ mắt — đang xem dở luôn giữ trọn mạch tập',
+          'Chọn nhanh từ hơn 100 kênh gợi ý sẵn cho lứa tuổi 2–12+ (từ Numberblocks, Bluey đến TED-Ed, Kurzgesagt, Mark Rober, Nat Geo Kids) hoặc dán link kênh YouTube bất kỳ. Kippin chỉ phát danh sách ba mẹ cho phép, tự động loại bỏ 100% video ngắn Shorts, Livestream và quảng cáo.',
+        r2Alt: 'Hai anh chị em cùng xem chương trình khoa học và hoạt hình trên máy tính bảng',
+        r3Title: 'Giữ trọn mạch tập dài kỳ — dừng xem nhẹ nhàng đúng giờ',
         r3Body:
-          'Ba mẹ chủ động đặt thời lượng xem mỗi ngày cho từng con: khi hết giờ, màn hình tự động khép lại nhẹ nhàng sang chế độ chờ tĩnh lặng thay vì tắt đột ngột gây căng thẳng. Trong suốt giờ xem, trình phát luôn mở đúng tập tiếp theo trong cùng bộ phim hoặc chuỗi bài học và nhớ chính xác vị trí con đang dừng.',
-        r3Alt:
-          'Bé gái ôm thỏ bông ngồi trên ghế sofa sáng nắng xem trọn vẹn câu chuyện theo từng tập',
-        r3SubAlt:
-          'Màn hình chờ nghỉ mắt dịu nhẹ trên Kippin khi hết thời lượng xem trong ngày',
-        r3Badge: 'Hết giờ xem → Tự chuyển màn hình nghỉ mắt',
-        r4Tag: 'Ứng dụng Smart TV độc lập',
+          'Khi con xem xong một tập khoa học hay truyện kể, trình phát tự động mở đúng tập kế tiếp trong cùng bộ và lưu lại vị trí đang dừng. Không thuật toán tự trôi sang kênh lạ, giúp con theo dõi trọn vẹn bài học và dễ khép lại giờ xem mỗi ngày.',
+        r3Alt: 'Bé gái ôm thỏ bông ngồi trên ghế sofa theo dõi câu chuyện dài kỳ',
         r4Title: 'Đưa con rời màn hình điện thoại nhỏ lên Smart TV phòng khách',
         r4Body:
-          'Giúp con ngồi xa bảo vệ thị lực với ứng dụng Kippin độc lập dành riêng cho Android TV và Google TV (Sony, TCL, Xiaomi, Casper, Chromecast). Con dễ dàng dùng điều khiển TV chọn tập yêu thích trong không gian riêng mà không phải mở chung trong ứng dụng YouTube người lớn hay đăng nhập tài khoản Google cá nhân lên TV phòng khách.',
+          'Ứng dụng Kippin độc lập trên Android TV và Google TV (Sony, TCL, Xiaomi, Casper, Chromecast) giúp con ngồi xa bảo vệ mắt và tự chọn tập bằng điều khiển TV. Không cần mở chung ứng dụng YouTube người lớn hay đăng nhập tài khoản Google cá nhân lên TV.',
         r4Alt:
-          'Giao diện thực tế Kippin trên màn hình Smart TV phòng khách với kệ Xem tiếp và các kênh TED-Ed, Kurzgesagt, Nat Geo Kids, Numberblocks',
-        r5Tag: 'Đa hồ sơ 2–12+ tuổi & Nhật ký từ xa',
-        r5Title: 'Mỗi con một góc riêng đúng lứa tuổi — ba mẹ yên tâm nắm bắt từ xa',
+          'Hai anh em ngồi trên thảm phòng khách dùng điều khiển chọn chương trình vũ trụ trên Smart TV',
+        r5Title: 'Mỗi anh chị em một hồ sơ đúng tuổi — ba mẹ theo dõi từ xa',
         r5Body:
-          'Em út 3 tuổi nghe đồng dao tiếng Anh còn anh lớn 10 tuổi mê khoa học vũ trụ? Ngay trong một tài khoản gia đình, mỗi con có một hồ sơ riêng và chỉ nhìn thấy những kênh cùng bộ video đúng độ tuổi của mình. Dù đang ở văn phòng, ba mẹ vẫn xem được nhật ký hôm nay con đã xem tập nào ở nhà và bảo vệ cài đặt bằng mã PIN.',
+          'Bé 4 tuổi nghe đồng dao tiếng Anh, anh 10 tuổi mê khám phá vũ trụ — mỗi con chỉ thấy đúng kênh và bộ video hợp lứa tuổi của mình. Dù đang ở văn phòng, ba mẹ vẫn xem được lịch sử tập đã xem trên điện thoại và khóa cài đặt bằng mã PIN.',
         r5Alt:
-          'Giao diện Nhật ký xem video hàng ngày trong Góc Ba Mẹ theo dõi từng tập và thời lượng xem của mỗi con',
-        r5SubAlt:
-          'Màn hình chọn hồ sơ riêng cho từng độ tuổi với bộ nhân vật Boro, Lumi, Kip và Mori',
+          'Ba ngồi tại bàn làm việc sáng nắng xem nhanh lịch sử xem video của con trên điện thoại',
       },
       inside: {
         heading: 'Bên trong ứng dụng Kippin',
         subheading:
-          'Giao diện hình ảnh trong trẻo để con tự mở tập yêu thích — công cụ quản lý gọn nhẹ cho ba mẹ trên cả Web, iPad và Smart TV.',
+          'Bấm vào từng ảnh để phóng to giao diện dành cho con và trang quản lý của ba mẹ.',
         galleryAria: 'Hình ảnh giao diện thực tế bên trong ứng dụng Kippin',
+        s1OpenAria: 'Phóng to ảnh Trang chủ của con',
         s1Alt:
-          'Tủ Đám Mây Gia Đình chia bộ video bản quyền đã mua theo Mùa 1, Mùa 2 và thanh Xem tiếp',
-        s1Cap: 'Tủ Đám Mây Gia Đình — Chia bộ video bản quyền theo Mùa/Tập',
+          'Trang chủ của con với các kênh đã duyệt TED-Ed, Kurzgesagt, Mark Rober, Nat Geo Kids, Numberblocks và hàng Xem tiếp',
+        s1Cap: 'Trang chủ của con — Kênh đã duyệt và mục Xem tiếp',
+        s2OpenAria: 'Phóng to ảnh Kệ phim gia đình',
         s2Alt:
-          'Trang chủ của Con với kệ Xem tiếp và các kênh TED-Ed, Kurzgesagt, Mark Rober, Nat Geo Kids, Numberblocks',
-        s2Cap: 'Trang chủ của Con — Trải rộng từ mầm non đến 12+ tuổi',
-        s3Alt: 'Trình phát bài học TED-Ed sạch nút rối mắt kèm hàng Tập tiếp theo',
-        s3Cap: 'Trình phát sạch xao nhãng — Giữ trọn mạch tập tiếp theo',
+          'Kệ phim gia đình chia bộ video bản quyền Oxford Read & Discover theo Mùa 1, Mùa 2, Mùa 3 và từng Tập',
+        s2Cap: 'Kệ phim gia đình — Bộ video bản quyền chia theo Mùa và Tập',
+        s3OpenAria: 'Phóng to ảnh Trình phát video theo tập',
+        s3Alt:
+          'Trình phát video 2 cột hiển thị đếm ngược chuyển sang Tập 02 và danh sách Tập 02 đến Tập 06 cùng bộ ở cột bên phải',
+        s3Cap: 'Trình phát video — Tự mở tập kế tiếp cùng bộ, không gợi ý kênh lạ',
+        s4OpenAria: 'Phóng to ảnh Màn hình chọn hồ sơ',
         s4Alt:
-          'Thư viện hơn 100 kênh YouTube chọn lọc phân theo độ tuổi 2–4, 5–7, 8–10 và 11+',
-        s4Cap: 'Góc Ba Mẹ — Thư viện 100+ kênh YouTube chọn lọc theo tuổi',
+          'Màn hình chọn hồ sơ riêng theo từng độ tuổi 4t, 7t, 10t, 12t và mục Phụ huynh có khóa PIN',
+        s4Cap: 'Chọn hồ sơ — Tách riêng nội dung theo tuổi, khóa cài đặt bằng PIN',
+        s5OpenAria: 'Phóng to ảnh Quản lý kênh của ba mẹ',
         s5Alt:
-          'Tải các bộ video bản quyền .mp4 lên Kho lưu trữ gia đình và phân vào từng mùa phim',
-        s5Cap: 'Góc Ba Mẹ — Tải hàng loạt bộ video bản quyền đã mua (.mp4)',
-        s6Alt:
-          'Màn hình chờ nghỉ mắt tĩnh lặng trên Kippin khi hết giờ xem trong ngày',
-        s6Cap: 'Màn hình chờ nghỉ mắt — Khép lại giờ xem êm ái mỗi ngày',
-        s7Alt:
-          'Màn hình chọn hồ sơ theo độ tuổi cho anh chị em với Boro, Lumi, Kip và Mori',
-        s7Cap: 'Đa hồ sơ theo độ tuổi — Góc riêng cho từng anh chị em',
-        s8Alt:
-          'Nhật ký xem video hàng ngày trong Góc Ba Mẹ theo dõi từng tập con đã xem',
-        s8Cap: 'Góc Ba Mẹ — Nhật ký xem video hàng ngày từ xa',
+          'Trang Quản lý kênh với danh mục 108 kênh thiếu nhi chọn lọc theo độ tuổi 2–4, 5–7, 8–10, 11+ và ô dán link YouTube',
+        s5Cap: 'Quản lý kênh — Chọn từ 100+ kênh gợi ý theo tuổi hoặc dán link YouTube',
+        s6OpenAria: 'Phóng to ảnh Nhật ký xem video',
+        s6Alt: 'Nhật ký xem video chi tiết từng tập phim và thời lượng xem của mỗi hồ sơ con',
+        s6Cap: 'Nhật ký xem — Theo dõi từng tập và thời lượng xem của mỗi con',
       },
       compare: {
-        heading: 'Kippin khác gì khi đặt cạnh YouTube và Google Drive?',
+        heading: 'Kippin khác gì so với YouTube và Google Drive?',
         subheading:
-          'Kết hợp kho kênh chọn lọc từ YouTube với sự chủ động của tủ lưu trữ đám mây gia đình — trong một không gian xem thiết kế riêng cho trẻ từ 2 đến 12+ tuổi.',
-        colFeature: 'Tiêu chí thực tế của ba mẹ',
+          'Kết hợp danh mục kênh chọn lọc từ YouTube với kho lưu trữ bộ video bản quyền của gia đình trong một ứng dụng duy nhất.',
+        colFeature: 'Nhu cầu thực tế',
         colYt: 'YouTube thường',
-        colDrive: 'Tự mở bằng Google Drive',
-        r1Label: 'Gom chung kênh YouTube & bộ video bản quyền đã mua',
+        colDrive: 'Mở từ Google Drive',
+        r1Label: 'Gom kênh YouTube & bộ video bản quyền đã mua',
         r1Kippin: 'Chung một kệ phim có ảnh bìa trực quan',
-        r1Yt: 'Không tải được bộ video bản quyền đã mua lên dùng riêng (dễ bị khóa bản quyền)',
-        r1Drive: 'Chỉ mở được file lưu sẵn, không gom được kênh YouTube',
-        r2Label: 'Mở các bộ video bản quyền ba mẹ đã mua',
-        r2Kippin:
-          'Chia theo Kênh & Mùa/Tập, phát mượt không bị khóa lượt tải; chia sẻ video gia đình với ông bà qua PIN 4 số',
-        r2Yt: 'Không có tủ lưu trữ riêng cho gia đình',
-        r2Drive: 'Toàn tên file khô khan con khó tự chọn; hay báo lỗi "vượt quá lượt xem/tải"',
-        r3Label: 'Kiểm soát thuật toán, Shorts ≤ 60s & Quảng cáo',
-        r3Kippin:
-          '100% kênh do ba mẹ duyệt (100+ kênh gợi ý 2–12+ tuổi), lọc sạch Shorts & không quảng cáo',
-        r3Yt: 'Thuật toán tự gợi ý kênh lạ, luồng lướt Shorts liên tục & chèn quảng cáo',
-        r3Drive: 'Không quảng cáo nhưng không có danh mục kênh theo độ tuổi',
-        r4Label: 'Giữ mạch tập dài kỳ & Giới hạn giờ xem',
-        r4Kippin:
-          'Tự chuyển đúng tập tiếp theo, nhớ đoạn xem dở & hết giờ tự chuyển sang màn hình nghỉ mắt êm ái',
-        r4Yt: 'Dễ tự nhảy sang kênh khác; thiết kế tối đa hóa thời gian xem',
-        r4Drive: 'Hết 1 file là dừng cứng, không lưu vị trí đang xem dở',
+        r1Yt: 'Không tải được bộ video bản quyền lên dùng riêng',
+        r1Drive: 'Chỉ mở file lưu sẵn, không gom được kênh YouTube',
+        r2Label: 'Phát các bộ video bản quyền đã mua',
+        r2Kippin: 'Chia theo Mùa/Tập, phát mượt không nghẽn lượt tải; chia sẻ qua PIN 4 số',
+        r2Yt: 'Không có kho lưu trữ riêng cho gia đình',
+        r2Drive: 'Tên file rời rạc khó chọn; hay báo lỗi vượt quá lượt xem',
+        r3Label: 'Kiểm soát thuật toán, Shorts & Quảng cáo',
+        r3Kippin: '100% kênh ba mẹ duyệt (100+ kênh 2–12+ tuổi), 0 Shorts, 0 quảng cáo',
+        r3Yt: 'Tự gợi ý kênh lạ, luồng lướt Shorts liên tục & chèn quảng cáo',
+        r3Drive: 'Không quảng cáo nhưng không có thư viện kênh theo độ tuổi',
+        r4Label: 'Giữ mạch tập dài kỳ',
+        r4Kippin: 'Tự chuyển đúng tập kế tiếp cùng bộ & nhớ chính xác đoạn xem dở',
+        r4Yt: 'Dễ tự chuyển sang kênh khác ngoài bộ đang học',
+        r4Drive: 'Hết 1 file là dừng, không nhớ vị trí đang xem dở',
         r5Label: 'Xem trên Smart TV phòng khách',
-        r5Kippin:
-          'Có ứng dụng Smart TV độc lập, điều khiển dễ bằng remote, không cần đăng nhập Google lên TV',
-        r5Yt: 'Dùng chung ứng dụng với người lớn (Google đã bỏ app TV riêng cho trẻ từ 07/2024)',
-        r5Drive: 'Không có giao diện chọn phim cho trẻ trên TV, bấm bằng remote rất vất vả',
+        r5Kippin: 'App Smart TV độc lập, bấm dễ bằng remote, không cần đăng nhập Google',
+        r5Yt: 'Dùng chung app người lớn (Google đã ngừng app TV riêng từ 07/2024)',
+        r5Drive: 'Không có giao diện kệ phim cho trẻ trên TV',
       },
       safety: {
-        heading: '100% tập trung vào sự bình yên của trẻ nhỏ',
+        heading: 'An tâm trọn vẹn trong từng khung hình',
         subheading:
-          'Không quảng cáo ẩn, không bán dữ liệu hành vi, không thuật toán giữ chân con trước màn hình.',
+          'Không quảng cáo ẩn, không bán dữ liệu hành vi, không thuật toán kéo dài giờ xem.',
         s1Big: '100%',
         s1Label: 'Nội dung ba mẹ chọn',
         s2Big: '0',
@@ -160,60 +132,50 @@
         s4Label: 'Gợi ý từ kênh lạ',
       },
       faq: {
-        heading: 'Câu hỏi thường gặp của ba mẹ',
+        heading: 'Câu hỏi thường gặp',
         q1: 'Ba mẹ thêm nội dung cho con bằng những cách nào?',
         a1:
-          'Ba mẹ có 3 cách rất nhanh trong Góc Ba Mẹ: bấm 1 chạm từ thư viện hơn 100 kênh YouTube gợi ý sẵn cho các lứa tuổi 2–4, 5–7, 8–10 và 11+; dán đường dẫn kênh hoặc playlist YouTube bất kỳ; hoặc tải các bộ video bản quyền đã mua và video kỷ niệm gia đình lên Tủ Đám Mây.',
-        q2: 'Nhà mình đang lưu các bộ video bản quyền đã mua trên Google Drive thì đưa lên Kippin khác gì?',
+          'Ba mẹ có thể chọn 1 chạm từ hơn 100 kênh YouTube gợi ý sẵn theo lứa tuổi (2–4, 5–7, 8–10, 11+), dán link kênh hoặc playlist YouTube bất kỳ, hoặc tải các bộ video bản quyền đã mua và video gia đình lên kệ riêng.',
+        q2: 'Đưa bộ video bản quyền đang lưu trên Google Drive lên Kippin có lợi gì?',
         a2:
-          'Các bộ video bản quyền ba mẹ đã mua sẽ hiển thị thành kệ phim có ảnh bìa chia theo từng Mùa/Tập để con tự chọn dễ dàng, tự động chuyển tập tiếp theo, nhớ chính xác đoạn đang xem dở và phát mượt trên Smart TV mà không bao giờ bị lỗi khóa lượt tải như trên Google Drive. Ngoài ra, ba mẹ có thể tạo mã PIN 4 số nếu muốn chia sẻ riêng tư thư mục video kỷ niệm gia đình cho ông bà cùng xem.',
-        q3: 'Làm sao để con dừng xem đúng giờ mà không căng thẳng?',
+          'Các file rời rạc sẽ được xếp thành kệ phim có ảnh bìa chia theo Mùa và Tập, tự phát tập tiếp theo, nhớ vị trí xem dở và xem mượt trên Smart TV mà không bị khóa lượt tải. Ba mẹ cũng có thể đặt mã PIN 4 số để chia sẻ thư mục video kỷ niệm gia đình cho ông bà.',
+        q3: 'Con lớn 8–12+ tuổi có kênh phù hợp không hay chỉ dành cho bé mầm non?',
         a3:
-          'Ba mẹ đặt giới hạn số phút xem mỗi ngày cho từng hồ sơ của con. Khi hết thời lượng, Kippin tự động chuyển nhẹ nhàng sang màn hình chờ nghỉ mắt tĩnh lặng để báo hiệu kết thúc giờ xem một cách tự nhiên, không cần ba mẹ phải giật điều khiển hay tắt đột ngột.',
-        q4: 'Con lớn 8–12 tuổi có kênh phù hợp không hay chỉ dành cho bé mầm non?',
+          'Danh mục gợi ý có nhóm riêng cho lứa tuổi 8–10 và 11+ với nhiều kênh khoa học, vũ trụ, lịch sử, toán và hội họa như TED-Ed, Kurzgesagt, Mark Rober, Nat Geo Kids, SciShow Kids, Art for Kids Hub, VTV7... cùng bất kỳ kênh chuyên sâu nào ba mẹ tự dán link thêm.',
+        q4: 'Vì sao con dễ dừng xem đúng giờ hơn so với khi mở YouTube thường?',
         a4:
-          'Thư viện gợi ý của Kippin phân tầng rõ cho trẻ Tiểu học và THCS (8–10 và 11+ tuổi) với hàng chục kênh khoa học, vũ trụ, lịch sử, toán tư duy, kỹ thuật và hội họa chất lượng cao như TED-Ed, Kurzgesagt, Mark Rober, Nat Geo Kids, SciShow Kids, Art for Kids Hub, VTV7... bên cạnh bất kỳ kênh chuyên sâu nào ba mẹ tự thêm.',
-        q5: 'Làm sao để mở Kippin trên Smart TV ở phòng khách?',
+          'Kippin loại bỏ luồng lướt Shorts vô tận, quảng cáo chen ngang và các đề xuất giật gân cuối video — chỉ giữ mạch tập trong bộ đang xem nên con không bị cuốn sang hàng chục video ngoài ý muốn.',
+        q5: 'Mở Kippin trên Smart TV phòng khách như thế nào?',
         a5:
-          'Ba mẹ cài ứng dụng Kippin độc lập dành cho Android TV và Google TV (Sony, TCL, Xiaomi, Casper, Chromecast with Google TV) và liên kết nhanh từ điện thoại ba mẹ — toàn bộ kệ kênh cùng bộ video của từng con sẽ đồng bộ lên màn hình lớn mà không cần đăng nhập tài khoản Google cá nhân lên TV.',
-        q6: 'Con có thể tự tìm kiếm sang kênh lạ ngoài danh sách ba mẹ duyệt không?',
+          'Ba mẹ tải ứng dụng Kippin trên Android TV hoặc Google TV (Sony, TCL, Xiaomi, Casper, Chromecast) rồi liên kết nhanh bằng điện thoại — kệ video của từng con sẽ đồng bộ lên TV mà không cần đăng nhập tài khoản Google cá nhân.',
+        q6: 'Con có tự tìm kiếm sang kênh lạ ngoài danh sách đã duyệt được không?',
         a6:
-          'Hoàn toàn không. Ô tìm kiếm bên trong Kippin chỉ tìm trong phạm vi các kênh và bộ video mà ba mẹ đã cho phép riêng cho đúng hồ sơ của con — không bao giờ mở ra ngoài Internet hay hiển thị gợi ý từ kênh lạ.',
+          'Không. Ô tìm kiếm trên Kippin chỉ trả kết quả nằm trong những kênh và bộ video mà ba mẹ đã gán riêng cho hồ sơ của bé đó.',
       },
       closing: {
-        heading: 'Tạo rạp phim trong trẻo cho con ngay hôm nay',
+        heading: 'Tạo kệ video riêng cho con chỉ trong vài phút',
         subtitle:
-          'Sắp xếp các bộ video bản quyền của gia đình và chọn những kênh đầu tiên hợp độ tuổi của con chỉ trong vài phút.',
+          'Tải bộ video bản quyền của gia đình và chọn những kênh đầu tiên hợp độ tuổi của con.',
         primaryCta: 'Bắt đầu miễn phí',
       },
       footer: {
-        tagline: 'Không gian xem an toàn cho con, do chính ba mẹ chọn lọc mỗi ngày.',
+        tagline: 'Không gian xem an toàn cho con, do ba mẹ chọn lọc mỗi ngày.',
         colExplore: 'Khám phá',
         colFamily: 'Dành cho gia đình',
         signUp: 'Đăng ký miễn phí',
         signIn: 'Đăng nhập',
         tvSetup: 'Cài đặt Android TV',
-        tvStandby: 'Màn hình chờ TV',
         legal: 'Điều khoản & Bảo mật',
         rights: 'Bảo lưu mọi quyền.',
         cc:
-          'Tên kênh và hình thu nhỏ YouTube xuất hiện trong ảnh minh họa thuộc về chủ sở hữu tương ứng. Kippin là công cụ giúp phụ huynh tự tổ chức nguồn xem an toàn từ YouTube và tệp lưu trữ hợp pháp của gia đình.',
+          'Tên kênh và hình thu nhỏ YouTube trong ảnh minh họa thuộc về chủ sở hữu tương ứng. Kippin giúp phụ huynh tự tổ chức nguồn xem an toàn từ YouTube và tệp lưu trữ hợp pháp của gia đình.',
       },
-      tour: {
-        title: '3 bước tạo không gian xem riêng cho con trên Kippin',
+      gallery: {
+        title: 'Giao diện thực tế bên trong Kippin',
         closeAria: 'Đóng cửa sổ',
-        tab1: '1. Tải bộ video & Chọn kênh',
-        tab2: '2. Chia hồ sơ & Giờ xem',
-        tab3: '3. Mở trên Smart TV & iPad',
-        cap1:
-          'Tải các bộ video bản quyền đã mua lên kệ chia theo Mùa/Tập và chọn nhanh từ thư viện hơn 100 kênh YouTube theo độ tuổi 2–12+.',
-        cap2:
-          'Tạo hồ sơ riêng cho từng anh chị em trong nhà, đặt giới hạn giờ xem tự chuyển sang màn hình nghỉ mắt và xem nhật ký từ xa.',
-        cap3:
-          'Thưởng thức mượt mà trên ứng dụng Smart TV phòng khách hoặc iPad — không quảng cáo xen ngang, không Shorts, không gợi ý kênh lạ.',
-        alt1: 'Giao diện kệ phim Tủ Đám Mây Gia Đình chia theo Mùa/Tập',
-        alt2: 'Màn hình chọn hồ sơ theo độ tuổi cho từng anh chị em trên Kippin',
-        alt3: 'Giao diện Kippin trên màn hình Smart TV phòng khách',
+        prevAria: 'Ảnh trước',
+        nextAria: 'Ảnh tiếp theo',
+        tabsAria: 'Chọn màn hình',
         cta: 'Bắt đầu miễn phí',
       },
       toast: {
@@ -223,7 +185,7 @@
     },
 
     en: {
-      pageTitle: 'Kippin — A safe, calm viewing space curated by parents',
+      pageTitle: 'Kippin — A safe viewing space for kids, curated by parents',
       header: {
         homeAria: 'Kippin Home',
         navAria: 'Main navigation',
@@ -240,133 +202,107 @@
         faq: 'FAQ',
       },
       hero: {
-        switcherAria: 'Preview Hero layout options',
-        switcherLabel: 'Preview Hero layout:',
-        opt1: 'Option 1: Contained 1140px Card',
-        opt2: 'Option 2: Balanced Full-Bleed',
-        title: 'A safe, calm viewing space for kids—curated by parents',
+        title: 'A safe viewing space for\u00A0kids, curated by\u00A0parents',
         subtitle:
-          'Organize your purchased licensed video sets onto illustrated season shelves alongside trusted YouTube channels approved for every age. Zero algorithmic drift, zero ad breaks, and zero YouTube Shorts.',
+          'Bring your purchased licensed video sets and parent-approved YouTube channels for ages 2–12+ onto one clean shelf. Zero algorithmic drift, zero Shorts, zero ads.',
         primaryCta: 'Start for Free',
-        imgAlt:
-          'Kippin Cozy Guardians Boro, Lumi, Kip, Pip, and Mori playing happily on a green hill under a clear sky',
+        imgAlt: 'Kippin characters Boro, Lumi, Kip, Pip, and Mori playing on a green hill',
       },
       video: {
-        title: 'Hand over the remote with complete peace of mind',
+        title: 'Hand over the remote without hovering nearby',
         body:
-          'Instead of worrying about autoplay drifting into unapproved channels or ad interruptions breaking focus, set up your family’s purchased video sets alongside age-appropriate language, science, history, and creative channels just once.',
-        linkLabel: 'See how Kippin works in 1 minute',
-        playAria: 'Open interactive Kippin walkthrough',
-        imgAlt:
-          'Child sitting comfortably on a sunlit living-room rug watching a favorite show on Smart TV',
+          'Set up your family’s purchased video sets and age-matched science, language, and creative channels once—so kids can browse safely on Smart TV or iPad every day.',
+        linkLabel: 'Preview 6 real app screens',
+        playAria: 'Open 6-screen Kippin interface gallery',
+        imgAlt: 'Child sitting comfortably on a living-room rug watching a favorite show on Smart TV',
       },
       features: {
-        heading: 'Built around the real everyday needs of modern families',
+        heading: 'Solving the real everyday frustrations of family screen time',
         subheading:
-          'Combine a dedicated vault for your family’s purchased licensed videos with handpicked YouTube channels from preschool to pre-teen—all in one calm space built for kids.',
-        r1Tag: 'Family Cloud Vault',
-        r1Title: 'Turn purchased video sets on Google Drive into your child’s private cinema',
+          'From purchased video sets sitting on Google Drive to YouTube channels for ages 2 through 12+.',
+        r1Title: 'Stream purchased licensed video sets like a real series',
         r1Body:
-          'Many parents store purchased language courses, audiobooks, and licensed video sets on Google Drive—only to deal with plain filenames, playback stopping after one file, and download quota errors. With Kippin’s Family Cloud Vault, upload your purchased licensed videos or family memories into illustrated Season & Episode shelves that play smoothly on Smart TV and iPad, with optional 4-digit PIN links to share family folders privately with grandparents.',
-        r1Alt:
-          'Real Kippin Family Cloud Vault screen organizing Oxford Read & Discover licensed videos into Season 1, Season 2, and Continue Watching',
-        r1Badge: 'Seasons & Episodes • Private 4-Digit PIN Family Sharing',
-        r2Tag: '100% Whitelist • 100+ Channels for Ages 2–12+',
-        r2Title:
-          'Enjoy the best of YouTube without the algorithm—plus 100+ curated channels from preschool to pre-teen',
+          'Google Drive leaves kids staring at raw filenames, stops after a single file, and hits download-quota errors. Upload your purchased language or story sets to Kippin to get illustrated Season & Episode shelves—plus a 4-digit PIN option to share family memory folders with grandparents.',
+        r1Alt: 'Mother and young son on a sunlit sofa picking an English episode on a tablet',
+        r2Title: 'Only the YouTube channels you approve—zero Shorts, zero ads',
         r2Body:
-          'Paste any YouTube channel or playlist link, or add with one tap from over 100 curated channels spanning toddlers to older kids aged 6–12+: from Numberblocks, Bluey, and Super Simple Songs to TED-Ed, Kurzgesagt, Mark Rober, Nat Geo Kids, SciShow Kids, Art for Kids Hub, and VTV7. Kippin shows only what you approve and automatically strips out 100% of Shorts, livestreams, and ads.',
-        r2Alt:
-          'Real Kippin Parent Dashboard showing 100+ curated YouTube channels filtered by ages 2–4, 5–7, 8–10, and 11+ including TED-Ed, Kurzgesagt, Mark Rober, and Nat Geo Kids',
-        r2SubAlt:
-          'Two siblings watching science and animated stories together on a tablet',
-        r3Tag: 'Daily Screen-Time Limit & Series Flow',
-        r3Title:
-          'Gentle rest screen when time is up—and seamless episode order while watching',
+          'Add in one tap from 100+ age-sorted channels for ages 2–12+ (from Numberblocks and Bluey to TED-Ed, Kurzgesagt, Mark Rober, and Nat Geo Kids) or paste any YouTube URL. Kippin plays strictly what you whitelist and strips out 100% of Shorts, livestreams, and ads.',
+        r2Alt: 'Two siblings watching science and animated stories together on a tablet',
+        r3Title: 'Unbroken episode order—and easier daily wrap-ups',
         r3Body:
-          'Set a daily viewing duration for each child: when time wraps up, Kippin transitions calmly to a peaceful standby screen instead of an abrupt shutoff. During viewing time, the player advances cleanly to the next episode in the same series and remembers exact watch progress.',
-        r3Alt:
-          'Young girl hugging a plush bunny on a sunlit sofa following a multi-episode story',
-        r3SubAlt:
-          'Calm Kippin Standby screen signaling eye-rest time when the daily timer finishes',
-        r3Badge: 'Time’s up → Gentle Standby Screen',
-        r4Tag: 'Dedicated Smart TV App',
+          'When an episode finishes, Kippin advances cleanly to the next lesson in the same series and saves exact playback progress. With no algorithmic rabbit holes pulling kids to outside channels, wrapping up daily screen time stays calm.',
+        r3Alt: 'Young girl hugging a plush bunny on a sunlit sofa following a multi-episode story',
         r4Title: 'Move kids off small phone screens onto the living-room Smart TV',
         r4Body:
-          'Protect young eyes at a healthy distance with Kippin’s standalone app for Android TV and Google TV (Sony, TCL, Xiaomi, Casper, Chromecast). Kids browse their own approved library effortlessly with the TV remote—without sharing the adult YouTube app or signing a personal Google account into the family TV.',
+          'Kippin’s standalone app for Android TV and Google TV (Sony, TCL, Xiaomi, Casper, Chromecast) lets kids sit back at a healthy distance and pick episodes by remote—without opening the adult YouTube app or signing your personal Google account into the TV.',
         r4Alt:
-          'Real Kippin interface on a living-room Smart TV showing Continue Watching alongside TED-Ed, Kurzgesagt, Nat Geo Kids, and Numberblocks',
-        r5Tag: 'Ages 2–12+ Profiles & Remote Activity Log',
-        r5Title: 'An age-right space for every sibling—and effortless visibility from afar',
+          'Two siblings on a living-room rug using a TV remote to watch a space documentary on Smart TV',
+        r5Title: 'Age-matched profiles for every sibling—and remote visibility',
         r5Body:
-          'Have a 3-year-old learning phonics and a 10-year-old fascinated by space science? Under one family account, each child gets an individual profile showing only their age-matched channels and video sets. Even from the office, parents can review today’s watch log and keep settings locked behind a PIN.',
-        r5Alt:
-          'Daily Watch Activity Log in the Kippin Parent Dashboard tracking watched episodes and duration per child',
-        r5SubAlt:
-          'Individual sibling profile selector featuring Cozy Guardians Boro, Lumi, Kip, and Mori',
+          'Your 4-year-old hears phonics songs while your 10-year-old explores space science—each profile shows only age-appropriate channels and sets. Even from work, you can check watched episodes on your phone and keep settings locked behind a PIN.',
+        r5Alt: 'Father at a sunlit desk checking his child’s watch activity log on his phone',
       },
       inside: {
         heading: 'Inside the Kippin app',
         subheading:
-          'A calm, visual shelf for kids to pick favorite episodes—paired with effortless curation tools for parents across Web, iPad, and Smart TV.',
+          'Click any screen to zoom into the kid viewing experience and parent dashboard.',
         galleryAria: 'Real screenshots inside the Kippin application',
+        s1OpenAria: 'Zoom Kid’s Home screenshot',
         s1Alt:
-          'Family Cloud Vault organizing purchased licensed video sets into Season 1, Season 2, and Continue Watching',
-        s1Cap: 'Family Cloud Vault — Purchased Video Sets by Season & Episode',
+          'Kid’s Home screen with approved channels TED-Ed, Kurzgesagt, Mark Rober, Nat Geo Kids, Numberblocks, and Continue Watching',
+        s1Cap: 'Kid’s Home — Approved channels and Continue Watching',
+        s2OpenAria: 'Zoom Family Shelf screenshot',
         s2Alt:
-          'Kid Home screen with Continue Watching plus TED-Ed, Kurzgesagt, Mark Rober, Nat Geo Kids, and Numberblocks',
-        s2Cap: 'Kid Home — Spanning Preschool Through Ages 12+',
-        s3Alt: 'Distraction-free TED-Ed lesson player with Up Next episodes in series',
-        s3Cap: 'Distraction-Free Player — Seamless Up-Next Series Flow',
+          'Family Shelf organizing Oxford Read & Discover licensed videos into Season 1, Season 2, Season 3, and Episodes',
+        s2Cap: 'Family Shelf — Purchased video sets organized by Season & Episode',
+        s3OpenAria: 'Zoom Series Player screenshot',
+        s3Alt:
+          'Two-column Series Player showing 4-second countdown to Ep 02 alongside Ep 02–06 in the Up Next sidebar',
+        s3Cap: 'Series Player — Auto-plays next episode in order, zero outside suggestions',
+        s4OpenAria: 'Zoom Profile Switcher screenshot',
         s4Alt:
-          'Curated directory of 100+ YouTube channels filtered by ages 2–4, 5–7, 8–10, and 11+',
-        s4Cap: 'Parent Corner — 100+ Age-Curated YouTube Channels',
+          'Profile Switcher showing separate child profiles for ages 4, 7, 10, 12 and PIN-locked Parents mode',
+        s4Cap: 'Profile Switcher — Age-separated spaces with Parent PIN lock',
+        s5OpenAria: 'Zoom Manage Channels screenshot',
         s5Alt:
-          'Batch uploading licensed .mp4 video sets into Family Cloud Vault seasons',
-        s5Cap: 'Parent Corner — Batch Upload Purchased Licensed Videos (.mp4)',
-        s6Alt: 'Peaceful Kippin Standby screen when daily viewing time concludes',
-        s6Cap: 'Calm Standby Screen — Peaceful Daily Screen-Time Wrap-Up',
-        s7Alt: 'Multi-age sibling profile selector with Boro, Lumi, Kip, and Mori',
-        s7Cap: 'Multi-Age Profiles — Separate Spaces for Every Sibling',
-        s8Alt: 'Daily Watch Activity Log in Parent Corner showing watched episodes',
-        s8Cap: 'Parent Corner — Remote Daily Watch Activity Log',
+          'Manage Channels dashboard showing 108 curated kids channels filtered by ages 2–4, 5–7, 8–10, 11+ plus YouTube URL input',
+        s5Cap: 'Manage Channels — Pick from 100+ age-sorted channels or paste a YouTube URL',
+        s6OpenAria: 'Zoom Activity Log screenshot',
+        s6Alt: 'Watch Activity Log tracking watched episodes and duration across child profiles',
+        s6Cap: 'Activity Log — Track watched episodes and duration per child',
       },
       compare: {
         heading: 'How does Kippin compare to YouTube and Google Drive?',
         subheading:
-          'Bringing together curated YouTube channels and a private family cloud vault—purpose-built for children ages 2 to 12+.',
-        colFeature: 'What parents actually need',
+          'Combining curated YouTube channels and a private vault for purchased family video sets in one app.',
+        colFeature: 'Everyday need',
         colYt: 'Standard YouTube',
         colDrive: 'Playing from Google Drive',
         r1Label: 'Combine YouTube channels & purchased licensed videos',
         r1Kippin: 'Unified on one illustrated shelf with cover art',
-        r1Yt: 'Cannot host purchased licensed sets privately (copyright blocks)',
+        r1Yt: 'Cannot upload purchased licensed sets privately',
         r1Drive: 'Plays stored files only; cannot include YouTube channels',
-        r2Label: 'Play purchased licensed video sets smoothly',
-        r2Kippin:
-          'Organized by Channel & Season/Episode, smooth streaming with zero quota errors; 4-digit PIN sharing for grandparents',
+        r2Label: 'Stream purchased licensed video sets',
+        r2Kippin: 'Season & Episode shelves, zero quota errors; 4-digit PIN family sharing',
         r2Yt: 'No private family video vault',
-        r2Drive: 'Plain filenames kids struggle to pick; frequent download-quota blocks',
-        r3Label: 'Control algorithms, Shorts ≤ 60s & ads',
-        r3Kippin:
-          '100% parent-approved channels (100+ curated for ages 2–12+), zero Shorts & zero ads',
-        r3Yt: 'Algorithm pushes unapproved channels, endless Shorts & ad breaks',
-        r3Drive: 'Ad-free, but zero curated channels by age group',
-        r4Label: 'Series continuity & daily screen-time limit',
-        r4Kippin:
-          'Auto-plays next episode in order, saves progress & transitions gently to rest standby',
-        r4Yt: 'Easily drifts to unrelated channels; built to maximize watch time',
-        r4Drive: 'Stops cold after one file; never remembers playback position',
+        r2Drive: 'Raw filenames; frequent download-quota blocks',
+        r3Label: 'Control algorithms, Shorts & ads',
+        r3Kippin: '100% parent-approved (100+ channels for ages 2–12+), 0 Shorts, 0 ads',
+        r3Yt: 'Pushes unapproved channels, endless Shorts & ad breaks',
+        r3Drive: 'Ad-free, but no age-sorted channel directory',
+        r4Label: 'Multi-episode series continuity',
+        r4Kippin: 'Auto-plays next episode in series & saves exact watch progress',
+        r4Yt: 'Easily drifts into unrelated channels after a video',
+        r4Drive: 'Stops after one file; never saves playback position',
         r5Label: 'Living-room Smart TV experience',
-        r5Kippin:
-          'Standalone Smart TV app, easy remote navigation, no Google login on TV',
+        r5Kippin: 'Standalone Smart TV app, easy remote browsing, no Google login on TV',
         r5Yt: 'Shares adult YouTube app (standalone kids TV app retired July 2024)',
-        r5Drive: 'No kid-friendly TV shelf; tedious folder navigation by remote',
+        r5Drive: 'No kid-friendly TV shelf for remote navigation',
       },
       safety: {
-        heading: '100% focused on calm, healthy childhoods',
+        heading: 'Built for focused, distraction-free viewing',
         subheading:
-          'No hidden ads, no behavioral data selling, and no algorithms engineered to keep kids glued to the screen.',
+          'No hidden ads, no behavioral data selling, and no algorithms engineered to extend screen time.',
         s1Big: '100%',
         s1Label: 'Parent-Selected Content',
         s2Big: '0',
@@ -380,57 +316,47 @@
         heading: 'Frequently asked questions',
         q1: 'How can parents add videos and channels for their kids?',
         a1:
-          'You have three quick options in the Parent Corner: add with one tap from over 100 curated YouTube channels across ages 2–4, 5–7, 8–10, and 11+; paste any YouTube channel or playlist URL; or upload your purchased licensed video sets and family memories to the Family Cloud Vault.',
-        q2: 'We already store purchased licensed videos on Google Drive—how is Kippin better?',
+          'Pick in one tap from 100+ curated YouTube channels across ages 2–4, 5–7, 8–10, and 11+, paste any YouTube channel or playlist URL, or upload your purchased licensed video sets and family memories.',
+        q2: 'We store purchased licensed videos on Google Drive—how is Kippin better?',
         a2:
-          'Your purchased licensed sets become an illustrated shelf organized by Season and Episode so kids can pick episodes visually, auto-advance to the next lesson, resume right where they left off, and stream smoothly on Smart TV without Google Drive quota errors. You can also generate a 4-digit PIN link to share family memory folders privately with grandparents.',
-        q3: 'How does Kippin help kids wrap up screen time without tantrums?',
+          'Loose files become an illustrated shelf organized by Season and Episode that auto-plays the next lesson, remembers watch progress, and streams on Smart TV without Google Drive quota errors. You can also set a 4-digit PIN to share family memory folders privately with grandparents.',
+        q3: 'Are there channels for 8–12+ year olds, or is it mostly for preschoolers?',
         a3:
-          'Set a daily minute allowance for each child’s profile. When the timer finishes, Kippin transitions gently to a calm standby rest screen—signaling the end of viewing time naturally without sudden shutoffs.',
-        q4: 'Are there great channels for 8–12+ year olds, or is it mostly for toddlers?',
+          'Our catalog includes dedicated tiers for ages 8–10 and 11+ featuring science, space, history, math, and art channels like TED-Ed, Kurzgesagt, Mark Rober, Nat Geo Kids, SciShow Kids, Art for Kids Hub, and VTV7—plus any specialized channel you paste yourself.',
+        q4: 'Why is it easier for kids to stop watching on time compared to YouTube?',
         a4:
-          'Kippin’s curated library has dedicated tiers for elementary and middle-school kids (ages 8–10 and 11+) packed with science, space, history, math, engineering, and art channels like TED-Ed, Kurzgesagt, Mark Rober, Nat Geo Kids, SciShow Kids, Art for Kids Hub, and VTV7—plus any specialized channel you paste yourself.',
+          'Kippin removes endless Shorts feeds, ad interruptions, and sensational end-screen suggestions—keeping playback strictly inside the series your child is watching.',
         q5: 'How do we watch Kippin on our living-room Smart TV?',
         a5:
-          'Install the standalone Kippin app on Android TV or Google TV (Sony, TCL, Xiaomi, Casper, Chromecast with Google TV) and link quickly from your phone—every child’s channels and vault shelves sync to the big screen without signing your personal Google account into the TV.',
+          'Install the standalone Kippin app on Android TV or Google TV (Sony, TCL, Xiaomi, Casper, Chromecast) and link from your phone—each child’s shelf syncs without signing your personal Google account into the TV.',
         q6: 'Can kids search for unapproved channels outside our list?',
         a6:
-          'Never. Search inside Kippin is strictly scoped to the channels and video sets you have approved for that specific child’s profile—never opening the wider web or suggesting outside channels.',
+          'No. Search inside Kippin only returns videos from the channels and sets you have assigned to that child’s profile.',
       },
       closing: {
-        heading: 'Create a calm, joyful cinema for your child today',
+        heading: 'Set up your child’s video shelf in minutes',
         subtitle:
-          'Organize your family’s purchased video sets and pick your first age-matched channels in just a few minutes.',
+          'Upload your family’s purchased video sets and pick your first age-matched channels.',
         primaryCta: 'Start for Free',
       },
       footer: {
-        tagline: 'A safe, calm viewing space for kids—curated by parents every day.',
+        tagline: 'A safe viewing space for kids, curated by parents every day.',
         colExplore: 'Explore',
         colFamily: 'For Families',
         signUp: 'Start for Free',
         signIn: 'Log In',
         tvSetup: 'Android TV Setup',
-        tvStandby: 'TV Standby Screen',
         legal: 'Terms & Privacy',
         rights: 'All rights reserved.',
         cc:
           'YouTube channel names and thumbnails shown in interface previews belong to their respective owners. Kippin helps parents organize safe viewing from YouTube and lawful family media files.',
       },
-      tour: {
-        title: '3 steps to set up your child’s space on Kippin',
-        closeAria: 'Close dialog',
-        tab1: '1. Upload Sets & Pick Channels',
-        tab2: '2. Sibling Profiles & Timer',
-        tab3: '3. Watch on Smart TV & iPad',
-        cap1:
-          'Upload purchased licensed video sets into Season/Episode shelves and add from 100+ curated YouTube channels for ages 2–12+.',
-        cap2:
-          'Create age-matched profiles for each sibling, set daily screen-time limits with calm standby, and check watch logs remotely.',
-        cap3:
-          'Stream smoothly on the standalone Smart TV app or iPad—zero ad breaks, zero Shorts, and zero unapproved channel drift.',
-        alt1: 'Kippin Family Cloud Vault organized by Season and Episode',
-        alt2: 'Multi-age sibling profile selector inside Kippin',
-        alt3: 'Kippin interface running on a living-room Smart TV',
+      gallery: {
+        title: 'Inside the Kippin App',
+        closeAria: 'Close gallery',
+        prevAria: 'Previous screen',
+        nextAria: 'Next screen',
+        tabsAria: 'Select screen',
         cta: 'Start for Free',
       },
       toast: {
@@ -440,15 +366,17 @@
     },
   };
 
-  const TOUR_SLIDES = [
-    { img: 'assets/app-screen-1.webp', capKey: 'tour.cap1', altKey: 'tour.alt1' },
-    { img: 'assets/app-screen-7.webp', capKey: 'tour.cap2', altKey: 'tour.alt2' },
-    { img: 'assets/screen-tv-whitelist.webp', capKey: 'tour.cap3', altKey: 'tour.alt3' },
+  const GALLERY_SCREENS = [
+    { num: 1, capKey: 'inside.s1Cap', altKey: 'inside.s1Alt' },
+    { num: 2, capKey: 'inside.s2Cap', altKey: 'inside.s2Alt' },
+    { num: 3, capKey: 'inside.s3Cap', altKey: 'inside.s3Alt' },
+    { num: 4, capKey: 'inside.s4Cap', altKey: 'inside.s4Alt' },
+    { num: 5, capKey: 'inside.s5Cap', altKey: 'inside.s5Alt' },
+    { num: 6, capKey: 'inside.s6Cap', altKey: 'inside.s6Alt' },
   ];
 
   let currentLang = 'vi';
-  let currentHeroOpt = '1';
-  let currentTourStep = 0;
+  let currentGalleryStep = 0;
   let toastTimer = null;
 
   function resolveKey(dict, path) {
@@ -457,42 +385,77 @@
       .reduce((acc, part) => (acc && Object.hasOwn(acc, part) ? acc[part] : null), dict);
   }
 
-  function applyHeroOption(opt) {
-    currentHeroOpt = opt === '2' ? '2' : '1';
-    document.body.setAttribute('data-hero-option', currentHeroOpt);
+  function screenAssetPath(num, lang) {
+    const folder = lang === 'vi' ? 'vi' : 'en';
+    return `assets/${folder}/screen-${num}.webp`;
+  }
 
-    document.querySelectorAll('.hero-opt-btn').forEach((btn) => {
-      const active = btn.getAttribute('data-hero-btn') === currentHeroOpt;
-      btn.classList.toggle('is-active', active);
-      btn.setAttribute('aria-pressed', active ? 'true' : 'false');
-    });
+  function renderGalleryStep(stepIdx) {
+    const total = GALLERY_SCREENS.length;
+    currentGalleryStep = ((stepIdx % total) + total) % total;
+    const item = GALLERY_SCREENS[currentGalleryStep];
+    const dict = I18N[currentLang];
 
-    try {
-      localStorage.setItem('kippin_hero_opt', currentHeroOpt);
-    } catch (_) {
-      /* ignore storage errors in restricted contexts */
+    const imgEl = document.getElementById('gallery-preview-img');
+    const capEl = document.getElementById('gallery-preview-caption');
+    const counterEl = document.getElementById('gallery-counter');
+
+    if (imgEl) {
+      const nextModalSrc = screenAssetPath(item.num, currentLang);
+      if (imgEl.getAttribute('src') !== nextModalSrc) {
+        imgEl.setAttribute('src', nextModalSrc);
+      }
+      const altText = resolveKey(dict, item.altKey);
+      if (altText && imgEl.getAttribute('alt') !== altText) imgEl.setAttribute('alt', altText);
     }
+    if (capEl) {
+      const capText = resolveKey(dict, item.capKey);
+      if (capText && capEl.textContent !== capText) capEl.textContent = capText;
+    }
+    if (counterEl) {
+      const nextCount = `${currentGalleryStep + 1} / ${total}`;
+      if (counterEl.textContent !== nextCount) counterEl.textContent = nextCount;
+    }
+
+    document.querySelectorAll('.gallery-dot').forEach((btn, idx) => {
+      const active = idx === currentGalleryStep;
+      btn.classList.toggle('is-active', active);
+      if (active) {
+        btn.setAttribute('aria-current', 'true');
+      } else {
+        btn.removeAttribute('aria-current');
+      }
+    });
   }
 
   function applyLanguage(lang) {
     currentLang = lang === 'en' ? 'en' : 'vi';
     const dict = I18N[currentLang];
     document.documentElement.lang = currentLang;
-    document.title = dict.pageTitle;
+    if (document.title !== dict.pageTitle) document.title = dict.pageTitle;
 
     document.querySelectorAll('[data-i18n]').forEach((el) => {
       const val = resolveKey(dict, el.getAttribute('data-i18n'));
-      if (val !== null) el.textContent = val;
+      if (val !== null && el.textContent !== val) el.textContent = val;
     });
 
     document.querySelectorAll('[data-i18n-aria]').forEach((el) => {
       const val = resolveKey(dict, el.getAttribute('data-i18n-aria'));
-      if (val !== null) el.setAttribute('aria-label', val);
+      if (val !== null && el.getAttribute('aria-label') !== val) el.setAttribute('aria-label', val);
     });
 
     document.querySelectorAll('[data-i18n-alt]').forEach((el) => {
       const val = resolveKey(dict, el.getAttribute('data-i18n-alt'));
-      if (val !== null) el.setAttribute('alt', val);
+      if (val !== null && el.getAttribute('alt') !== val) el.setAttribute('alt', val);
+    });
+
+    // Swap real UI screenshots: Vietnamese UI for 'vi', English UI for all non-'vi' locales
+    document.querySelectorAll('img[data-ui-screen]').forEach((img) => {
+      const num = Number(img.getAttribute('data-ui-screen') || '1');
+      const nextSrc = screenAssetPath(num, currentLang);
+      if (img.getAttribute('src') !== nextSrc) {
+        img.setAttribute('src', nextSrc);
+      }
     });
 
     // Update CSS custom properties for mobile stacked comparison cards (responsive-table)
@@ -509,10 +472,7 @@
       btn.setAttribute('aria-pressed', active ? 'true' : 'false');
     });
 
-    const openTourDialog = document.getElementById('tour-dialog');
-    if (openTourDialog && openTourDialog.open) {
-      renderTourStep(currentTourStep);
-    }
+    renderGalleryStep(currentGalleryStep);
 
     try {
       localStorage.setItem('kippin_preview_lang', currentLang);
@@ -521,59 +481,8 @@
     }
   }
 
-  function renderTourStep(stepIdx) {
-    currentTourStep = stepIdx;
-    const slide = TOUR_SLIDES[stepIdx] || TOUR_SLIDES[0];
-    const imgEl = document.getElementById('tour-preview-img');
-    const capEl = document.getElementById('tour-preview-caption');
-    if (imgEl) {
-      imgEl.src = slide.img;
-      const altText = resolveKey(I18N[currentLang], slide.altKey);
-      if (altText) imgEl.alt = altText;
-    }
-    if (capEl) {
-      const text = resolveKey(I18N[currentLang], slide.capKey);
-      if (text) capEl.textContent = text;
-    }
-
-    document.querySelectorAll('.tour-tab').forEach((btn, idx) => {
-      const active = idx === stepIdx;
-      btn.classList.toggle('is-active', active);
-      btn.setAttribute('aria-selected', active ? 'true' : 'false');
-    });
-  }
-
-  // Initial query & storage detection (?lang=en|vi, ?hero=1|2)
+  // Initial query & storage detection (?lang=en|vi)
   const params = new URLSearchParams(window.location.search);
-  const queryHero = params.get('hero');
-  let initialHero = '1';
-  if (queryHero === '1' || queryHero === '2') {
-    initialHero = queryHero;
-  } else {
-    try {
-      const savedHero = localStorage.getItem('kippin_hero_opt');
-      if (savedHero === '1' || savedHero === '2') initialHero = savedHero;
-    } catch (_) {
-      /* default '1' */
-    }
-  }
-  applyHeroOption(initialHero);
-
-  // Hero Option 1 / Option 2 live switcher buttons
-  document.querySelectorAll('.hero-opt-btn').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const nextOpt = btn.getAttribute('data-hero-btn');
-      applyHeroOption(nextOpt);
-      try {
-        const url = new URL(window.location.href);
-        url.searchParams.set('hero', currentHeroOpt);
-        window.history.replaceState({}, '', url.toString());
-      } catch (_) {
-        /* ignore replaceState in restricted origins */
-      }
-    });
-  });
-
   const queryLang = params.get('lang');
   let initialLang = 'vi';
   if (queryLang === 'en' || queryLang === 'vi') {
@@ -625,34 +534,56 @@
     });
   }
 
-  // Native Light-Dismiss Tour Dialog + Safari Fallback (Modern Web Guidance: light-dismiss-a-dialog)
-  const tourDialog = document.getElementById('tour-dialog');
-  if (tourDialog) {
-    document.querySelectorAll('[data-open-tour]').forEach((trigger) => {
+  // Native Light-Dismiss Popup Lightbox Gallery + Safari Fallback (Modern Web Guidance: light-dismiss-a-dialog)
+  const galleryDialog = document.getElementById('gallery-dialog');
+  if (galleryDialog) {
+    document.querySelectorAll('[data-gallery-open]').forEach((trigger) => {
       trigger.addEventListener('click', () => {
-        renderTourStep(0);
-        tourDialog.showModal();
+        const idx = Number(trigger.getAttribute('data-gallery-open') || '0');
+        renderGalleryStep(idx);
+        galleryDialog.showModal();
       });
     });
 
-    document.querySelectorAll('.tour-tab').forEach((tab) => {
-      tab.addEventListener('click', () => {
-        const idx = Number(tab.getAttribute('data-tour-step') || '0');
-        renderTourStep(idx);
+    const prevBtn = document.getElementById('gallery-prev');
+    const nextBtn = document.getElementById('gallery-next');
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => renderGalleryStep(currentGalleryStep - 1));
+    }
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => renderGalleryStep(currentGalleryStep + 1));
+    }
+
+    document.querySelectorAll('.gallery-dot').forEach((dot) => {
+      dot.addEventListener('click', () => {
+        const idx = Number(dot.getAttribute('data-gallery-step') || '0');
+        renderGalleryStep(idx);
       });
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (!galleryDialog.open) return;
+      if (event.altKey || event.ctrlKey || event.metaKey) return;
+      if (event.key === 'ArrowLeft') {
+        event.preventDefault();
+        renderGalleryStep(currentGalleryStep - 1);
+      } else if (event.key === 'ArrowRight') {
+        event.preventDefault();
+        renderGalleryStep(currentGalleryStep + 1);
+      }
     });
 
     if (!('closedBy' in HTMLDialogElement.prototype)) {
-      tourDialog.addEventListener('click', (event) => {
-        if (event.target !== tourDialog) return;
-        const rect = tourDialog.getBoundingClientRect();
+      galleryDialog.addEventListener('click', (event) => {
+        if (event.target !== galleryDialog) return;
+        const rect = galleryDialog.getBoundingClientRect();
         const isDialogContent =
           rect.top <= event.clientY &&
           event.clientY <= rect.top + rect.height &&
           rect.left <= event.clientX &&
           event.clientX <= rect.left + rect.width;
         if (isDialogContent) return;
-        tourDialog.close();
+        galleryDialog.close();
       });
     }
   }
@@ -670,7 +601,7 @@
       link.addEventListener('click', (event) => {
         event.preventDefault();
         const route = link.getAttribute('data-route') || '/login';
-        if (tourDialog && tourDialog.open) tourDialog.close();
+        if (galleryDialog && galleryDialog.open) galleryDialog.close();
         const t = I18N[currentLang].toast;
         toastEl.textContent = `${t.prefix}${route}${t.suffix}`;
         toastEl.hidden = false;
