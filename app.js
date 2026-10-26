@@ -41,7 +41,7 @@
           'Kippin là kho video cá nhân cho từng gia đình — ba mẹ đưa gì vào, con chỉ xem đúng nội dung đó từ 3 nguồn:',
         s1Title: 'Từ YouTube',
         s1Body:
-          'Chọn từ 100+ kênh thiếu nhi lọc sẵn theo độ tuổi hoặc dán link kênh, danh sách phát bất kỳ.',
+          'Chọn từ 100+ kênh lọc sẵn theo độ tuổi hoặc dán link kênh, danh sách phát bất kỳ.',
         s2Title: 'Từ Google Drive',
         s2Body:
           'Nhập trực tiếp thư mục video lưu trên đám mây về kho riêng, không lo giới hạn lượt xem.',

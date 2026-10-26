@@ -413,6 +413,7 @@ section[id] {
   line-height: 1.74;
   color: var(--charcoal);
   margin: 0 0 14px;
+  text-wrap: pretty;
 }
 
 .story-lead-last {
@@ -465,6 +466,7 @@ section[id] {
   line-height: 1.68;
   color: var(--charcoal);
   margin: 0;
+  text-wrap: pretty;
 }
 
 .what-sources-grid {
@@ -532,6 +534,7 @@ section[id] {
   font-size: 15.25px;
   line-height: 1.62;
   color: var(--ink-muted);
+  text-wrap: pretty;
 }
 
 /* ─── 4. Section 3: 4 Core Feature Pillars (Lifestyle Polaroids Only, Zero Eyebrow Badges) ─── */
@@ -555,6 +558,7 @@ section[id] {
   font-size: 17.5px;
   line-height: 1.7;
   color: var(--ink-muted);
+  text-wrap: balance;
 }
 
 .z-row {
