@@ -90,7 +90,7 @@
       </a>
 
       <nav class="desktop-nav" data-i18n-aria="header.navAria" aria-label="Điều hướng chính">
-        <a href="#video-showcase" data-i18n="nav.intro">Giới thiệu</a>
+        <a href="#video-showcase" data-i18n="nav.intro">Câu chuyện</a>
         <a href="#features" data-i18n="nav.features">Tính năng</a>
         <a href="#inside-app" data-i18n="nav.inside">Bên trong ứng dụng</a>
         <a href="#compare" data-i18n="nav.compare">So sánh</a>
@@ -128,7 +128,7 @@
 
     <div class="mobile-drawer" id="mobile-drawer" hidden>
       <nav class="mobile-nav" data-i18n-aria="header.mobileNavAria" aria-label="Menu di động">
-        <a href="#video-showcase" data-i18n="nav.intro">Giới thiệu</a>
+        <a href="#video-showcase" data-i18n="nav.intro">Câu chuyện</a>
         <a href="#features" data-i18n="nav.features">Tính năng</a>
         <a href="#inside-app" data-i18n="nav.inside">Bên trong ứng dụng</a>
         <a href="#compare" data-i18n="nav.compare">So sánh</a>
@@ -254,71 +254,75 @@
       </div>
     </section>
 
-    <!-- ─── Section 2: Living-Room Showcase ─── -->
+    <!-- ─── Section 2: Founder Origin Story & Personal Family Vault Model ─── -->
     <section class="showcase-band" id="video-showcase">
       <div class="container showcase-grid">
         <div class="showcase-copy">
-          <h2 data-i18n="video.title">Trao điều khiển cho con mà không phải canh chừng</h2>
-          <p data-i18n="video.body">
-            Ba mẹ chỉ cần chọn sẵn một lần những bộ video của gia đình và các kênh ngoại ngữ, khoa học, sáng tạo hợp tuổi — con tự mở xem mỗi ngày trên Smart TV hoặc iPad.
+          <h2 data-i18n="story.title">Vì sao vợ chồng mình làm ra Kippin?</h2>
+          <p class="story-lead" data-i18n="story.p1">
+            Trước đây tụi mình cho con xem trên YouTube và YouTube Kids nhưng rất khó lọc triệt để. Đến khi mua và lưu được các bộ video ngoại ngữ, khoa học chất lượng về máy tính hay Google Drive thì hai vợ chồng đi làm cả ngày — con còn nhỏ không tự mở từng file rời rạc được, nhờ ông bà thao tác giúp cũng lỉnh kỉnh.
           </p>
-          <button type="button" class="text-play-link" data-gallery-open="0">
-            <span class="mini-play-circle" aria-hidden="true">▶</span>
-            <span data-i18n="video.linkLabel">Xem trước 6 màn hình thực tế</span>
-          </button>
+          <p class="story-bridge" data-i18n="story.p2">
+            Tụi mình tạo ra Kippin như một kho lưu trữ video cá nhân của riêng gia đình: ba mẹ đưa gì lên thì ở nhà con chỉ mở xem đúng những nội dung đó, từ 2 nguồn:
+          </p>
+          <ol class="story-sources">
+            <li>
+              <span class="story-step-num" aria-hidden="true">1</span>
+              <span data-i18n="story.src1">Tải file video sẵn có từ máy tính, ổ cứng hoặc Google Drive.</span>
+            </li>
+            <li>
+              <span class="story-step-num story-step-sage" aria-hidden="true">2</span>
+              <span data-i18n="story.src2">Kéo link kênh, playlist trực tiếp từ YouTube (hoặc chọn nhanh từ 100+ kênh gợi ý).</span>
+            </li>
+          </ol>
+          <p class="story-commitment" data-i18n="story.commitment">
+            Vì chính con ở nhà vẫn mở Kippin xem mỗi ngày, tụi mình luôn tiếp tục tối ưu từng chi tiết nhỏ cho gia đình mình cũng như các gia đình có chung mối quan tâm.
+          </p>
         </div>
 
         <div class="showcase-media">
-          <button
-            type="button"
-            class="video-frame-btn"
-            data-gallery-open="0"
-            data-i18n-aria="video.playAria"
-            aria-label="Mở thư viện 6 màn hình giao diện thực tế Kippin"
-          >
+          <figure class="story-photo-card">
             <img
               src="assets/photo-kid-livingroom-tv.webp"
-              alt="Em bé ngồi trên thảm phòng khách xem chương trình yêu thích trên Smart TV"
-              data-i18n-alt="video.imgAlt"
+              alt="Em bé ngồi trên thảm phòng khách tự mở chương trình yêu thích trên Smart TV"
+              data-i18n-alt="story.imgAlt"
               width="1200"
               height="805"
               loading="lazy"
               decoding="async"
             />
-            <span class="big-play-badge" aria-hidden="true">
-              <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M8 5.5v13l10.5-6.5L8 5.5z" />
-              </svg>
-            </span>
-          </button>
+            <figcaption class="story-photo-caption" data-i18n="story.imgCap">
+              Ở nhà con tự mở xem trên Smart TV hoặc iPad — ông bà không phải thao tác lỉnh kỉnh.
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
-    <!-- ─── Section 3: 5 Pain-Point Z-Rows (Lifestyle Photography Only — Zero UI Duplication, Zero Eyebrow Badges) ─── -->
+    <!-- ─── Section 3: 4 Core Feature Pillars (Phương án A — Reach × TTFV × Differentiation) ─── -->
     <section class="features-world deferred-section" id="features">
       <div class="container">
         <div class="section-intro">
-          <h2 data-i18n="features.heading">Giải quyết những bất tiện thực tế khi cho con xem video</h2>
+          <h2 data-i18n="features.heading">Giải quyết trọn vẹn chuyện xem video của con mỗi ngày</h2>
           <p data-i18n="features.subheading">
-            Từ các bộ video bản quyền cất trên Google Drive đến danh sách kênh YouTube cho trẻ từ mầm non tới 12+ tuổi.
+            Từ bước chọn kênh YouTube trong 30 giây, gom kho video bản quyền đã mua đến việc con tự mở xem ở nhà trên Smart TV.
           </p>
         </div>
 
-        <!-- Row 1: Purchased Licensed Video Sets on Google Drive -->
+        <!-- Row 1: 100% Whitelist YouTube + 100+ Age-Sorted Channels (2–12+) -->
         <div class="z-row">
           <div class="z-copy">
-            <h3 data-i18n="features.r1Title">Mở bộ video bản quyền đã mua mượt như xem phim dài tập</h3>
+            <h3 data-i18n="features.r1Title">Chọn kênh từ YouTube không Shorts, không quảng cáo</h3>
             <p data-i18n="features.r1Body">
-              Lưu trên Google Drive toàn tên file rời rạc, hết một bài là dừng và hay kẹt giới hạn lượt xem. Tải lên Kippin, bộ video ngoại ngữ hay truyện kể đã mua hiện thành kệ phim có ảnh bìa chia theo Mùa/Tập — kèm mã PIN 4 số nếu muốn gửi thư mục video kỷ niệm cho ông bà.
+              Chọn nhanh từ hơn 100 kênh gợi ý sẵn cho lứa tuổi 2–12+ (Numberblocks, Bluey, Storyline Online đến TED-Ed, Kurzgesagt, Mark Rober, Nat Geo Kids) hoặc dán link kênh YouTube bất kỳ. Kippin chỉ phát đúng danh sách ba mẹ duyệt, tự động loại bỏ 100% Shorts, Livestream và quảng cáo.
             </p>
           </div>
           <div class="z-visual">
             <div class="polaroid-stage tilt-left">
               <div class="polaroid-frame">
                 <img
-                  src="assets/photo-vault-mother-son.webp"
-                  alt="Mẹ và bé trai ngồi trên ghế sofa chọn tập học tiếng Anh trên máy tính bảng"
+                  src="assets/photo-siblings-tablet.webp"
+                  alt="Hai anh chị em cùng xem chương trình khoa học và hoạt hình trên máy tính bảng"
                   data-i18n-alt="features.r1Alt"
                   width="1200"
                   height="896"
@@ -330,20 +334,20 @@
           </div>
         </div>
 
-        <!-- Row 2: 100% Whitelist YouTube + 100+ Age-Sorted Channels (2–12+) -->
+        <!-- Row 2: Purchased Licensed Video Sets on Google Drive + Series Continuity -->
         <div class="z-row z-row-reverse">
           <div class="z-copy">
-            <h3 data-i18n="features.r2Title">Chỉ xem đúng kênh YouTube ba mẹ duyệt — lọc sạch Shorts và quảng cáo</h3>
+            <h3 data-i18n="features.r2Title">Biến thư mục video bản quyền đã mua thành kệ phim chia Mùa và Tập</h3>
             <p data-i18n="features.r2Body">
-              Chọn nhanh từ hơn 100 kênh gợi ý sẵn cho lứa tuổi 2–12+ (từ Numberblocks, Bluey đến TED-Ed, Kurzgesagt, Mark Rober, Nat Geo Kids) hoặc dán link kênh YouTube bất kỳ. Kippin chỉ phát danh sách ba mẹ cho phép, tự động loại bỏ 100% video ngắn Shorts, Livestream và quảng cáo.
+              Lưu trên Google Drive toàn tên file rời rạc, hết một bài là dừng và hay kẹt giới hạn lượt xem. Tải lên Kippin, bộ video ngoại ngữ hay truyện kể đã mua hiện thành kệ phim có ảnh bìa, tự mở tập kế tiếp cùng bộ và nhớ vị trí xem dở — kèm mã PIN 4 số khi muốn chia sẻ video gia đình cho ông bà.
             </p>
           </div>
           <div class="z-visual">
             <div class="polaroid-stage tilt-right">
               <div class="polaroid-frame">
                 <img
-                  src="assets/photo-siblings-tablet.webp"
-                  alt="Hai anh chị em cùng xem chương trình khoa học và hoạt hình trên máy tính bảng"
+                  src="assets/photo-vault-mother-son.webp"
+                  alt="Mẹ và bé trai ngồi trên ghế sofa chọn tập học tiếng Anh trên máy tính bảng"
                   data-i18n-alt="features.r2Alt"
                   width="1200"
                   height="896"
@@ -355,12 +359,12 @@
           </div>
         </div>
 
-        <!-- Row 3: Unbroken Series Continuity & Calm Viewing Routine -->
+        <!-- Row 3: Dedicated Smart TV App -->
         <div class="z-row">
           <div class="z-copy">
-            <h3 data-i18n="features.r3Title">Giữ trọn mạch tập dài kỳ — dừng xem nhẹ nhàng đúng giờ</h3>
+            <h3 data-i18n="features.r3Title">Ứng dụng riêng trên Smart TV — con tự mở xem, người nhà không vất vả</h3>
             <p data-i18n="features.r3Body">
-              Khi con xem xong một tập khoa học hay truyện kể, trình phát tự động mở đúng tập kế tiếp trong cùng bộ và lưu lại vị trí đang dừng. Không thuật toán tự trôi sang kênh lạ, giúp con theo dõi trọn vẹn bài học và dễ khép lại giờ xem mỗi ngày.
+              Ứng dụng Kippin độc lập trên Android TV và Google TV (Sony, TCL, Xiaomi, Casper, Chromecast) giúp con ngồi xa bảo vệ mắt và tự chọn tập bằng điều khiển TV. Không cần mở chung ứng dụng YouTube người lớn, không cần nhờ ông bà cắm máy tính hay mở Drive hộ.
             </p>
           </div>
           <div class="z-visual">
@@ -374,8 +378,8 @@
               </svg>
               <div class="polaroid-frame">
                 <img
-                  src="assets/photo-girl-sofa-story.webp"
-                  alt="Bé gái ôm thỏ bông ngồi trên ghế sofa theo dõi câu chuyện dài kỳ"
+                  src="assets/photo-siblings-smart-tv.webp"
+                  alt="Hai anh em ngồi trên thảm phòng khách dùng điều khiển chọn chương trình vũ trụ trên Smart TV"
                   data-i18n-alt="features.r3Alt"
                   width="1200"
                   height="896"
@@ -387,46 +391,21 @@
           </div>
         </div>
 
-        <!-- Row 4: Dedicated Smart TV App -->
+        <!-- Row 4: Separate Age-Matched Profiles & Remote Watch Log -->
         <div class="z-row z-row-reverse">
           <div class="z-copy">
-            <h3 data-i18n="features.r4Title">Đưa con rời màn hình điện thoại nhỏ lên Smart TV phòng khách</h3>
+            <h3 data-i18n="features.r4Title">Mỗi anh chị em một hồ sơ đúng tuổi — ba mẹ đi làm vẫn theo dõi từ xa</h3>
             <p data-i18n="features.r4Body">
-              Ứng dụng Kippin độc lập trên Android TV và Google TV (Sony, TCL, Xiaomi, Casper, Chromecast) giúp con ngồi xa bảo vệ mắt và tự chọn tập bằng điều khiển TV. Không cần mở chung ứng dụng YouTube người lớn hay đăng nhập tài khoản Google cá nhân lên TV.
+              Bé 4 tuổi nghe đồng dao tiếng Anh, anh 10 tuổi khám phá vũ trụ — mỗi con chỉ thấy đúng kênh và bộ video hợp lứa tuổi của mình. Dù đang ở văn phòng, ba mẹ vẫn xem được lịch sử từng tập con đã mở trên điện thoại và khóa cài đặt bằng mã PIN.
             </p>
           </div>
           <div class="z-visual">
             <div class="polaroid-stage tilt-right">
               <div class="polaroid-frame">
                 <img
-                  src="assets/photo-siblings-smart-tv.webp"
-                  alt="Hai anh em ngồi trên thảm phòng khách dùng điều khiển chọn chương trình vũ trụ trên Smart TV"
-                  data-i18n-alt="features.r4Alt"
-                  width="1200"
-                  height="896"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Row 5: Separate Age-Matched Profiles & Remote Watch Log -->
-        <div class="z-row">
-          <div class="z-copy">
-            <h3 data-i18n="features.r5Title">Mỗi anh chị em một hồ sơ đúng tuổi — ba mẹ theo dõi từ xa</h3>
-            <p data-i18n="features.r5Body">
-              Bé 4 tuổi nghe đồng dao tiếng Anh, anh 10 tuổi mê khám phá vũ trụ — mỗi con chỉ thấy đúng kênh và bộ video hợp lứa tuổi của mình. Dù đang ở văn phòng, ba mẹ vẫn xem được lịch sử tập đã xem trên điện thoại và khóa cài đặt bằng mã PIN.
-            </p>
-          </div>
-          <div class="z-visual">
-            <div class="polaroid-stage tilt-left">
-              <div class="polaroid-frame">
-                <img
                   src="assets/photo-parent-calm-phone.webp"
                   alt="Ba ngồi tại bàn làm việc sáng nắng xem nhanh lịch sử xem video của con trên điện thoại"
-                  data-i18n-alt="features.r5Alt"
+                  data-i18n-alt="features.r4Alt"
                   width="1200"
                   height="896"
                   loading="lazy"
@@ -927,7 +906,7 @@
       <div class="footer-col">
         <h3 data-i18n="footer.colExplore">Khám phá</h3>
         <ul>
-          <li><a href="#video-showcase" data-i18n="nav.intro">Giới thiệu</a></li>
+          <li><a href="#video-showcase" data-i18n="nav.intro">Câu chuyện</a></li>
           <li><a href="#features" data-i18n="nav.features">Tính năng</a></li>
           <li><a href="#inside-app" data-i18n="nav.inside">Bên trong ứng dụng</a></li>
           <li><a href="#compare" data-i18n="nav.compare">So sánh</a></li>

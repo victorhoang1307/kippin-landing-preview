@@ -109,7 +109,7 @@ section[id] {
 }
 
 #features.deferred-section {
-  contain-intrinsic-size: auto none auto 2600px;
+  contain-intrinsic-size: auto none auto 2150px;
 }
 
 /* ─── Kinetic Hopping Wordmark ─── */
@@ -390,81 +390,99 @@ section[id] {
   gap: 14px;
 }
 
-/* ─── 3. Section 2: Living-Room Showcase (Sage-Linen Mist #E6EFEA) ─── */
+/* ─── 3. Section 2: Founder Origin Story & Personal Vault Model (Sage-Linen Mist #E6EFEA) ─── */
 .showcase-band {
   background-color: var(--sage-mist);
-  padding: 84px 0;
+  padding: 88px 0;
 }
 
 .showcase-grid {
   display: grid;
-  grid-template-columns: 1fr 1.22fr;
-  gap: 56px;
+  grid-template-columns: 1.12fr 0.96fr;
+  gap: 54px;
   align-items: center;
 }
 
 .showcase-copy h2 {
   font-size: clamp(30px, 3.2vw, 42px);
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
-.showcase-copy p {
-  font-size: 17px;
-  line-height: 1.75;
-  margin-bottom: 22px;
-}
-
-.text-play-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  border: none;
-  background: transparent;
-  padding: 4px 0;
-  font-family: var(--font-body);
-  font-weight: 700;
+.story-lead {
   font-size: 16.5px;
+  line-height: 1.75;
   color: var(--charcoal);
-  cursor: pointer;
-  text-align: left;
+  margin-bottom: 14px;
 }
 
-.text-play-link:hover {
-  color: var(--terracotta);
+.story-bridge {
+  font-size: 16.5px;
+  line-height: 1.72;
+  color: var(--charcoal);
+  font-weight: 600;
+  margin-bottom: 14px;
 }
 
-.mini-play-circle {
-  width: 32px;
-  height: 32px;
+.story-sources {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.story-sources li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background-color: var(--linen);
+  padding: 13px 16px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(35, 34, 40, 0.05);
+  font-size: 15.5px;
+  line-height: 1.55;
+  color: var(--charcoal);
+}
+
+.story-step-num {
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   background-color: var(--terracotta);
   color: var(--linen);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
   flex-shrink: 0;
+  margin-top: 1px;
 }
 
-.video-frame-btn {
-  display: block;
-  width: 100%;
-  padding: 16px;
+.story-step-sage {
+  background-color: var(--sage);
+}
+
+.story-commitment {
+  font-size: 15.5px;
+  line-height: 1.68;
+  color: var(--ink-muted);
+  border-left: 3px solid var(--terracotta);
+  padding-left: 14px;
+  margin: 4px 0 0;
+}
+
+.story-photo-card {
+  margin: 0;
+  padding: 16px 16px 18px;
   background-color: var(--linen);
-  border: none;
   border-radius: 26px;
   box-shadow: 0 20px 44px rgba(35, 34, 40, 0.11);
-  position: relative;
-  cursor: pointer;
-  transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 
-.video-frame-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 26px 52px rgba(35, 34, 40, 0.15);
-}
-
-.video-frame-btn img {
+.story-photo-card img {
   width: 100%;
   height: auto;
   aspect-ratio: 1200 / 805;
@@ -472,30 +490,16 @@ section[id] {
   border-radius: 16px;
 }
 
-.big-play-badge {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 82px;
-  height: 82px;
-  border-radius: 50%;
-  background-color: var(--terracotta);
-  border: 5px solid var(--linen);
-  color: var(--linen);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 12px 30px rgba(35, 34, 40, 0.28);
-  transition: transform 0.18s ease, background-color 0.18s ease;
+.story-photo-caption {
+  margin-top: 12px;
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: var(--ink-muted);
+  text-align: center;
+  font-weight: 500;
 }
 
-.video-frame-btn:hover .big-play-badge {
-  transform: translate(-50%, -50%) scale(1.06);
-  background-color: var(--terracotta-hover);
-}
-
-/* ─── 4. Section 3: 5 Pain-Point Z-Rows (Lifestyle Polaroids Only, Zero Eyebrow Badges) ─── */
+/* ─── 4. Section 3: 4 Core Feature Pillars (Lifestyle Polaroids Only, Zero Eyebrow Badges) ─── */
 .features-world {
   background-color: var(--linen);
   padding: 96px 0 104px;
