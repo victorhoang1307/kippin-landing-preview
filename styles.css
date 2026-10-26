@@ -1,20 +1,27 @@
-/* ─── Kippin Landing V13 — Joyful Storybook & Family Living (Khan Academy Kids Benchmark) ─── */
+/* ─── Kippin Landing V14 — Khan-Kids Layout + Locked V10 Brand Palette & V11 Cozy Guardians ─── */
 
 :root {
-  --navy: #0A2A66;
-  --navy-hover: #133A85;
-  --teal: #14967F;
-  --teal-hover: #0F7B68;
-  --ink: #231F20;
-  --ink-soft: #475467;
-  --sky-hero: #E6F5FC;
-  --lawn-hero: #C4D998;
-  --sky-video: #DDF0FA;
-  --sky-features: #EBF9FF;
-  --buttercream: #FFF9D7;
-  --ice-blue: #E9F7FC;
-  --cocoa: #7B5B4C;
-  --seal-cream: #FFF9E6;
+  /* Official Kippin V10 Brand Guideline Tokens (docs/strategy/brand-strategy.md §4 & DEC-010/DEC-011) */
+  --linen: #FAF7F2;
+  --paper: #F4EFEA;
+  --charcoal: #232228;
+  --ink-muted: #5C5863;
+  --plum: #2C1E36;
+
+  --terracotta: #D86A50;
+  --terracotta-hover: #C2563D;
+  --slate: #52758E;
+  --slate-hover: #416076;
+  --sage: #6FA090;
+  --sage-hover: #5B8B7B;
+  --mustard: #E9A844;
+  --rose: #D98293;
+
+  /* Measured Seamless Section World Tints */
+  --sky-hero: #EFF3F6;
+  --lawn-hero: #BDD7C5;
+  --sage-mist: #E6EFEA;
+  --buttercream: #FCF3DC;
   --white: #FFFFFF;
 
   --font-display: 'Baloo 2', system-ui, -apple-system, sans-serif;
@@ -50,8 +57,8 @@ body {
   font-family: var(--font-body);
   font-size: 17px;
   line-height: 1.78;
-  color: var(--ink);
-  background-color: var(--white);
+  color: var(--charcoal);
+  background-color: var(--linen);
   overflow-x: hidden;
 }
 
@@ -64,7 +71,7 @@ h1,
 h2,
 h3 {
   font-family: var(--font-display);
-  color: var(--navy);
+  color: var(--charcoal);
   font-weight: 700;
   margin: 0;
   line-height: 1.18;
@@ -81,7 +88,7 @@ a {
 }
 
 :focus-visible {
-  outline: 3px solid var(--teal);
+  outline: 3px solid var(--terracotta);
   outline-offset: 3px;
   border-radius: 8px;
 }
@@ -169,32 +176,32 @@ section[id] {
   padding: 15px 26px;
 }
 
-.btn-navy {
-  background-color: var(--navy);
-  color: var(--white);
+.btn-terracotta {
+  background-color: var(--terracotta);
+  color: var(--linen);
 }
 
-.btn-navy:hover {
-  background-color: var(--navy-hover);
+.btn-terracotta:hover {
+  background-color: var(--terracotta-hover);
 }
 
-.btn-teal {
-  background-color: var(--teal);
-  color: var(--white);
+.btn-slate {
+  background-color: var(--slate);
+  color: var(--linen);
 }
 
-.btn-teal:hover {
-  background-color: var(--teal-hover);
+.btn-slate:hover {
+  background-color: var(--slate-hover);
 }
 
-/* ─── 1. Sticky White Header ─── */
+/* ─── 1. Sticky Linen Cream Header (#FAF7F2) ─── */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 50;
-  background-color: rgba(255, 255, 255, 0.97);
+  background-color: rgba(250, 247, 242, 0.96);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(10, 42, 102, 0.07);
+  border-bottom: 1px solid rgba(35, 34, 40, 0.08);
 }
 
 .header-inner {
@@ -220,13 +227,13 @@ section[id] {
 .desktop-nav a {
   font-weight: 600;
   font-size: 16px;
-  color: var(--navy);
+  color: var(--charcoal);
   padding: 6px 2px;
   transition: color 0.16s ease;
 }
 
 .desktop-nav a:hover {
-  color: var(--teal);
+  color: var(--terracotta);
 }
 
 .header-actions {
@@ -238,7 +245,7 @@ section[id] {
 .lang-switch {
   display: inline-flex;
   align-items: center;
-  background-color: #EDF6FB;
+  background-color: var(--paper);
   padding: 3px;
   border-radius: 10px;
 }
@@ -249,7 +256,7 @@ section[id] {
   font-family: var(--font-body);
   font-weight: 700;
   font-size: 13px;
-  color: var(--navy);
+  color: var(--charcoal);
   padding: 6px 10px;
   border-radius: 8px;
   cursor: pointer;
@@ -259,7 +266,7 @@ section[id] {
 .lang-btn.is-active {
   background-color: var(--white);
   opacity: 1;
-  box-shadow: 0 2px 6px rgba(10, 42, 102, 0.1);
+  box-shadow: 0 2px 6px rgba(35, 34, 40, 0.09);
 }
 
 .mobile-menu-btn {
@@ -268,16 +275,16 @@ section[id] {
   height: 44px;
   border-radius: 10px;
   border: none;
-  background-color: #EDF6FB;
-  color: var(--navy);
+  background-color: var(--paper);
+  color: var(--charcoal);
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
 
 .mobile-drawer {
-  background-color: var(--white);
-  border-top: 1px solid rgba(10, 42, 102, 0.08);
+  background-color: var(--linen);
+  border-top: 1px solid rgba(35, 34, 40, 0.08);
   padding: 16px 24px 24px;
 }
 
@@ -290,7 +297,7 @@ section[id] {
 .mobile-nav a:not(.btn) {
   font-weight: 700;
   font-size: 17px;
-  color: var(--navy);
+  color: var(--charcoal);
   padding: 8px 4px;
 }
 
@@ -301,7 +308,7 @@ section[id] {
 
 /* ─── 2. Section 1: Full-Bleed Storybook Panorama Hero ─── */
 .hero-section {
-  /* Matches exact measured sky (#E6F5FC) to lawn (#C4D998) horizon at 80.86% of khan-hero-scene.webp */
+  /* Matches exact post-WebP sky (#EFF3F6) to Sage meadow (#BDD7C5) horizon at 80.86% of khan-hero-scene.webp */
   background: linear-gradient(
     180deg,
     var(--sky-hero) 0%,
@@ -353,7 +360,7 @@ section[id] {
 .hero-lead {
   font-size: clamp(16px, 1.32vw, 18.5px);
   line-height: 1.72;
-  color: var(--ink);
+  color: var(--charcoal);
   margin-bottom: 28px;
   max-width: 500px;
 }
@@ -364,9 +371,9 @@ section[id] {
   gap: 14px;
 }
 
-/* ─── 3. Section 2: White-Framed Living-Room Video Showcase ─── */
+/* ─── 3. Section 2: Living-Room Video Showcase (Sage-Linen Mist #E6EFEA) ─── */
 .showcase-band {
-  background-color: var(--sky-video);
+  background-color: var(--sage-mist);
   padding: 88px 0;
 }
 
@@ -398,21 +405,21 @@ section[id] {
   font-family: var(--font-body);
   font-weight: 700;
   font-size: 16.5px;
-  color: var(--navy);
+  color: var(--charcoal);
   cursor: pointer;
   text-align: left;
 }
 
 .text-play-link:hover {
-  color: var(--teal);
+  color: var(--terracotta);
 }
 
 .mini-play-circle {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: var(--teal);
-  color: var(--white);
+  background-color: var(--terracotta);
+  color: var(--linen);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -424,10 +431,10 @@ section[id] {
   display: block;
   width: 100%;
   padding: 16px;
-  background-color: var(--white);
+  background-color: var(--linen);
   border: none;
   border-radius: 26px;
-  box-shadow: 0 20px 44px rgba(10, 42, 102, 0.1);
+  box-shadow: 0 20px 44px rgba(35, 34, 40, 0.11);
   position: relative;
   cursor: pointer;
   transition: transform 0.22s ease, box-shadow 0.22s ease;
@@ -435,7 +442,7 @@ section[id] {
 
 .video-frame-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 26px 52px rgba(10, 42, 102, 0.14);
+  box-shadow: 0 26px 52px rgba(35, 34, 40, 0.15);
 }
 
 .video-frame-btn img {
@@ -454,24 +461,24 @@ section[id] {
   width: 84px;
   height: 84px;
   border-radius: 50%;
-  background-color: var(--teal);
-  border: 5px solid var(--white);
-  color: var(--white);
+  background-color: var(--terracotta);
+  border: 5px solid var(--linen);
+  color: var(--linen);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 12px 30px rgba(10, 42, 102, 0.28);
+  box-shadow: 0 12px 30px rgba(35, 34, 40, 0.28);
   transition: transform 0.18s ease, background-color 0.18s ease;
 }
 
 .video-frame-btn:hover .big-play-badge {
   transform: translate(-50%, -50%) scale(1.06);
-  background-color: var(--teal-hover);
+  background-color: var(--terracotta-hover);
 }
 
-/* ─── 4. Section 3: Open-Air Alternating Z-Pattern Value Props ─── */
+/* ─── 4. Section 3: Open-Air Alternating Z-Pattern Value Props (Kippin Linen Cream #FAF7F2) ─── */
 .features-world {
-  background-color: var(--sky-features);
+  background-color: var(--linen);
   padding: 104px 0 112px;
 }
 
@@ -522,20 +529,20 @@ section[id] {
   line-height: 1.82;
 }
 
-.inline-teal-link {
+.inline-brand-link {
   display: inline-block;
   margin-top: 20px;
   font-weight: 700;
   font-size: 16.5px;
-  color: var(--teal);
+  color: var(--terracotta);
 }
 
-.inline-teal-link:hover {
-  color: var(--navy);
+.inline-brand-link:hover {
+  color: var(--charcoal);
   text-decoration: underline;
 }
 
-/* Tilted Polaroid Frames + Playful Paper-Cut Stickers */
+/* Tilted Polaroid Frames + Playful Stickers */
 .polaroid-stage {
   position: relative;
   max-width: 520px;
@@ -546,7 +553,7 @@ section[id] {
   background-color: var(--white);
   padding: 14px 14px 32px;
   border-radius: 20px;
-  box-shadow: 0 18px 40px rgba(10, 42, 102, 0.09);
+  box-shadow: 0 18px 40px rgba(35, 34, 40, 0.09);
 }
 
 .tilt-left .polaroid-frame {
@@ -606,10 +613,10 @@ section[id] {
   aspect-ratio: 1120 / 723;
   display: block;
   border-radius: 28px;
-  box-shadow: 0 20px 44px rgba(10, 42, 102, 0.1);
+  box-shadow: 0 20px 44px rgba(35, 34, 40, 0.11);
 }
 
-/* ─── 5. Section 4: "Bên trong ứng dụng Kippin" (Warm Buttercream + Garland + 2 Brick Rows) ─── */
+/* ─── 5. Section 4: "Bên trong ứng dụng Kippin" (Warm Mustard-Buttercream #FCF3DC + Garland + 2 Brick Rows) ─── */
 .inside-world {
   background-color: var(--buttercream);
   padding: 0 0 104px;
@@ -671,8 +678,8 @@ section[id] {
   margin: 0;
   border-radius: 20px;
   overflow: hidden;
-  background-color: var(--white);
-  box-shadow: 0 14px 32px rgba(10, 42, 102, 0.09);
+  background-color: var(--linen);
+  box-shadow: 0 14px 32px rgba(35, 34, 40, 0.10);
 }
 
 .app-shot img {
@@ -682,9 +689,9 @@ section[id] {
   display: block;
 }
 
-/* ─── 6. Section 5: Friendly Family Comparison (#E9F7FC Soft Ice Blue) ─── */
+/* ─── 6. Section 5: Friendly Family Comparison (Paper Light #F4EFEA) ─── */
 .compare-world {
-  background-color: var(--ice-blue);
+  background-color: var(--paper);
   padding: 96px 0 104px;
 }
 
@@ -692,7 +699,7 @@ section[id] {
   background-color: var(--white);
   border-radius: 28px;
   padding: 16px;
-  box-shadow: 0 18px 40px rgba(10, 42, 102, 0.07);
+  box-shadow: 0 18px 40px rgba(35, 34, 40, 0.06);
   overflow-x: auto;
 }
 
@@ -706,7 +713,7 @@ section[id] {
 .compare-table td {
   padding: 20px 22px;
   text-align: left;
-  border-bottom: 1px solid #EEF4F8;
+  border-bottom: 1px solid #EFEAE3;
   font-size: 16px;
   line-height: 1.55;
   vertical-align: middle;
@@ -720,30 +727,30 @@ section[id] {
 .compare-table thead th {
   font-family: var(--font-display);
   font-size: 22px;
-  color: var(--navy);
+  color: var(--charcoal);
   padding-top: 18px;
   padding-bottom: 18px;
 }
 
 .compare-table tbody th {
   font-weight: 700;
-  color: var(--navy);
+  color: var(--charcoal);
   width: 24%;
 }
 
 .compare-table td {
-  color: var(--ink-soft);
+  color: var(--ink-muted);
 }
 
 .compare-table .col-kippin {
-  background-color: #F0FBF8;
-  color: var(--navy);
+  background-color: #EDF5F1;
+  color: var(--charcoal);
   font-weight: 700;
 }
 
 .compare-table thead .col-kippin {
   border-radius: 18px 18px 0 0;
-  color: var(--teal);
+  color: var(--terracotta);
   font-size: 25px;
 }
 
@@ -765,32 +772,32 @@ section[id] {
   height: 24px;
   flex-shrink: 0;
   border-radius: 50%;
-  background-color: var(--teal);
-  color: var(--white);
+  background-color: var(--sage);
+  color: var(--linen);
   font-size: 13px;
   font-weight: 700;
   margin-top: 2px;
 }
 
-/* ─── 7. Section 6: Warm Cocoa Safety Band (#7B5B4C) ─── */
-.cocoa-band {
-  background-color: var(--cocoa);
-  color: var(--white);
+/* ─── 7. Section 6: Kippin Slate Blue Trust & Safety Band (#52758E) ─── */
+.slate-band {
+  background-color: var(--slate);
+  color: var(--linen);
   padding: 88px 0 92px;
   text-align: center;
 }
 
-.cocoa-band h2 {
-  color: var(--white);
+.slate-band h2 {
+  color: var(--linen);
   font-size: clamp(30px, 3.4vw, 44px);
   margin-bottom: 14px;
 }
 
-.cocoa-sub {
+.slate-sub {
   max-width: 660px;
   margin: 0 auto 48px;
   font-size: 18px;
-  color: #FAEEE7;
+  color: var(--paper);
 }
 
 .seals-row {
@@ -804,9 +811,9 @@ section[id] {
   width: 158px;
   height: 158px;
   border-radius: 50%;
-  background-color: var(--seal-cream);
+  background-color: var(--linen);
   padding: 10px;
-  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 12px 26px rgba(35, 34, 40, 0.18);
   display: flex;
 }
 
@@ -814,7 +821,7 @@ section[id] {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 2.5px dashed #D8B989;
+  border: 2.5px dashed var(--mustard);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -826,20 +833,20 @@ section[id] {
   font-family: var(--font-display);
   font-size: 34px;
   line-height: 1.05;
-  color: var(--navy);
+  color: var(--charcoal);
 }
 
 .seal-label {
   font-size: 13.5px;
   font-weight: 700;
-  color: #5C4438;
+  color: var(--slate);
   margin-top: 4px;
 }
 
-/* ─── 8. Section 7: Clean Parent FAQ Accordion (#FFFFFF) ─── */
+/* ─── 8. Section 7: Clean Parent FAQ Accordion (Kippin Linen Cream #FAF7F2) ─── */
 .faq-world {
-  background-color: var(--white);
-  padding: 96px 0 64px;
+  background-color: var(--linen);
+  padding: 96px 0 88px;
 }
 
 .faq-container {
@@ -853,11 +860,11 @@ section[id] {
 }
 
 .faq-list {
-  border-top: 1.5px solid #E5EEF5;
+  border-top: 1.5px solid #E5DFD7;
 }
 
 .faq-item {
-  border-bottom: 1.5px solid #E5EEF5;
+  border-bottom: 1.5px solid #E5DFD7;
 }
 
 .faq-item summary {
@@ -872,7 +879,7 @@ section[id] {
   font-size: 22px;
   font-weight: 600;
   line-height: 1.3;
-  color: var(--navy);
+  color: var(--charcoal);
 }
 
 .faq-item summary::-webkit-details-marker {
@@ -880,12 +887,12 @@ section[id] {
 }
 
 .faq-item summary:hover {
-  color: var(--teal);
+  color: var(--terracotta);
 }
 
 .faq-chevron {
   flex-shrink: 0;
-  color: var(--teal);
+  color: var(--terracotta);
   transition: transform 0.2s ease;
 }
 
@@ -897,19 +904,19 @@ section[id] {
   padding: 0 32px 26px 4px;
   font-size: 17px;
   line-height: 1.8;
-  color: var(--ink);
+  color: var(--charcoal);
 }
 
-/* ─── 9. Section 8: Playful Closing Strip + Deep Navy Footer ─── */
+/* ─── 9. Section 8: Playful Closing Strip (#F4EFEA) + Plum Dark Footer (#2C1E36) ─── */
 .closing-strip {
-  background-color: var(--white);
-  padding: 56px 0 92px;
+  background-color: var(--paper);
+  padding: 72px 0 88px;
   position: relative;
   overflow: hidden;
 }
 
 .closing-inner {
-  max-width: 680px;
+  max-width: 640px;
   text-align: center;
   position: relative;
   z-index: 2;
@@ -932,25 +939,30 @@ section[id] {
   gap: 14px;
 }
 
-.closing-deco {
+.closing-mascot {
   position: absolute;
-  bottom: 0;
+  bottom: 8px;
+  height: auto;
+  display: block;
   pointer-events: none;
+  z-index: 1;
 }
 
-.closing-deco-left {
-  left: max(12px, 3vw);
-  bottom: 12px;
+.closing-mascot-left {
+  left: max(12px, calc(50% - 620px));
+  width: clamp(190px, 19vw, 260px);
+  aspect-ratio: 560 / 380;
 }
 
-.closing-deco-right {
-  right: max(12px, 3vw);
-  bottom: 20px;
+.closing-mascot-right {
+  right: max(12px, calc(50% - 620px));
+  width: clamp(190px, 19vw, 260px);
+  aspect-ratio: 560 / 336;
 }
 
 .site-footer {
-  background-color: var(--navy);
-  color: #D9E8F8;
+  background-color: var(--plum);
+  color: var(--paper);
   padding: 72px 0 44px;
 }
 
@@ -959,7 +971,7 @@ section[id] {
   grid-template-columns: 1.5fr 1fr 1fr;
   gap: 48px;
   padding-bottom: 48px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  border-bottom: 1px solid rgba(244, 239, 234, 0.14);
 }
 
 .footer-tagline {
@@ -967,11 +979,11 @@ section[id] {
   max-width: 340px;
   font-size: 15.5px;
   line-height: 1.7;
-  color: #C4DCF4;
+  color: #D7CEE0;
 }
 
 .footer-col h3 {
-  color: var(--white);
+  color: var(--linen);
   font-size: 20px;
   margin-bottom: 16px;
 }
@@ -987,12 +999,12 @@ section[id] {
 
 .footer-col a {
   font-size: 15.5px;
-  color: #D2E5FA;
+  color: #DFD7E6;
   transition: color 0.15s ease;
 }
 
 .footer-col a:hover {
-  color: #FFD447;
+  color: var(--mustard);
 }
 
 .footer-bottom {
@@ -1002,7 +1014,7 @@ section[id] {
   justify-content: space-between;
   gap: 14px;
   font-size: 14px;
-  color: #9EC0E6;
+  color: #B8ADCA;
 }
 
 .footer-cc {
@@ -1015,13 +1027,13 @@ section[id] {
   border-radius: 28px;
   padding: 0;
   width: min(680px, calc(100% - 32px));
-  background: var(--white);
-  color: var(--ink);
-  box-shadow: 0 28px 68px rgba(10, 42, 102, 0.32);
+  background: var(--linen);
+  color: var(--charcoal);
+  box-shadow: 0 28px 68px rgba(44, 30, 54, 0.36);
 }
 
 .tour-dialog::backdrop {
-  background-color: rgba(10, 42, 102, 0.56);
+  background-color: rgba(44, 30, 54, 0.58);
   backdrop-filter: blur(3px);
 }
 
@@ -1046,8 +1058,8 @@ section[id] {
   height: 40px;
   border-radius: 50%;
   border: none;
-  background-color: #EDF6FB;
-  color: var(--navy);
+  background-color: var(--paper);
+  color: var(--charcoal);
   font-size: 18px;
   font-weight: 700;
   cursor: pointer;
@@ -1062,8 +1074,8 @@ section[id] {
 
 .tour-tab {
   border: none;
-  background-color: #EDF6FB;
-  color: var(--navy);
+  background-color: var(--paper);
+  color: var(--charcoal);
   font-family: var(--font-body);
   font-weight: 700;
   font-size: 14px;
@@ -1073,13 +1085,14 @@ section[id] {
 }
 
 .tour-tab.is-active {
-  background-color: var(--teal);
-  color: var(--white);
+  background-color: var(--terracotta);
+  color: var(--linen);
 }
 
 .tour-stage img {
   width: 100%;
   height: auto;
+  aspect-ratio: 720 / 450;
   border-radius: 18px;
   display: block;
   margin-bottom: 14px;
@@ -1103,18 +1116,38 @@ section[id] {
   left: 50%;
   transform: translateX(-50%);
   z-index: 80;
-  background-color: var(--navy);
-  color: var(--white);
+  background-color: var(--plum);
+  color: var(--linen);
   padding: 13px 22px;
   border-radius: 14px;
   font-size: 14.5px;
   font-weight: 600;
-  box-shadow: 0 14px 32px rgba(10, 42, 102, 0.28);
+  box-shadow: 0 14px 32px rgba(44, 30, 54, 0.34);
   max-width: calc(100vw - 32px);
   text-align: center;
 }
 
 /* ─── Responsive Breakpoints ─── */
+@media (max-width: 1180px) {
+  .closing-strip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 24px;
+    padding: 64px 0 36px;
+  }
+  .closing-inner {
+    order: -1;
+    width: calc(100% - 36px);
+    margin-bottom: 12px;
+  }
+  .closing-mascot {
+    position: static;
+    width: min(40vw, 196px);
+  }
+}
+
 @media (max-width: 1024px) {
   .desktop-nav {
     display: none;
@@ -1210,10 +1243,6 @@ section[id] {
     scroll-snap-align: center;
   }
 
-  .closing-deco {
-    opacity: 0.25;
-    transform: scale(0.7);
-  }
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 32px;
