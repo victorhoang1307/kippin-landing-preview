@@ -47,18 +47,18 @@
         r1Alt: 'Hai anh chị em cùng xem chương trình khoa học và hoạt hình trên máy tính bảng',
         r2Title: 'Biến thư mục video bản quyền đã mua thành kệ phim chia Mùa và Tập',
         r2Body:
-          'Lưu trên Google Drive toàn tên file rời rạc, hết một bài là dừng và hay kẹt giới hạn lượt xem. Tải lên Kippin, bộ video ngoại ngữ hay truyện kể đã mua hiện thành kệ phim có ảnh bìa, tự mở tập kế tiếp cùng bộ và nhớ vị trí xem dở — kèm mã PIN 4 số khi muốn chia sẻ video gia đình cho ông bà.',
+          'Lưu trên Google Drive toàn tên file rời rạc, hết một bài là dừng và hay kẹt giới hạn lượt xem. Tải lên Kippin, bộ video ngoại ngữ hay truyện kể đã mua hiện thành kệ phim có ảnh bìa, tự mở tập kế tiếp cùng bộ, nhớ vị trí xem dở và dễ dàng chia sẻ thư mục video kỷ niệm cho ông bà.',
         r2Alt: 'Mẹ và bé trai ngồi trên ghế sofa chọn tập học tiếng Anh trên máy tính bảng',
         r3Title: 'Ứng dụng riêng trên Smart TV — con tự mở xem, người nhà không vất vả',
         r3Body:
           'Ứng dụng Kippin độc lập trên Android TV và Google TV (Sony, TCL, Xiaomi, Casper, Chromecast) giúp con ngồi xa bảo vệ mắt và tự chọn tập bằng điều khiển TV. Không cần mở chung ứng dụng YouTube người lớn, không cần nhờ ông bà cắm máy tính hay mở Drive hộ.',
         r3Alt:
-          'Hai anh em ngồi trên thảm phòng khách dùng điều khiển chọn chương trình vũ trụ trên Smart TV',
+          'Hai anh em ngồi trên ghế sofa phòng khách dùng điều khiển chọn chương trình vũ trụ trên Smart TV',
         r4Title: 'Mỗi anh chị em một hồ sơ đúng tuổi — ba mẹ đi làm vẫn theo dõi từ xa',
         r4Body:
           'Bé 4 tuổi nghe đồng dao tiếng Anh, anh 10 tuổi khám phá vũ trụ — mỗi con chỉ thấy đúng kênh và bộ video hợp lứa tuổi của mình. Dù đang ở văn phòng, ba mẹ vẫn xem được lịch sử từng tập con đã mở trên điện thoại và khóa cài đặt bằng mã PIN.',
         r4Alt:
-          'Ba ngồi tại bàn làm việc sáng nắng xem nhanh lịch sử xem video của con trên điện thoại',
+          'Hai anh em chênh lệch độ tuổi ngồi trên ghế sofa chọn hồ sơ xem video riêng trên máy tính bảng',
       },
       inside: {
         heading: 'Bên trong ứng dụng Kippin',
@@ -101,7 +101,7 @@
         r1Yt: 'Không tải được bộ video bản quyền lên dùng riêng',
         r1Drive: 'Chỉ mở file lưu sẵn, không gom được kênh YouTube',
         r2Label: 'Phát các bộ video bản quyền đã mua',
-        r2Kippin: 'Chia theo Mùa/Tập, phát mượt không nghẽn lượt tải; chia sẻ qua PIN 4 số',
+        r2Kippin: 'Chia theo Mùa/Tập, phát mượt không nghẽn lượt tải, dễ chia sẻ cho ông bà',
         r2Yt: 'Không có kho lưu trữ riêng cho gia đình',
         r2Drive: 'Tên file rời rạc khó chọn; hay báo lỗi vượt quá lượt xem',
         r3Label: 'Kiểm soát thuật toán, Shorts & Quảng cáo',
@@ -137,7 +137,7 @@
           'Ba mẹ có thể chọn 1 chạm từ hơn 100 kênh YouTube gợi ý sẵn theo lứa tuổi (2–4, 5–7, 8–10, 11+), dán link kênh hoặc playlist YouTube bất kỳ, hoặc tải các bộ video bản quyền đã mua và video gia đình lên kệ riêng.',
         q2: 'Đưa bộ video bản quyền đang lưu trên Google Drive lên Kippin có lợi gì?',
         a2:
-          'Các file rời rạc sẽ được xếp thành kệ phim có ảnh bìa chia theo Mùa và Tập, tự phát tập tiếp theo, nhớ vị trí xem dở và xem mượt trên Smart TV mà không bị khóa lượt tải. Ba mẹ cũng có thể đặt mã PIN 4 số để chia sẻ thư mục video kỷ niệm gia đình cho ông bà.',
+          'Các file rời rạc sẽ được xếp thành kệ phim có ảnh bìa chia theo Mùa và Tập, tự phát tập tiếp theo, nhớ vị trí xem dở và xem mượt trên Smart TV mà không bị khóa lượt tải. Ba mẹ cũng có thể chia sẻ riêng thư mục video kỷ niệm gia đình cho ông bà.',
         q3: 'Con lớn 8–12+ tuổi có kênh phù hợp không hay chỉ dành cho bé mầm non?',
         a3:
           'Danh mục gợi ý có nhóm riêng cho lứa tuổi 8–10 và 11+ với nhiều kênh khoa học, vũ trụ, lịch sử, toán và hội họa như TED-Ed, Kurzgesagt, Mark Rober, Nat Geo Kids, SciShow Kids, Art for Kids Hub, VTV7... cùng bất kỳ kênh chuyên sâu nào ba mẹ tự dán link thêm.',
@@ -228,17 +228,18 @@
         r1Alt: 'Two siblings watching science and animated stories together on a tablet',
         r2Title: 'Turn purchased licensed video folders into Season & Episode shelves',
         r2Body:
-          'Google Drive leaves kids staring at raw filenames, stops after one file, and hits download-quota blocks. Upload your purchased language or story sets to Kippin for illustrated cover shelves that auto-play the next episode in order and save watch progress—plus a 4-digit PIN to share family memory folders with grandparents.',
+          'Google Drive leaves kids staring at raw filenames, stops after one file, and hits download-quota blocks. Upload your purchased language or story sets to Kippin for illustrated cover shelves that auto-play the next episode in order, save watch progress, and privately share family memory folders with grandparents.',
         r2Alt: 'Mother and young son on a sunlit sofa picking an English episode on a tablet',
         r3Title: 'Standalone Smart TV app—kids open it easily, grandparents don’t struggle',
         r3Body:
           'Kippin’s dedicated app for Android TV and Google TV (Sony, TCL, Xiaomi, Casper, Chromecast) lets kids sit back at a healthy distance and pick episodes by remote—without opening the adult YouTube app or asking grandparents to plug in a laptop or open Drive.',
         r3Alt:
-          'Two siblings on a living-room rug using a TV remote to watch a space documentary on Smart TV',
+          'Two siblings on a living-room sofa using a TV remote to watch a space documentary on Smart TV',
         r4Title: 'Age-matched sibling profiles—and remote visibility while you’re at work',
         r4Body:
           'Your 4-year-old hears phonics songs while your 10-year-old explores space science—each profile shows only age-appropriate channels and sets. Even from the office, you can check watched episodes on your phone and keep settings locked behind a PIN.',
-        r4Alt: 'Father at a sunlit desk checking his child’s watch activity log on his phone',
+        r4Alt:
+          'Younger sister and older brother sitting on a sunlit sofa picking their own age-matched profiles on a tablet',
       },
       inside: {
         heading: 'Inside the Kippin app',
@@ -281,7 +282,7 @@
         r1Yt: 'Cannot upload purchased licensed sets privately',
         r1Drive: 'Plays stored files only; cannot include YouTube channels',
         r2Label: 'Stream purchased licensed video sets',
-        r2Kippin: 'Season & Episode shelves, zero quota errors; 4-digit PIN family sharing',
+        r2Kippin: 'Season & Episode shelves, zero quota errors, easy sharing with grandparents',
         r2Yt: 'No private family video vault',
         r2Drive: 'Raw filenames; frequent download-quota blocks',
         r3Label: 'Control algorithms, Shorts & ads',
@@ -317,7 +318,7 @@
           'Pick in one tap from 100+ curated YouTube channels across ages 2–4, 5–7, 8–10, and 11+, paste any YouTube channel or playlist URL, or upload your purchased licensed video sets and family memories.',
         q2: 'We store purchased licensed videos on Google Drive—how is Kippin better?',
         a2:
-          'Loose files become an illustrated shelf organized by Season and Episode that auto-plays the next lesson, remembers watch progress, and streams on Smart TV without Google Drive quota errors. You can also set a 4-digit PIN to share family memory folders privately with grandparents.',
+          'Loose files become an illustrated shelf organized by Season and Episode that auto-plays the next lesson, remembers watch progress, and streams on Smart TV without Google Drive quota errors. You can also privately share family memory folders with grandparents.',
         q3: 'Are there channels for 8–12+ year olds, or is it mostly for preschoolers?',
         a3:
           'Our catalog includes dedicated tiers for ages 8–10 and 11+ featuring science, space, history, math, and art channels like TED-Ed, Kurzgesagt, Mark Rober, Nat Geo Kids, SciShow Kids, Art for Kids Hub, and VTV7—plus any specialized channel you paste yourself.',
