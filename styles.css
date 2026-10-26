@@ -359,9 +359,9 @@ section[id] {
 .hero-copy {
   position: absolute;
   top: 6%;
-  bottom: 17%;
+  bottom: 16%;
   left: max(24px, calc((100% - 1140px) / 2));
-  width: min(40%, 458px);
+  width: min(44.5%, 520px);
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -370,18 +370,54 @@ section[id] {
 }
 
 .hero-copy h1 {
-  font-size: clamp(31px, 3vw, 44px);
+  font-size: clamp(31px, 2.95vw, 43px);
   line-height: 1.18;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
+  max-width: 472px;
   text-wrap: balance;
 }
 
 .hero-lead {
-  font-size: clamp(15.5px, 1.2vw, 17.5px);
-  line-height: 1.68;
+  font-size: clamp(15px, 1.15vw, 17px);
+  line-height: 1.62;
   color: var(--charcoal);
-  margin-bottom: 24px;
-  max-width: 448px;
+  margin-bottom: 15px;
+  max-width: 468px;
+}
+
+.hero-guarantees {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: balance;
+  gap: 7px;
+}
+
+.hero-guarantee-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 9.5px;
+  background-color: var(--linen);
+  border: 1.8px solid var(--charcoal);
+  border-radius: 10px;
+  box-shadow: 0 2.5px 0 rgba(35, 34, 40, 0.14);
+}
+
+.hero-guarantee-icon {
+  flex-shrink: 0;
+  display: block;
+}
+
+.hero-guarantee-text {
+  font-size: 12.8px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--charcoal);
+  white-space: nowrap;
+  text-box: trim-both cap alphabetic;
 }
 
 .hero-cta-row {
@@ -390,83 +426,34 @@ section[id] {
   gap: 14px;
 }
 
-/* ─── 3. Section 2: "Vì sao Kippin ra đời" + "Kippin là gì?" (Sage-Linen Mist #E6EFEA) ─── */
+/* ─── 3. Section 2: "Kippin là gì?" (Sage-Linen Mist #E6EFEA) ─── */
 .showcase-band {
   background-color: var(--sage-mist);
-  padding: 84px 0;
-}
-
-.showcase-grid {
-  display: grid;
-  grid-template-columns: 1.06fr 0.98fr;
-  gap: 52px;
-  align-items: center;
-}
-
-.showcase-copy h2 {
-  font-size: clamp(30px, 3.2vw, 42px);
-  margin-bottom: 18px;
-}
-
-.story-lead {
-  font-size: 16.5px;
-  line-height: 1.74;
-  color: var(--charcoal);
-  margin: 0 0 14px;
-  text-wrap: pretty;
-}
-
-.story-lead-last {
-  margin-bottom: 0;
-}
-
-.story-photo-card {
-  margin: 0;
-  padding: 16px 16px 18px;
-  background-color: var(--linen);
-  border-radius: 26px;
-  box-shadow: 0 20px 44px rgba(35, 34, 40, 0.11);
-}
-
-.story-photo-card img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1200 / 805;
-  display: block;
-  border-radius: 16px;
-}
-
-.story-photo-caption {
-  margin-top: 12px;
-  font-size: 14.5px;
-  line-height: 1.5;
-  color: var(--ink-muted);
-  text-align: center;
-  font-weight: 500;
+  padding: 78px 0 84px;
 }
 
 .what-block {
-  margin-block-start: 56px;
-  padding-block-start: 48px;
-  border-block-start: 1px solid rgba(35, 34, 40, 0.1);
+  margin: 0;
 }
 
 .what-header {
   max-width: 720px;
-  margin-block-end: 26px;
+  margin-inline: auto;
+  margin-block-end: 34px;
+  text-align: center;
 }
 
 .what-heading {
-  font-size: clamp(27px, 2.8vw, 36px);
-  margin: 0 0 10px;
+  font-size: clamp(30px, 3.2vw, 42px);
+  margin: 0 0 12px;
 }
 
 .what-lead {
-  font-size: 16.5px;
+  font-size: 17px;
   line-height: 1.68;
   color: var(--charcoal);
   margin: 0;
-  text-wrap: pretty;
+  text-wrap: balance;
 }
 
 .what-sources-grid {
@@ -1387,8 +1374,8 @@ section[id] {
     transform: translateX(-76px);
   }
   .hero-copy {
-    left: max(112px, calc((100% - 1140px) / 2));
-    width: min(39%, 444px);
+    left: max(96px, calc((100% - 1140px) / 2));
+    width: min(40.5%, 496px);
   }
 }
 
@@ -1397,8 +1384,8 @@ section[id] {
     display: none;
   }
   .hero-copy {
-    left: 36px;
-    width: min(41%, 432px);
+    left: 32px;
+    width: min(45%, 496px);
   }
 }
 
@@ -1463,6 +1450,9 @@ section[id] {
   .hero-lead {
     max-width: 560px;
   }
+  .hero-guarantees {
+    justify-content: center;
+  }
   .hero-cta-row {
     justify-content: center;
   }
@@ -1473,18 +1463,10 @@ section[id] {
     width: calc(100% - 36px);
   }
   .showcase-band {
-    padding: 60px 0;
-  }
-  .showcase-grid {
-    grid-template-columns: 1fr;
-    gap: 34px;
-  }
-  .what-block {
-    margin-block-start: 40px;
-    padding-block-start: 34px;
+    padding: 58px 0 64px;
   }
   .what-header {
-    margin-block-end: 20px;
+    margin-block-end: 24px;
   }
   .features-world {
     padding: 68px 0 76px;
