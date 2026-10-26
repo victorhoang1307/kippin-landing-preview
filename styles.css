@@ -426,7 +426,7 @@ section[id] {
 .story-sources {
   list-style: none;
   padding: 0;
-  margin: 0 0 18px;
+  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -463,15 +463,6 @@ section[id] {
 
 .story-step-sage {
   background-color: var(--sage);
-}
-
-.story-commitment {
-  font-size: 15.5px;
-  line-height: 1.68;
-  color: var(--ink-muted);
-  border-left: 3px solid var(--terracotta);
-  padding-left: 14px;
-  margin: 4px 0 0;
 }
 
 .story-photo-card {

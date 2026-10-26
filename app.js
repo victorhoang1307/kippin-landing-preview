@@ -13,7 +13,7 @@
         signup: 'Bắt đầu miễn phí',
       },
       nav: {
-        intro: 'Câu chuyện',
+        intro: 'Về Kippin',
         features: 'Tính năng',
         inside: 'Bên trong ứng dụng',
         compare: 'So sánh',
@@ -27,15 +27,13 @@
         imgAlt: 'Nhóm nhân vật Boro, Lumi, Kip, Pip và Mori vui chơi trên đồi cỏ xanh',
       },
       story: {
-        title: 'Vì sao vợ chồng mình làm ra Kippin?',
+        title: 'Vì sao Kippin ra đời',
         p1:
-          'Trước đây tụi mình cho con xem trên YouTube và YouTube Kids nhưng rất khó lọc triệt để. Đến khi mua và lưu được các bộ video ngoại ngữ, khoa học chất lượng về máy tính hay Google Drive thì hai vợ chồng đi làm cả ngày — con còn nhỏ không tự mở từng file rời rạc được, nhờ ông bà thao tác giúp cũng lỉnh kỉnh.',
+          'Cho con xem trên YouTube thì khó kiểm soát triệt để nội dung gợi ý. Ngược lại, khi tải các bộ video học tập chất lượng về máy tính hay Google Drive, lúc ba mẹ đi làm cả ngày thì ở nhà con nhỏ không tự mở từng file rời rạc được — nhờ ông bà thao tác hộ cũng bất tiện.',
         p2:
-          'Tụi mình tạo ra Kippin như một kho lưu trữ video cá nhân của riêng gia đình: ba mẹ đưa gì lên thì ở nhà con chỉ mở xem đúng những nội dung đó, từ 2 nguồn:',
+          'Kippin giải quyết khoảng trống đó bằng mô hình kho video cá nhân cho từng gia đình — ba mẹ đưa nội dung gì vào thì con chỉ xem đúng những nội dung đó, từ 2 nguồn:',
         src1: 'Tải file video sẵn có từ máy tính, ổ cứng hoặc Google Drive.',
-        src2: 'Kéo link kênh, playlist trực tiếp từ YouTube (hoặc chọn nhanh từ 100+ kênh gợi ý).',
-        commitment:
-          'Vì chính con ở nhà vẫn mở Kippin xem mỗi ngày, tụi mình luôn tiếp tục tối ưu từng chi tiết nhỏ cho gia đình mình cũng như các gia đình có chung mối quan tâm.',
+        src2: 'Liên kết kênh, danh sách phát trực tiếp từ YouTube (hoặc chọn từ 100+ kênh gợi ý).',
         imgAlt: 'Em bé ngồi trên thảm phòng khách tự mở chương trình yêu thích trên Smart TV',
         imgCap: 'Ở nhà con tự mở xem trên Smart TV hoặc iPad — ông bà không phải thao tác lỉnh kỉnh.',
       },
@@ -196,7 +194,7 @@
         signup: 'Start for Free',
       },
       nav: {
-        intro: 'Our Story',
+        intro: 'Why Kippin',
         features: 'Features',
         inside: 'Inside the App',
         compare: 'Compare',
@@ -210,15 +208,13 @@
         imgAlt: 'Kippin characters Boro, Lumi, Kip, Pip, and Mori playing on a green hill',
       },
       story: {
-        title: 'Why our family built Kippin',
+        title: 'Why Kippin exists',
         p1:
-          'We used to let our child watch on YouTube and YouTube Kids, yet stray content was still hard to filter out completely. Once we bought great language and science video sets onto our computer and Google Drive, we hit another wall: with both parents at work all day, our child couldn’t open scattered files alone—and asking grandparents to navigate folders was cumbersome.',
+          'Streaming on YouTube makes it hard to prevent stray recommendations completely. Yet storing purchased educational video sets on a computer or Google Drive creates the opposite problem: while parents are at work, young kids cannot open scattered files alone—and asking grandparents to navigate folders is cumbersome.',
         p2:
-          'So we built Kippin as a private personal video vault for our family: whatever parents add is strictly all our child sees at home, from two simple sources:',
-        src1: 'Upload existing video files from your computer, hard drive, or Google Drive.',
-        src2: 'Pull channel or playlist links straight from YouTube (or pick in one tap from 100+ curated channels).',
-        commitment:
-          'Because our own kids open Kippin at home every day, we continuously refine every detail for our family—and for other families who share the same care.',
+          'Kippin bridges that gap as a private video library for each family—kids only ever see what parents add, from two sources:',
+        src1: 'Upload existing video files from a computer, hard drive, or Google Drive.',
+        src2: 'Link channels or playlists directly from YouTube (or pick from 100+ curated channels).',
         imgAlt: 'Child sitting comfortably on a living-room rug opening an approved show on Smart TV',
         imgCap: 'At home, kids open approved shows on Smart TV or iPad on their own—no complicated steps for grandparents.',
       },
