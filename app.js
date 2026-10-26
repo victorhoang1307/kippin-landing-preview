@@ -29,34 +29,45 @@
       story: {
         title: 'Vì sao Kippin ra đời',
         p1:
-          'Cho con xem trên YouTube thì khó kiểm soát triệt để nội dung gợi ý. Ngược lại, khi tải các bộ video học tập chất lượng về máy tính hay Google Drive, lúc ba mẹ đi làm cả ngày thì ở nhà con nhỏ không tự mở từng file rời rạc được — nhờ ông bà thao tác hộ cũng bất tiện.',
+          'Mở trực tiếp YouTube cho con thì khó chặn triệt để video gợi ý ngoài luồng, quảng cáo và Shorts.',
         p2:
-          'Kippin giải quyết khoảng trống đó bằng mô hình kho video cá nhân cho từng gia đình — ba mẹ đưa nội dung gì vào thì con chỉ xem đúng những nội dung đó, từ 2 nguồn:',
-        src1: 'Tải file video sẵn có từ máy tính, ổ cứng hoặc Google Drive.',
-        src2: 'Liên kết kênh, danh sách phát trực tiếp từ YouTube (hoặc chọn từ 100+ kênh gợi ý).',
+          'Ngược lại, lưu video chọn lọc trên máy tính hay Google Drive thì khi ba mẹ đi làm, con nhỏ ở nhà không tự mở từng file rời rạc được — nhờ ông bà mở hộ cũng bất tiện.',
         imgAlt: 'Em bé ngồi trên thảm phòng khách tự mở chương trình yêu thích trên Smart TV',
-        imgCap: 'Ở nhà con tự mở xem trên Smart TV hoặc iPad — ông bà không phải thao tác lỉnh kỉnh.',
+        imgCap: 'Ở nhà con tự mở xem trên Smart TV hoặc iPad, người nhà không phải thao tác hộ.',
+      },
+      what: {
+        title: 'Kippin là gì?',
+        lead:
+          'Kippin là kho video cá nhân cho từng gia đình — ba mẹ đưa gì vào, con chỉ xem đúng nội dung đó từ 3 nguồn:',
+        s1Title: 'Từ YouTube',
+        s1Body:
+          'Chọn từ 100+ kênh thiếu nhi lọc sẵn theo độ tuổi hoặc dán link kênh, danh sách phát bất kỳ.',
+        s2Title: 'Từ Google Drive',
+        s2Body:
+          'Nhập trực tiếp thư mục video lưu trên đám mây về kho riêng, không lo giới hạn lượt xem.',
+        s3Title: 'Từ máy tính & ổ cứng',
+        s3Body:
+          'Tải lên các bộ video học tập đã mua hoặc video gia đình tự quay để lưu trữ lâu dài.',
       },
       features: {
-        heading: 'Giải quyết trọn vẹn chuyện xem video của con mỗi ngày',
-        subheading:
-          'Từ bước chọn kênh YouTube trong 30 giây, gom kho video bản quyền đã mua đến việc con tự mở xem ở nhà trên Smart TV.',
-        r1Title: 'Chọn kênh từ YouTube không Shorts, không quảng cáo',
+        heading: 'Cách Kippin vận hành mỗi ngày',
+        subheading: 'Tổ chức gọn một lần cho ba mẹ, mở xem đơn giản cho con.',
+        r1Title: 'Tự động xếp thành kệ phim chia Mùa và Tập',
         r1Body:
-          'Chọn nhanh từ hơn 100 kênh gợi ý sẵn cho lứa tuổi 2–12+ (Numberblocks, Bluey, Storyline Online đến TED-Ed, Kurzgesagt, Mark Rober, Nat Geo Kids) hoặc dán link kênh YouTube bất kỳ. Kippin chỉ phát đúng danh sách ba mẹ duyệt, tự động loại bỏ 100% Shorts, Livestream và quảng cáo.',
-        r1Alt: 'Hai anh chị em cùng xem chương trình khoa học và hoạt hình trên máy tính bảng',
-        r2Title: 'Biến thư mục video bản quyền đã mua thành kệ phim chia Mùa và Tập',
+          'Video từ cả ba nguồn được xếp thành kệ phim có ảnh bìa, chia rõ Kênh, Mùa và Tập. Ba mẹ cũng có thể chia sẻ riêng từng thư mục cho người thân hoặc gia đình bạn bè qua liên kết.',
+        r1Alt: 'Mẹ và bé trai ngồi trên ghế sofa chọn tập học tiếng Anh trên máy tính bảng',
+        r2Title: 'Phát liền mạch từng bộ, không quảng cáo và không Shorts',
         r2Body:
-          'Lưu trên Google Drive toàn tên file rời rạc, hết một bài là dừng và hay kẹt giới hạn lượt xem. Tải lên Kippin, bộ video ngoại ngữ hay truyện kể đã mua hiện thành kệ phim có ảnh bìa, tự mở tập kế tiếp cùng bộ, nhớ vị trí xem dở và dễ dàng chia sẻ thư mục video kỷ niệm cho ông bà.',
-        r2Alt: 'Mẹ và bé trai ngồi trên ghế sofa chọn tập học tiếng Anh trên máy tính bảng',
-        r3Title: 'Ứng dụng riêng trên Smart TV — con tự mở xem, người nhà không vất vả',
+          'Trình phát riêng của Kippin chặn 100% quảng cáo, Shorts và video gợi ý ngoài danh sách. Hết một bài, ứng dụng tự mở tập kế tiếp cùng bộ và lưu vị trí đang xem dở.',
+        r2Alt: 'Hai anh chị em cùng xem chương trình khoa học và hoạt hình trên máy tính bảng',
+        r3Title: 'Ứng dụng độc lập trên Smart TV để con tự mở ở nhà',
         r3Body:
-          'Ứng dụng Kippin độc lập trên Android TV và Google TV (Sony, TCL, Xiaomi, Casper, Chromecast) giúp con ngồi xa bảo vệ mắt và tự chọn tập bằng điều khiển TV. Không cần mở chung ứng dụng YouTube người lớn, không cần nhờ ông bà cắm máy tính hay mở Drive hộ.',
+          'Cài trực tiếp trên Android TV, Google TV và iPad để con ngồi xa chọn tập bằng điều khiển. Không dùng chung ứng dụng YouTube người lớn, không cần ông bà mở máy tính hộ.',
         r3Alt:
           'Hai anh em ngồi trên ghế sofa phòng khách dùng điều khiển chọn chương trình vũ trụ trên Smart TV',
-        r4Title: 'Mỗi anh chị em một hồ sơ đúng tuổi — ba mẹ đi làm vẫn theo dõi từ xa',
+        r4Title: 'Tách hồ sơ theo độ tuổi và xem nhật ký từ xa',
         r4Body:
-          'Bé 4 tuổi nghe đồng dao tiếng Anh, anh 10 tuổi khám phá vũ trụ — mỗi con chỉ thấy đúng kênh và bộ video hợp lứa tuổi của mình. Dù đang ở văn phòng, ba mẹ vẫn xem được lịch sử từng tập con đã mở trên điện thoại và khóa cài đặt bằng mã PIN.',
+          'Mỗi anh chị em có hồ sơ riêng, chỉ hiển thị đúng kênh và bộ video được gán. Phụ huynh khóa cài đặt bằng mã PIN và xem lịch sử từng tập con đã mở ngay trên điện thoại.',
         r4Alt:
           'Hai anh em chênh lệch độ tuổi ngồi trên ghế sofa chọn hồ sơ xem video riêng trên máy tính bảng',
       },
@@ -101,7 +112,7 @@
         r1Yt: 'Không tải được bộ video bản quyền lên dùng riêng',
         r1Drive: 'Chỉ mở file lưu sẵn, không gom được kênh YouTube',
         r2Label: 'Phát các bộ video bản quyền đã mua',
-        r2Kippin: 'Chia theo Mùa/Tập, phát mượt không nghẽn lượt tải, dễ chia sẻ cho ông bà',
+        r2Kippin: 'Chia theo Mùa/Tập, không nghẽn lượt xem, chia sẻ thư mục qua liên kết',
         r2Yt: 'Không có kho lưu trữ riêng cho gia đình',
         r2Drive: 'Tên file rời rạc khó chọn; hay báo lỗi vượt quá lượt xem',
         r3Label: 'Kiểm soát thuật toán, Shorts & Quảng cáo',
@@ -134,10 +145,10 @@
         heading: 'Câu hỏi thường gặp',
         q1: 'Ba mẹ thêm nội dung cho con bằng những cách nào?',
         a1:
-          'Ba mẹ có thể chọn 1 chạm từ hơn 100 kênh YouTube gợi ý sẵn theo lứa tuổi (2–4, 5–7, 8–10, 11+), dán link kênh hoặc playlist YouTube bất kỳ, hoặc tải các bộ video bản quyền đã mua và video gia đình lên kệ riêng.',
+          'Có 3 nguồn: chọn từ 100+ kênh YouTube lọc sẵn theo tuổi (hoặc dán link kênh, danh sách phát bất kỳ), nhập thư mục video từ Google Drive, hoặc tải file trực tiếp từ máy tính và ổ cứng.',
         q2: 'Đưa bộ video bản quyền đang lưu trên Google Drive lên Kippin có lợi gì?',
         a2:
-          'Các file rời rạc sẽ được xếp thành kệ phim có ảnh bìa chia theo Mùa và Tập, tự phát tập tiếp theo, nhớ vị trí xem dở và xem mượt trên Smart TV mà không bị khóa lượt tải. Ba mẹ cũng có thể chia sẻ riêng thư mục video kỷ niệm gia đình cho ông bà.',
+          'Các file rời rạc được xếp thành kệ phim có ảnh bìa chia theo Mùa và Tập, tự mở tập tiếp theo, nhớ vị trí xem dở và phát trên Smart TV không bị khóa lượt xem. Ba mẹ cũng có thể chia sẻ riêng từng thư mục cho người thân hoặc gia đình bạn bè qua liên kết.',
         q3: 'Con lớn 8–12+ tuổi có kênh phù hợp không hay chỉ dành cho bé mầm non?',
         a3:
           'Danh mục gợi ý có nhóm riêng cho lứa tuổi 8–10 và 11+ với nhiều kênh khoa học, vũ trụ, lịch sử, toán và hội họa như TED-Ed, Kurzgesagt, Mark Rober, Nat Geo Kids, SciShow Kids, Art for Kids Hub, VTV7... cùng bất kỳ kênh chuyên sâu nào ba mẹ tự dán link thêm.',
@@ -210,34 +221,45 @@
       story: {
         title: 'Why Kippin exists',
         p1:
-          'Streaming on YouTube makes it hard to prevent stray recommendations completely. Yet storing purchased educational video sets on a computer or Google Drive creates the opposite problem: while parents are at work, young kids cannot open scattered files alone—and asking grandparents to navigate folders is cumbersome.',
+          'Streaming directly on YouTube makes it hard to block stray suggestions, ads, and Shorts.',
         p2:
-          'Kippin bridges that gap as a private video library for each family—kids only ever see what parents add, from two sources:',
-        src1: 'Upload existing video files from a computer, hard drive, or Google Drive.',
-        src2: 'Link channels or playlists directly from YouTube (or pick from 100+ curated channels).',
+          'Conversely, storing selected videos on a computer or Google Drive leaves young kids unable to open scattered files while parents are at work—and asking grandparents to navigate folders is inconvenient.',
         imgAlt: 'Child sitting comfortably on a living-room rug opening an approved show on Smart TV',
-        imgCap: 'At home, kids open approved shows on Smart TV or iPad on their own—no complicated steps for grandparents.',
+        imgCap: 'At home, kids open approved shows on Smart TV or iPad on their own.',
+      },
+      what: {
+        title: 'What is Kippin?',
+        lead:
+          'Kippin is a private video library for each family—kids only watch what parents add, from three sources:',
+        s1Title: 'From YouTube',
+        s1Body:
+          'Pick from 100+ age-sorted kids’ channels or paste any channel or playlist link.',
+        s2Title: 'From Google Drive',
+        s2Body:
+          'Import cloud video folders directly into your library with zero playback-quota errors.',
+        s3Title: 'From computer & drives',
+        s3Body:
+          'Upload purchased learning sets or family videos for organized, long-term streaming.',
       },
       features: {
-        heading: 'Built around how working families actually manage screen time',
-        subheading:
-          'From picking YouTube channels in 30 seconds and organizing purchased video sets to effortless Smart TV viewing at home.',
-        r1Title: 'Curated YouTube channels—zero Shorts, zero ads',
+        heading: 'How Kippin works every day',
+        subheading: 'Set up once by parents, effortless to open for kids.',
+        r1Title: 'Organized automatically into Season and Episode shelves',
         r1Body:
-          'Pick in one tap from 100+ age-sorted channels for ages 2–12+ (from Numberblocks, Bluey, and Storyline Online to TED-Ed, Kurzgesagt, Mark Rober, and Nat Geo Kids) or paste any YouTube URL. Kippin plays strictly what you approve and strips out 100% of Shorts, livestreams, and ads.',
-        r1Alt: 'Two siblings watching science and animated stories together on a tablet',
-        r2Title: 'Turn purchased licensed video folders into Season & Episode shelves',
+          'Videos from all three sources appear on illustrated shelves sorted by Channel, Season, and Episode. Parents can also privately share individual folders with relatives or family friends via a link.',
+        r1Alt: 'Mother and young son on a sunlit sofa picking an English episode on a tablet',
+        r2Title: 'Seamless series playback—zero ads and zero Shorts',
         r2Body:
-          'Google Drive leaves kids staring at raw filenames, stops after one file, and hits download-quota blocks. Upload your purchased language or story sets to Kippin for illustrated cover shelves that auto-play the next episode in order, save watch progress, and privately share family memory folders with grandparents.',
-        r2Alt: 'Mother and young son on a sunlit sofa picking an English episode on a tablet',
-        r3Title: 'Standalone Smart TV app—kids open it easily, grandparents don’t struggle',
+          'Kippin’s dedicated player blocks 100% of ads, Shorts, and outside suggestions. When an episode finishes, it plays the next one in order and saves exact watch progress.',
+        r2Alt: 'Two siblings watching science and animated stories together on a tablet',
+        r3Title: 'Standalone Smart TV app kids can open on their own',
         r3Body:
-          'Kippin’s dedicated app for Android TV and Google TV (Sony, TCL, Xiaomi, Casper, Chromecast) lets kids sit back at a healthy distance and pick episodes by remote—without opening the adult YouTube app or asking grandparents to plug in a laptop or open Drive.',
+          'Install directly on Android TV, Google TV, and iPad so kids sit back and pick episodes by remote—without opening the adult YouTube app or needing grandparents to set up a computer.',
         r3Alt:
           'Two siblings on a living-room sofa using a TV remote to watch a space documentary on Smart TV',
-        r4Title: 'Age-matched sibling profiles—and remote visibility while you’re at work',
+        r4Title: 'Age-matched profiles and remote watch history',
         r4Body:
-          'Your 4-year-old hears phonics songs while your 10-year-old explores space science—each profile shows only age-appropriate channels and sets. Even from the office, you can check watched episodes on your phone and keep settings locked behind a PIN.',
+          'Each sibling gets a separate profile showing only their assigned channels and video sets. Parents lock settings with a PIN and check watched episodes right from their phone.',
         r4Alt:
           'Younger sister and older brother sitting on a sunlit sofa picking their own age-matched profiles on a tablet',
       },
@@ -282,7 +304,7 @@
         r1Yt: 'Cannot upload purchased licensed sets privately',
         r1Drive: 'Plays stored files only; cannot include YouTube channels',
         r2Label: 'Stream purchased licensed video sets',
-        r2Kippin: 'Season & Episode shelves, zero quota errors, easy sharing with grandparents',
+        r2Kippin: 'Season & Episode shelves, zero quota errors, folder sharing via link',
         r2Yt: 'No private family video vault',
         r2Drive: 'Raw filenames; frequent download-quota blocks',
         r3Label: 'Control algorithms, Shorts & ads',
@@ -315,10 +337,10 @@
         heading: 'Frequently asked questions',
         q1: 'How can parents add videos and channels for their kids?',
         a1:
-          'Pick in one tap from 100+ curated YouTube channels across ages 2–4, 5–7, 8–10, and 11+, paste any YouTube channel or playlist URL, or upload your purchased licensed video sets and family memories.',
+          'From three sources: pick from 100+ age-sorted YouTube channels (or paste any channel or playlist URL), import folders from Google Drive, or upload files directly from your computer or drive.',
         q2: 'We store purchased licensed videos on Google Drive—how is Kippin better?',
         a2:
-          'Loose files become an illustrated shelf organized by Season and Episode that auto-plays the next lesson, remembers watch progress, and streams on Smart TV without Google Drive quota errors. You can also privately share family memory folders with grandparents.',
+          'Loose files become an illustrated shelf sorted by Season and Episode that auto-plays the next video, saves watch progress, and streams on Smart TV without quota blocks. You can also privately share folders with relatives or family friends via a link.',
         q3: 'Are there channels for 8–12+ year olds, or is it mostly for preschoolers?',
         a3:
           'Our catalog includes dedicated tiers for ages 8–10 and 11+ featuring science, space, history, math, and art channels like TED-Ed, Kurzgesagt, Mark Rober, Nat Geo Kids, SciShow Kids, Art for Kids Hub, and VTV7—plus any specialized channel you paste yourself.',
