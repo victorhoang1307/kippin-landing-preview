@@ -1,4 +1,4 @@
-/* ─── Kippin Landing V16 — Bilingual Dictionary (VI / EN), Locale UI Screens & Popup Lightbox Gallery ─── */
+/* ─── Kippin Landing V21 Exploration — Bilingual Dictionary (VI / EN), Locale UI Screens & Popup Lightbox Gallery ─── */
 
 (() => {
   const I18N = {
@@ -27,7 +27,8 @@
         g2: 'Phát liền mạch',
         g3: 'Sạch quảng cáo',
         primaryCta: 'Bắt đầu miễn phí',
-        imgAlt: 'Nhóm nhân vật Boro, Lumi, Kip, Pip và Mori vui chơi trên đồi cỏ xanh',
+        imgAlt:
+          'Cảnh minh họa màu bột gouache trên nền giấy kem và đồi xanh ngọc: cá sấu xanh lá, mèo đen trắng, ếch xanh cốm, chó trắng tai đen và bò sữa mõm hồng cùng chọn các hộp tập phim có đóng dấu tick duyệt của ba mẹ mở ra sao Thổ, tên lửa và thiên nhiên',
       },
       what: {
         title: 'Kippin là gì?',
@@ -49,17 +50,18 @@
         r1Title: 'Tự động xếp theo Mùa, Tập và phát liền mạch từng bộ',
         r1Body:
           'Video từ cả ba nguồn được gom vào thư viện riêng có ảnh bìa, chia rõ từng bộ theo Mùa và Tập để tự mở bài kế tiếp và nhớ vị trí đang xem dở. Ba mẹ cũng có thể chia sẻ riêng từng thư mục cho người thân hoặc gia đình bạn bè qua liên kết.',
-        r1Alt: 'Mẹ và bé trai ngồi trên ghế sofa chọn tập học tiếng Anh trên máy tính bảng',
+        r1Alt:
+          'Minh họa cá sấu xanh lá và mèo đen trắng xếp gọn ba hộp tập phim gắn sao và dấu tick theo đúng thứ tự trên nền xanh ngọc',
         r2Title: 'Ứng dụng độc lập trên Smart TV để con tự mở ở nhà',
         r2Body:
           'Cài trực tiếp trên Android TV, Google TV và iPad để con ngồi xa chọn tập bằng điều khiển. Không dùng chung ứng dụng YouTube người lớn, không cần ông bà mở máy tính hộ.',
         r2Alt:
-          'Hai anh em ngồi trên ghế sofa phòng khách dùng điều khiển chọn chương trình vũ trụ trên Smart TV',
+          'Minh họa chó trắng tai đen, bò sữa mõm hồng và ếch xanh cốm ngồi ghế sofa xanh dương bấm điều khiển mở chương trình sao Thổ trên Smart TV màn hình phẳng',
         r3Title: 'Tách hồ sơ theo độ tuổi và xem nhật ký từ xa',
         r3Body:
           'Mỗi anh chị em có hồ sơ riêng, chỉ hiển thị đúng kênh và bộ video được gán. Phụ huynh khóa cài đặt bằng mã PIN và xem lịch sử từng tập con đã mở ngay trên điện thoại.',
         r3Alt:
-          'Hai anh em ngồi trên ghế sofa chọn hồ sơ xem video riêng trên giao diện Kippin của máy tính bảng',
+          'Minh họa ếch xanh cốm, mèo đen trắng và chó trắng cổ dài ở các lứa tuổi khác nhau cầm thẻ hồ sơ riêng trên nền vàng chanh',
       },
       inside: {
         heading: 'Bên trong ứng dụng Kippin',
@@ -209,7 +211,8 @@
         g2: 'Seamless episodes',
         g3: '100% ad-free',
         primaryCta: 'Start for Free',
-        imgAlt: 'Kippin characters Boro, Lumi, Kip, Pip, and Mori playing on a green hill',
+        imgAlt:
+          'Flat gouache storybook scene on cream paper and an aqua-teal hill: emerald crocodile, tuxedo cat, lime frog, spotted-ear puppy, and coral-muzzle cow excitedly picking checkmark-approved episode boxes revealing Saturn, a space rocket, and nature discovery',
       },
       what: {
         title: 'What is Kippin?',
@@ -231,17 +234,18 @@
         r1Title: 'Sorted by Season & Episode with seamless series playback',
         r1Body:
           'Videos from all three sources live in one illustrated library sorted by Season and Episode—auto-playing the next video in order and saving watch progress. Parents can also privately share individual folders with relatives or family friends via a link.',
-        r1Alt: 'Mother and young son on a sunlit sofa picking an English episode on a tablet',
+        r1Alt:
+          'Flat gouache emerald crocodile and black-and-white tuxedo cat lining up three star-marked episode boxes in order on an aqua-teal background',
         r2Title: 'Standalone Smart TV app kids can open on their own',
         r2Body:
           'Install directly on Android TV, Google TV, and iPad so kids sit back and pick episodes by remote—without opening the adult YouTube app or needing grandparents to set up a computer.',
         r2Alt:
-          'Two siblings on a living-room sofa using a TV remote to watch a space documentary on Smart TV',
+          'Flat gouache spotted-ear puppy, coral-muzzle cow, and lime frog sitting on a cobalt sofa pointing a remote at a modern flat-panel Smart TV playing a Saturn space show',
         r3Title: 'Age-matched profiles and remote watch history',
         r3Body:
           'Each sibling gets a separate profile showing only their assigned channels and video sets. Parents lock settings with a PIN and check watched episodes right from their phone.',
         r3Alt:
-          'Younger sister and older brother sitting on a sofa selecting their own Kippin profiles on an iPad',
+          'Flat gouache lime frog, tuxedo cat, and long-necked white puppy holding their own color-coded profile cards on a butter-yellow background',
       },
       inside: {
         heading: 'Inside the Kippin app',
