@@ -28,7 +28,7 @@
         g3: 'Sạch quảng cáo',
         primaryCta: 'Bắt đầu miễn phí',
         imgAlt:
-          'Sáu nhân vật thú ngộ nghĩnh gồm cú, ếch, mèo, cá sấu, chó và bò vẽ nét sáp dầu trên các ô màu gouache rực rỡ',
+          'Sáu nhân vật thú Kippin vẽ nét sáp dầu gồm hà mã răng thỏ, rái cá quàng khăn, gấu trúc đỏ đeo tai nghe, cáo tai to đeo kính, gấu lười ngái ngủ và chim cánh cụt chỏm tóc dựng trên các ô màu gouache',
       },
       what: {
         title: 'Kippin là gì?',
@@ -51,17 +51,17 @@
         r1Body:
           'Video từ cả ba nguồn được gom vào thư viện riêng có ảnh bìa, chia rõ từng bộ theo Mùa và Tập để tự mở bài kế tiếp và nhớ vị trí đang xem dở. Ba mẹ cũng có thể chia sẻ riêng từng thư mục cho người thân hoặc gia đình bạn bè qua liên kết.',
         r1Alt:
-          'Minh họa cá sấu xanh và mèo nhị thể xếp gọn các cuốn băng tập phim màu sắc theo thứ tự trên nền xanh ngọc',
+          'Minh họa cáo tai to đeo kính tròn và gấu trúc đỏ đeo tai nghe xếp gọn các hộp tập phim màu sắc theo thứ tự trên nền xanh ngọc',
         r2Title: 'Ứng dụng độc lập trên Smart TV để con tự mở ở nhà',
         r2Body:
           'Cài trực tiếp trên Android TV, Google TV và iPad để con ngồi xa chọn tập bằng điều khiển. Không dùng chung ứng dụng YouTube người lớn, không cần ông bà mở máy tính hộ.',
         r2Alt:
-          'Minh họa chú chó tai cụp và ếch xanh ngồi trên ghế sofa bấm điều khiển mở chương trình tên lửa vũ trụ trên Smart TV màn hình phẳng',
+          'Minh họa chim cánh cụt chỏm tóc dựng và rái cá quàng khăn sọc ngồi ghế sofa bấm điều khiển mở chương trình vũ trụ trên Smart TV màn hình phẳng',
         r3Title: 'Tách hồ sơ theo độ tuổi và xem nhật ký từ xa',
         r3Body:
           'Mỗi anh chị em có hồ sơ riêng, chỉ hiển thị đúng kênh và bộ video được gán. Phụ huynh khóa cài đặt bằng mã PIN và xem lịch sử từng tập con đã mở ngay trên điện thoại.',
         r3Alt:
-          'Minh họa bò sữa, mèo nhị thể và cú nhỏ ở các lứa tuổi khác nhau cầm bảng hồ sơ riêng trên nền vàng chanh',
+          'Minh họa hà mã răng thỏ, cáo tai to đeo kính và gấu lười nhỏ ở các lứa tuổi khác nhau cầm thẻ hồ sơ riêng trên nền vàng chanh',
       },
       inside: {
         heading: 'Bên trong ứng dụng Kippin',
@@ -212,7 +212,7 @@
         g3: '100% ad-free',
         primaryCta: 'Start for Free',
         imgAlt:
-          'Six quirky oil-pastel animal mascots—owl, frog, tuxedo cat, crocodile, dog, and cow—on bold matte gouache color blocks',
+          'Six original Kippin oil-pastel animal characters—buck-toothed hippo, striped-scarf sea otter, headphone red panda, glasses fox, sleepy sloth, and tufted penguin—on bold matte gouache color blocks',
       },
       what: {
         title: 'What is Kippin?',
@@ -235,17 +235,17 @@
         r1Body:
           'Videos from all three sources live in one illustrated library sorted by Season and Episode—auto-playing the next video in order and saving watch progress. Parents can also privately share individual folders with relatives or family friends via a link.',
         r1Alt:
-          'Hand-drawn green crocodile and tuxedo cat lining up numbered star, planet, and dinosaur episode cassettes on an aqua-teal background',
+          'Hand-drawn big-eared fox in round glasses and red panda in headphones lining up star, rocket, and planet episode boxes on an aqua-teal background',
         r2Title: 'Standalone Smart TV app kids can open on their own',
         r2Body:
           'Install directly on Android TV, Google TV, and iPad so kids sit back and pick episodes by remote—without opening the adult YouTube app or needing grandparents to set up a computer.',
         r2Alt:
-          'Hand-drawn lanky dog and winking frog sitting on a blue sofa pointing a remote at a modern flat-panel Smart TV playing a rocket show',
+          'Hand-drawn tufted penguin and striped-scarf sea otter sitting on a blue sofa pointing a remote at a modern flat-panel Smart TV playing a space rocket show',
         r3Title: 'Age-matched profiles and remote watch history',
         r3Body:
           'Each sibling gets a separate profile showing only their assigned channels and video sets. Parents lock settings with a PIN and check watched episodes right from their phone.',
         r3Alt:
-          'Hand-drawn cow, tuxedo cat, and tiny owl holding their own self-portrait profile cards against a canary-yellow background',
+          'Hand-drawn buck-toothed hippo, big-eared fox with glasses, and tiny sleepy sloth holding their own self-portrait profile cards against a canary-yellow background',
       },
       inside: {
         heading: 'Inside the Kippin app',
