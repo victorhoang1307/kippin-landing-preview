@@ -139,8 +139,10 @@ p {
   }
 }
 
-/* ─── Tactile Gouache Stamp Buttons ─── */
+/* ─── Tactile Hand-Inked Gouache Stamp Buttons (Zero Text-Blur Filter) ─── */
 .btn {
+  position: relative;
+  isolation: isolate;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -149,39 +151,74 @@ p {
   font-weight: 800;
   font-size: 15.5px;
   line-height: 1.2;
-  padding: 12px 22px;
-  border-radius: 12px;
-  border: var(--border-ink);
-  box-shadow: var(--shadow-sm);
+  padding: 13px 25px 16px 22px;
+  border: none;
+  border-radius: 14px;
+  background: transparent;
+  box-shadow: none;
   cursor: pointer;
-  transition: transform 0.14s ease, box-shadow 0.14s ease, background-color 0.14s ease;
+  transition: transform 0.14s ease, color 0.14s ease;
   white-space: nowrap;
+}
+
+.btn-sketch-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+  z-index: 0;
+  overflow: visible;
+}
+
+.btn-label {
+  position: relative;
+  z-index: 1;
+  text-box: trim-both cap alphabetic;
 }
 
 .btn:hover {
   transform: translate(1.5px, 1.5px);
-  box-shadow: 1.5px 1.5px 0 #1B1918;
 }
 
 .btn:active {
   transform: translate(3px, 3px);
-  box-shadow: 0 0 0 #1B1918;
 }
 
 .btn-lg {
   font-size: 16.5px;
-  padding: 15px 28px;
-  border-radius: 14px;
-  box-shadow: 4px 4px 0 #1B1918;
+  padding: 16px 31px 19px 28px;
 }
 
 .btn-vermilion {
-  background-color: var(--gouache-vermilion);
+  --btn-fill: var(--gouache-vermilion);
   color: var(--paper);
 }
 
 .btn-vermilion:hover {
-  background-color: var(--gouache-vermilion-hover);
+  --btn-fill: var(--gouache-vermilion-hover);
+}
+
+/* Shared Hand-Cut Mini Control Stamps */
+.mini-stamp-bg,
+.stamp-box-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+  z-index: 0;
+  overflow: visible;
+}
+
+.stamp-fg-icon {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: -2px 0 0 -2px;
+  pointer-events: none;
 }
 
 /* ─── 1. Sticky Sketchbook Header ─── */
@@ -249,38 +286,42 @@ p {
   align-items: center;
   background-color: var(--paper-buff);
   padding: 3px;
-  border-radius: 10px;
+  border-radius: 13px 10px 14px 11px / 11px 13px 10px 14px;
   border: 2px solid var(--ink);
+  box-shadow: 2px 2px 0 var(--ink);
 }
 
 .lang-btn {
-  border: none;
+  border: 1.5px solid transparent;
   background: transparent;
   font-family: var(--font-body);
   font-weight: 800;
   font-size: 12.5px;
   color: var(--ink);
-  padding: 5px 9px;
-  border-radius: 7px;
+  padding: 4.5px 9px;
+  border-radius: 9px 7px 10px 8px / 8px 10px 7px 9px;
   cursor: pointer;
-  opacity: 0.72;
+  opacity: 0.74;
 }
 
 .lang-btn.is-active {
   background-color: var(--gouache-yellow);
+  border-color: var(--ink);
   opacity: 1;
   box-shadow: 1.5px 1.5px 0 var(--ink);
 }
 
 .mobile-menu-btn {
+  position: relative;
+  isolation: isolate;
   display: none;
   width: 44px;
   height: 44px;
-  border-radius: 10px;
-  border: 2px solid var(--ink);
-  background-color: var(--gouache-yellow);
+  padding: 0;
+  border: none;
+  background: transparent;
+  --mini-fill: var(--gouache-yellow);
   color: var(--ink);
-  box-shadow: 2px 2px 0 var(--ink);
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -358,33 +399,49 @@ p {
 }
 
 .hero-guarantee-box {
+  position: relative;
+  isolation: isolate;
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 7.5px 10px;
-  border: 2px solid var(--ink);
-  border-radius: 10px;
-  box-shadow: 2.5px 2.5px 0 var(--ink);
+  padding: 8.5px 12px 10.5px 9.5px;
+  border: none;
+  background: transparent;
+}
+
+.pill-sketch-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+  z-index: 0;
+  overflow: visible;
 }
 
 .pill-lime {
-  background-color: var(--gouache-lime-soft);
+  --pill-fill: var(--gouache-lime-soft);
 }
 
 .pill-yellow {
-  background-color: var(--gouache-yellow-soft);
+  --pill-fill: var(--gouache-yellow-soft);
 }
 
 .pill-teal {
-  background-color: var(--gouache-teal-soft);
+  --pill-fill: var(--gouache-teal-soft);
 }
 
 .hero-guarantee-icon {
+  position: relative;
+  z-index: 1;
   flex-shrink: 0;
   display: block;
 }
 
 .hero-guarantee-text {
+  position: relative;
+  z-index: 1;
   font-size: 13px;
   font-weight: 800;
   line-height: 1.25;
@@ -410,7 +467,7 @@ p {
   gap: 4px;
   background-color: var(--ink);
   border: var(--border-ink-heavy);
-  border-radius: 24px;
+  border-radius: 26px 20px 28px 22px / 22px 27px 21px 25px;
   box-shadow: var(--shadow-lg);
   overflow: hidden;
 }
@@ -488,7 +545,7 @@ p {
   row-gap: 12px;
   background-color: var(--paper);
   border: var(--border-ink);
-  border-radius: 18px;
+  border-radius: 23px 17px 25px 18px / 18px 24px 17px 22px;
   padding: 22px 22px 24px;
   box-shadow: var(--shadow-md);
 }
@@ -500,29 +557,36 @@ p {
 }
 
 .what-source-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  border: 2px solid var(--ink);
-  box-shadow: 2px 2px 0 var(--ink);
+  position: relative;
+  isolation: isolate;
+  width: 46px;
+  height: 46px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  color: var(--paper);
+}
+
+.source-fg-icon {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: -2px 0 0 -2px;
 }
 
 .icon-vermilion {
-  background-color: var(--gouache-vermilion);
+  --stamp-fill: var(--gouache-vermilion);
+  transform: rotate(-2.4deg);
 }
 
 .icon-cobalt {
-  background-color: var(--gouache-cobalt);
+  --stamp-fill: var(--gouache-cobalt);
+  transform: rotate(1.9deg);
 }
 
 .icon-teal {
-  background-color: var(--gouache-teal);
-  color: var(--ink);
+  --stamp-fill: var(--gouache-teal);
+  transform: rotate(-1.7deg);
 }
 
 .what-source-head h3 {
@@ -597,25 +661,41 @@ p {
 }
 
 .feature-num {
+  position: relative;
+  isolation: isolate;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1;
-  width: 42px;
-  height: 42px;
-  border-radius: 11px;
-  border: 2.5px solid var(--ink);
-  box-shadow: 3px 3px 0 var(--ink);
+  width: 48px;
+  height: 48px;
   margin-bottom: 14px;
   color: var(--ink);
 }
 
-.stamp-teal { background-color: var(--gouache-teal); }
-.stamp-orange { background-color: var(--gouache-orange); }
-.stamp-yellow { background-color: var(--gouache-yellow); }
+.stamp-num-text {
+  position: relative;
+  z-index: 1;
+  margin: -2px 0 0 -2px;
+}
+
+.stamp-teal {
+  --stamp-fill: var(--gouache-teal);
+  transform: rotate(-2.5deg);
+}
+
+.stamp-orange {
+  --stamp-fill: var(--gouache-orange);
+  transform: rotate(2.1deg);
+}
+
+.stamp-yellow {
+  --stamp-fill: var(--gouache-yellow);
+  transform: rotate(-1.8deg);
+}
 
 .z-copy h3 {
   font-size: clamp(27px, 2.9vw, 37px);
@@ -632,7 +712,7 @@ p {
 
 .crayon-frame {
   border: var(--border-ink-heavy);
-  border-radius: 24px;
+  border-radius: 26px 19px 25px 21px / 20px 26px 19px 24px;
   box-shadow: var(--shadow-lg);
   overflow: hidden;
   transition: transform 0.22s ease;
@@ -739,24 +819,22 @@ p {
 
 .shot-zoom-pill {
   position: absolute;
+  isolation: isolate;
   right: 10px;
   bottom: 10px;
-  width: 34px;
-  height: 34px;
-  border-radius: 10px;
-  background-color: var(--gouache-yellow);
+  width: 37px;
+  height: 37px;
+  --mini-fill: var(--gouache-yellow);
   color: var(--ink);
-  border: 2px solid var(--ink);
-  box-shadow: 2px 2px 0 var(--ink);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.15s ease, transform 0.15s ease;
+  transition: transform 0.15s ease;
 }
 
 .app-shot-btn:hover .shot-zoom-pill {
-  background-color: var(--gouache-orange);
-  transform: scale(1.06);
+  --mini-fill: var(--gouache-orange);
+  transform: scale(1.07) rotate(-2deg);
 }
 
 .app-shot figcaption {
@@ -933,19 +1011,19 @@ p {
 }
 
 .check-dot {
-  width: 23px;
-  height: 23px;
-  border-radius: 7px;
-  background-color: var(--gouache-lime);
-  border: 2px solid var(--ink);
-  color: var(--ink);
-  font-size: 13px;
-  font-weight: 900;
+  width: 25px;
+  height: 25px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  margin-top: 2px;
+  margin-top: 1px;
+}
+
+.check-dot svg {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 /* ─── 7. Section 6: Cobalt Gouache Trust & Safety Band (#257BB4) ─── */
@@ -982,31 +1060,46 @@ p {
 }
 
 .seal-badge {
-  width: 178px;
-  height: 178px;
-  border-radius: 50%;
-  background-color: var(--paper);
-  padding: 10px;
-  border: var(--border-ink-heavy);
-  box-shadow: 6px 6px 0 var(--ink);
+  position: relative;
+  isolation: isolate;
+  width: 186px;
+  height: 186px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seal-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .seal-inner {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 100%;
-  border-radius: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 22px 24px 26px 20px;
 }
 
-.seal-yellow { border: 3px dashed #D19B00; background-color: #FFF9D2; }
-.seal-orange { border: 3px dashed var(--gouache-orange); background-color: #FFF1DC; }
-.seal-teal { border: 3px dashed #3D8F94; background-color: #E5F6F7; }
-.seal-vermilion { border: 3px dashed var(--gouache-vermilion); background-color: #FFEAE4; }
+.seal-yellow { --seal-bg: #FFF9D2; --seal-dash: #D19B00; }
+.seal-orange { --seal-bg: #FFF1DC; --seal-dash: #F39A27; }
+.seal-teal { --seal-bg: #E5F6F7; --seal-dash: #3D8F94; }
+.seal-vermilion { --seal-bg: #FFEAE4; --seal-dash: #DE411B; }
+
+.seal-tilt-1 { transform: rotate(-1.8deg); }
+.seal-tilt-2 { transform: rotate(1.6deg); }
+.seal-tilt-3 { transform: rotate(-1.4deg); }
+.seal-tilt-4 { transform: rotate(1.9deg); }
 
 .seal-big {
   font-family: var(--font-display);
@@ -1083,11 +1176,11 @@ p {
 }
 
 .faq-chevron-pill {
-  width: 34px;
-  height: 34px;
-  border-radius: 9px;
-  background-color: var(--gouache-yellow);
-  border: 2px solid var(--ink);
+  position: relative;
+  isolation: isolate;
+  width: 37px;
+  height: 37px;
+  --mini-fill: var(--gouache-yellow);
   color: var(--ink);
   display: inline-flex;
   align-items: center;
@@ -1104,7 +1197,7 @@ p {
 }
 
 .faq-item[open] .faq-chevron-pill {
-  background-color: var(--gouache-orange);
+  --mini-fill: var(--gouache-orange);
 }
 
 .faq-answer {
@@ -1130,7 +1223,7 @@ p {
 
 .closing-stamp {
   border: var(--border-ink-heavy);
-  border-radius: 20px;
+  border-radius: 22px 17px 24px 18px / 18px 23px 17px 21px;
   box-shadow: var(--shadow-md);
   overflow: hidden;
   aspect-ratio: 1 / 1;
@@ -1155,7 +1248,7 @@ p {
 .closing-card {
   background-color: var(--paper);
   border: var(--border-ink-heavy);
-  border-radius: 24px;
+  border-radius: 26px 20px 25px 22px / 21px 25px 20px 26px;
   box-shadow: var(--shadow-lg);
   padding: 40px 36px;
   text-align: center;
@@ -1291,26 +1384,30 @@ p {
   color: var(--ink);
   background-color: var(--gouache-yellow);
   border: 2px solid var(--ink);
+  box-shadow: 1.5px 1.5px 0 var(--ink);
   padding: 3px 11px;
-  border-radius: 999px;
+  border-radius: 14px 10px 15px 11px / 11px 14px 10px 13px;
 }
 
 .gallery-close-btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  border: 2px solid var(--ink);
-  background-color: var(--paper-buff);
+  position: relative;
+  isolation: isolate;
+  width: 41px;
+  height: 41px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  --mini-fill: var(--paper-buff);
   color: var(--ink);
-  font-size: 18px;
-  font-weight: 800;
-  box-shadow: 2px 2px 0 var(--ink);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   flex-shrink: 0;
 }
 
 .gallery-close-btn:hover {
-  background-color: var(--gouache-yellow);
+  --mini-fill: var(--gouache-yellow);
 }
 
 .gallery-stage {
@@ -1333,23 +1430,24 @@ p {
 
 .gallery-nav-btn {
   position: absolute;
+  isolation: isolate;
   top: 50%;
   transform: translateY(-50%);
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  border: 2px solid var(--ink);
-  background-color: var(--gouache-yellow);
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  --mini-fill: var(--gouache-yellow);
   color: var(--ink);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 3px 3px 0 var(--ink);
 }
 
 .gallery-nav-btn:hover {
-  background-color: var(--gouache-orange);
+  --mini-fill: var(--gouache-orange);
 }
 
 .gallery-prev {
@@ -1385,7 +1483,7 @@ p {
 .gallery-dot {
   width: 34px;
   height: 34px;
-  border-radius: 9px;
+  border-radius: 10px 8px 11px 8px / 8px 11px 8px 10px;
   border: 2px solid var(--ink);
   background-color: var(--paper-buff);
   color: var(--ink);
@@ -1399,6 +1497,7 @@ p {
   background-color: var(--gouache-vermilion);
   color: var(--paper);
   box-shadow: 2px 2px 0 var(--ink);
+  transform: rotate(-2deg);
 }
 
 /* ─── Preview Route Toast ─── */
@@ -1432,7 +1531,7 @@ p {
     gap: 28px;
   }
   .hero-guarantee-box {
-    padding: 6.5px 8.5px;
+    padding: 7.5px 9.5px 9.5px 8px;
   }
   .hero-guarantee-text {
     font-size: 12.2px;
